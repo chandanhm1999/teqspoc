@@ -2,6 +2,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/navbar/Navbar";
 import "react-multi-carousel/lib/styles.css";
+import Header from "@/components/header/Header";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -15,10 +16,9 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body>
         <div className="">
-        <Navbar />
-        </div>
+        <Navbar /> 
         {children}
-        
+        </div>
       </body>
     </html>
   );
