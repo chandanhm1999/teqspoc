@@ -73,6 +73,13 @@ const Navbar = () => {
                       />
                     </div>
                     <div className="col-span-2">
+                    <h1 className="pt-3 text-xl font-semibold">
+                        Earn Industry-Respected Certifications
+                      </h1>
+                      <p className="text-sm text-slate-600 w-5/5">
+                        Boost your career with certifications that are valued by
+                        top employers and recognized globally.
+                      </p>
                       <div className="grid grid-cols-3 gap-2 ">
                         <ul className="mt-3 flex flex-col gap-4">
                           <h1 className="text-2xl font-bold text-gray-800">
@@ -81,7 +88,7 @@ const Navbar = () => {
 
                           <div className="p-2 text-black border-l-gray-400 shadow-lg rounded-lg cursor-pointer hover:border-gray-300 hover:shadow-xl transition-all duration-300 border-2 border-transparent flex items-center">
                             <img
-                              src="/assets/navbar/java.jpg"
+                              src="/assets/navbar/scrum.png"
                               alt="Scrum Master Logo"
                               className="w-12 h-12 mr-4"
                             />
@@ -105,8 +112,8 @@ const Navbar = () => {
 
                           <div className="p-2 text-black border-l-gray-400 shadow-lg rounded-lg cursor-pointer hover:border-gray-300 hover:shadow-xl transition-all duration-300 border-2 border-transparent flex items-center">
                             <img
-                              src="https://picsum.photos/180"
-                              alt="Certification Logo"
+                              src="/assets/navbar/dotnet.png"
+                              alt="dotnet Logo"
                               className="w-12 h-12 mr-4"
                             />
                             <div className="flex flex-col w-full">
@@ -129,8 +136,8 @@ const Navbar = () => {
 
                           <div className="p-2 text-black border-l-gray-400 shadow-lg rounded-lg cursor-pointer hover:border-gray-300 hover:shadow-xl transition-all duration-300 border-2 border-transparent flex items-center">
                             <img
-                              src="https://picsum.photos/180"
-                              alt="Certification Logo"
+                              src="/assets/navbar/java.png"
+                              alt="java Logo"
                               className="w-12 h-12 mr-4"
                             />
                             <div className="flex flex-col w-full">
@@ -159,8 +166,8 @@ const Navbar = () => {
 
                           <div className="p-2 text-black border-l-gray-400 shadow-lg rounded-lg cursor-pointer hover:border-gray-300 hover:shadow-xl transition-all duration-300 border-2 border-transparent flex items-center">
                             <img
-                              src="https://picsum.photos/180"
-                              alt="Certification Logo"
+                              src="/assets/navbar/testing.png"
+                              alt="testing Logo"
                               className="w-12 h-12 mr-4"
                             />
                             <div className="flex flex-col w-full">
@@ -181,8 +188,8 @@ const Navbar = () => {
 
                           <div className="p-2 text-black border-l-gray-400 shadow-lg rounded-lg cursor-pointer hover:border-gray-300 hover:shadow-xl transition-all duration-300 border-2 border-transparent flex items-center">
                             <img
-                              src="https://picsum.photos/180"
-                              alt="Certification Logo"
+                              src="/assets/navbar/data.png"
+                              alt="data Logo"
                               className="w-12 h-12 mr-4"
                             />
                             <div className="flex flex-col w-full">
@@ -205,8 +212,8 @@ const Navbar = () => {
 
                           <div className="p-2 text-black border-l-gray-400 shadow-lg rounded-lg cursor-pointer hover:border-gray-300 hover:shadow-xl transition-all duration-300 border-2 border-transparent flex items-center">
                             <img
-                              src="https://picsum.photos/180"
-                              alt="Certification Logo"
+                              src="/assets/navbar/devops.png"
+                              alt="devops Logo"
                               className="w-12 h-12 mr-4"
                             />
                             <div className="flex flex-col w-full">
@@ -229,13 +236,7 @@ const Navbar = () => {
                           <img src="/assets/navbar/rightside.png" alt="no image" />
                         </div>
                       </div>
-                      <h1 className="pt-3 text-xl font-semibold">
-                        Earn Industry-Respected Certifications
-                      </h1>
-                      <p className="text-sm text-slate-600 w-5/5">
-                        Boost your career with certifications that are valued by
-                        top employers and recognized globally.
-                      </p>
+                      
                     </div>
                   </div>
                 </div>
