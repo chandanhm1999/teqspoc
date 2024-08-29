@@ -14,6 +14,7 @@ module.exports = {
         paragraph: "#898989",
         mainblue: "#00b3ff",
         darkblue: "#1c1d33",
+        gold: "#FFD700",
       },
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],
