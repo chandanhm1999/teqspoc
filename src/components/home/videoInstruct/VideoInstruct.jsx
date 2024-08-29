@@ -15,7 +15,7 @@ const VideoInstruct = () => {
             <TextLight text={"Our Online Courses"} />
           </h1>
           <p className="font-medium text-[16px] text-richblack-300 leading-relaxed">
-            Whether you're a beginner or an experienced developer, our courses 
+            Whether you&apos;re a beginner or an experienced developer, our courses 
             are designed to help you advance your skills. Our industry experts 
             bring years of knowledge and a passion for teaching to each course, 
             ensuring you get the most out of every lesson.
