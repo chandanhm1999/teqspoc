@@ -1,4 +1,5 @@
 import AboutMainSec from "@/components/about/AboutMainSec";
+import Timeline from "@/components/home/hometimeline/Timeline";
 import SectionTwo from "@/components/home/sectwo/SectionTwo";
 import React from "react";
 
@@ -11,6 +12,7 @@ const About = () => {
         title="About Us"
       />
       <SectionTwo />
+      <Timeline />
     </>
   );
 };

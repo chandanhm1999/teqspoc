@@ -11,7 +11,7 @@ import Image from "next/image";
 const Footer = () => {
   return (
     <footer className="bg-zinc-100 text-black px-4 py-4 sm:px-4 md:px-6 lg:px-8 xl:px-12">
-      <div className="container mx-auto">
+      <div className="mx-auto">
         <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center border-b border-black border-opacity-10 pb-8 mb-8">
           <div className="">
             <Image src="/teqlogo.svg" width={150} height={50} alt="teqlogo" />
@@ -71,7 +71,7 @@ const Footer = () => {
         </div>
 
         <div className="border-t border-black border-opacity-10 text-center pt-4">
-          <div className="container mx-auto flex flex-col sm:flex-row justify-between items-center">
+          <div className="mx-auto flex flex-col sm:flex-row justify-between items-center">
             <Link
               href="https://chandan21.vercel.app"
               className="text-black text-sm flex items-center transition hover:text-white"
