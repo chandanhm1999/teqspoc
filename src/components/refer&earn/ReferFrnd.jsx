@@ -26,11 +26,11 @@ const ReferFrnd = () => {
       newErrors.email = "Valid email is required";
     if (!formData.phone) newErrors.phone = "Phone number is required";
     if (!formData.friendName)
-      newErrors.friendName = "Friend's name is required";
+      newErrors.friendName = "Friends name is required";
     if (!formData.friendPhone)
-      newErrors.friendPhone = "Friend's phone number is required";
+      newErrors.friendPhone = "Friends phone number is required";
     if (!formData.friendEmail || !/\S+@\S+\.\S+/.test(formData.friendEmail))
-      newErrors.friendEmail = "Valid friend's email is required";
+      newErrors.friendEmail = "Valid friends email is required";
     if (!formData.place) newErrors.place = "Place is required";
     if (!formData.course) newErrors.course = "Course selection is required";
 
@@ -154,7 +154,7 @@ const ReferFrnd = () => {
             </div>
 
             <label className="text-blue-700 pt-4 font-bold font-sm">
-              Friend's Details
+              Friend&apos;s Details
             </label>
 
             <div className="space-y-4">
@@ -164,7 +164,7 @@ const ReferFrnd = () => {
                   name="friendName"
                   value={formData.friendName}
                   onChange={handleChange}
-                  placeholder="Friend's Name"
+                  placeholder="Friends Name"
                   className={`w-1/2 bg-gray-100 rounded-sm py-4 px-5 text-sm outline-blue-600 focus:bg-transparent ${
                     errors.friendName ? "border-2 border-red-500" : ""
                   }`}
@@ -178,7 +178,7 @@ const ReferFrnd = () => {
                   name="friendPhone"
                   value={formData.friendPhone}
                   onChange={handleChange}
-                  placeholder="Friend's Phone Number"
+                  placeholder="Friends Phone Number"
                   className={`w-1/2 bg-gray-100 rounded-sm py-4 px-5 text-sm outline-blue-600 focus:bg-transparent ${
                     errors.friendPhone ? "border-2 border-red-500" : ""
                   }`}
@@ -193,7 +193,7 @@ const ReferFrnd = () => {
                 name="friendEmail"
                 value={formData.friendEmail}
                 onChange={handleChange}
-                placeholder="Friend's Email"
+                placeholder="Friends Email"
                 className={`w-full bg-gray-100 rounded-sm py-4 px-5 text-sm outline-blue-600 focus:bg-transparent ${
                   errors.friendEmail ? "border-2 border-red-500" : ""
                 }`}

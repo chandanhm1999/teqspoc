@@ -14,7 +14,7 @@ const ShareModelResourse = ({ isOpen, onClose, shareUrl }) => {
       <div className="bg-white rounded-lg shadow-lg p-6 w-96">
         <h3 className="text-xl font-semibold mb-2">Share this course</h3>
         <p className="text-gray-700 mb-4">
-          Share this course's details with your family & friends
+          Share this course&apos;s details with your family & friends
         </p>
         <input
           type="text"

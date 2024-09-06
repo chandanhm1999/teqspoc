@@ -50,7 +50,7 @@ const Instruct = () => {
                         <li><span className="font-semibold">Expand Your Reach:</span> Connect with a global audience of aspiring professionals and make a lasting impact on their careers.</li>
                         <li><span className="font-semibold">Earn While You Teach:</span> Enjoy the flexibility of earning supplemental income on your terms, with opportunities to grow as you contribute.</li>
                         <li><span className="font-semibold">Collaborate with Peers:</span> Join a vibrant community of like-minded experts, sharing insights and experiences that enrich both teaching and learning.</li>
-                        <li><span className="font-semibold">Shape the Future:</span> Play a crucial role in shaping the future workforce by imparting the skills and knowledge needed for tomorrow's challenges.</li>
+                        <li><span className="font-semibold">Shape the Future:</span> Play a crucial role in shaping the future workforce by imparting the skills and knowledge needed for tomorrow&apos;s challenges.</li>
                     </ul>
                 
                 </div>

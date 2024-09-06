@@ -80,7 +80,7 @@ const Footer = () => {
               <span className="text-red-500 text-lg mx-1">&#10084;</span>
               <span className="text-black">
                 <span className="text-lg font-bold"> C</span>
-                devnxtgen
+                devxgen
               </span>
             </Link>
             <p className="text-sm text-gray-500">

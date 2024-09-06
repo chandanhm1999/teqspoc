@@ -8,34 +8,32 @@ import Image from "next/image";
 import { StarIcon } from "@heroicons/react/24/solid";
 import { FaUserGraduate, FaShareSquare } from "react-icons/fa";
 import ShareModal from "./ShareModel"; // Import the ShareModal component
+import TextLight from "./TextLight"
 
 // CAROUSEL DATA
 const postData = [
   {
     heading: "Scrum Master",
-    heading2: "Certified® Scrum Master",
-    name: "Gopi",
-    imgSrc: "/assets/courses/csm.svg",
+    imgSrc: "/assets/courses/scrum.svg",
+    name: "Industry-Experts",
     students: 150,
     classes: 12,
     price: 20,
     rating: 4.7,
   },
   {
-    heading: "DotNet Certification",
-    heading2: "FullStack Development",
-    name: "Gopi",
-    imgSrc: "/assets/courses/cdotnet.svg",
+    heading: "DotNet FullStack",
+    imgSrc: "/assets/courses/dotnet.svg",
+    name: "Industry-Experts",
     students: 130,
     classes: 12,
     price: 20,
     rating: 4.7,
   },
   {
-    heading: "Java Certification",
-    heading2: "FullStack Development",
-    name: "Gopi",
-    imgSrc: "/assets/courses/java.svg",
+    heading: "Java FullStack",
+    imgSrc: "/assets/courses/javaaa.svg",
+    name: "Industry-Experts",
     students: 120,
     classes: 12,
     price: 20,
@@ -43,9 +41,8 @@ const postData = [
   },
   {
     heading: "Software Testing",
-    heading2: "FullStack Testing",
-    name: "Gopi",
-    imgSrc: "/assets/courses/ctesting.svg",
+    imgSrc: "/assets/courses/testing.svg",
+    name: "Industry-Experts",
     students: 150,
     classes: 12,
     price: 20,
@@ -53,9 +50,8 @@ const postData = [
   },
   {
     heading: "Data Engineer",
-    heading2: "Certified® Data Engineer",
-    name: "Gopi",
-    imgSrc: "/assets/courses/cdatae.svg",
+    imgSrc: "/assets/courses/data.svg",
+    name: "Industry-Experts",
     students: 150,
     classes: 12,
     price: 20,
@@ -63,9 +59,8 @@ const postData = [
   },
   {
     heading: "DevOps",
-    heading2: "Certified® DevOps Course",
-    name: "Gopi",
-    imgSrc: "/assets/courses/cdevops.svg",
+    imgSrc: "/assets/courses/devops.svg",
+    name: "Industry-Experts",
     students: 150,
     classes: 12,
     price: 20,
@@ -75,12 +70,12 @@ const postData = [
 
 const responsive = {
   desktop: { breakpoint: { max: 3000, min: 1480 }, items: 4 },
-  laptop: { breakpoint: { max: 1480, min: 1024 }, items: 3 },
-  tablet: { breakpoint: { max: 1024, min: 768 }, items: 2 },
-  mobile: { breakpoint: { max: 768, min: 0 }, items: 1 },
+  laptop: { breakpoint: { max: 1480, min: 1024 }, items: 4 },
+  tablet: { breakpoint: { max: 1024, min: 486 }, items: 2 },
+  mobile: { breakpoint: { max: 486, min: 0 }, items: 1 },
 };
 
-const Courses = () => {
+const Course = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [currentShareUrl, setCurrentShareUrl] = useState("");
 
@@ -94,118 +89,115 @@ const Courses = () => {
   };
 
   return (
-    <div id="courses" className="py-8">
-      <div className="mx-auto px-4 lg:px-8">
-        <div className="sm:flex justify-between items-center">
-          <h3 className="text-xl md:text-3xl lg:text-3xl xl:text-3xl font-bold leading-tight mb-5 sm:mb-0">
-            Popular courses.
+    <div id="courses" className="py-12 bg-gray-50">
+      <div className="container mx-auto px-2 lg:px-2">
+        <div className="flex justify-between items-center mb-6">
+          <h3 className="text-3xl font-bold leading-tight text-gray-800">
+            Popular 
+            <TextLight text={"Courses"} />
           </h3>
-          <Link href={"/courses"} className="text-Blueviolet text-base sm:text-lg font-medium">
-            Explore courses&nbsp;&gt;&nbsp;
+          <Link
+            href="/courses"
+            className="text-blue-500 text-sm md:text-sm lg:text-lg xl:text-lg font-medium hover:underline"
+          >
+            Explore &nbsp;&gt;&nbsp;
           </Link>
         </div>
 
-        <Carousel responsive={responsive} infinite={true}>
+        {/* Centering the carousel with better alignment */}
+        <Carousel
+          responsive={responsive}
+          infinite={true}
+          containerClass="carousel-container"
+          itemClass="carousel-item-padding-40-px"
+        >
           {postData.map((item, i) => (
-            <div key={i} className="px-2">
-              <div className="bg-white px-4 pt-4 pb-8 shadow-lg rounded-2xl">
-                <div className="relative rounded-3xl overflow-hidden">
+            <div key={i} className="px-2 py-4">
+              <div className="bg-white shadow-xl rounded-2xl transform hover:scale-105 transition-transform duration-300">
+                <div className="relative overflow-hidden rounded-t-2xl">
                   <Image
                     src={item.imgSrc}
-                    alt="course"
+                    alt={item.heading}
                     width={389}
                     height={262}
-                    className="m-auto rounded-t-2xl object-cover h-auto w-full"
+                    className="m-auto object-cover h-auto w-full rounded-t-2xl"
                   />
-                  <div className="absolute right-5 -bottom-2 bg-gradient-to-r from-purple-400 via-purple-500 to-purple-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 rounded-lg p-2 sm:p-4 lg:p-4">
-                    <h3 className="text-white uppercase text-xs sm:text-sm font-bold text-center">
-                      best <br /> course
-                    </h3>
-                  </div>
                 </div>
 
-                <div className="px-3">
-                  <h4 className="text-lg sm:text-xl font-bold pt-2 sm:pt-4 text-black">
-                    {item.heading}
-                  </h4>
-                  <h4 className="text-lg text-gray-500 sm:text-xl font-bold pt-1">
-                    {item.heading2}
-                  </h4>
+                <div className="px-4 py-4">
+                  <h4 className="text-lg font-bold text-gray-800">{item.heading}</h4>
+                  <p className="text-sm text-gray-500 mb-2">By: {item.name}</p>
 
-                  <div>
-                    <h3 className="text-xs sm:text-base font-normal pt-2 sm:pt-2 opacity-75">
-                      {item.name}
-                    </h3>
-                  </div>
-
-                  <div className="flex justify-between items-center py-2 sm:py-2">
-                    <div className="flex gap-1 sm:gap-1">
-                      <h3 className="text-red text-lg sm:text-xl font-medium">
+                  <div className="flex justify-between items-center py-2">
+                    <div className="flex items-center">
+                      <h3 className="text-red-500 text-lg font-medium">
                         {item.rating}
                       </h3>
-                      <div className="flex">
+                      <div className="ml-2 flex">
                         {[...Array(5)].map((_, index) => (
                           <StarIcon
                             key={index}
-                            className="h-2 w-2 text-yellow-400 sm:h-3 sm:w-3"
+                            className="h-4 w-4 text-yellow-400"
                           />
                         ))}
                       </div>
                     </div>
-                    <div className="flex gap-1 sm:gap-2">
-                    <h3 className=" text-xs text-green-500 sm:text-sm font-small">
+                    <div className="flex items-center space-x-2">
+                      <h3 className="text-green-500 text-xs font-semibold">
                         40% off
                       </h3>
-                      <h3 className="flex text-xl sm:text-2xl font-medium">
-                        ${item.price}
-                      </h3>
-                     
+                      <h3 className="text-xl font-bold text-gray-900">${item.price}</h3>
                     </div>
                   </div>
 
-                  {/* Buttons Section */}
-                  <div className="flex justify-between pt-2 sm:pt-2">
+                  <div className="flex justify-between mt-4">
                     <Link href={`/enroll/${i}`} passHref>
-                      <button className="text-white border border-cyan-400 mt-4 hover:bg-white hover:text-cyan-600 bg-gradient-to-r from-cyan-400 via-cyan-500 to-cyan-600 hover:bg-gradient-to-br focus:ring-4 hover:from-white hover:via-white hover:to-white focus:outline-none focus:ring-black dark:focus:ring-black font-bold rounded-sm px-8 py-2 md:py-2 lg:py-2 xl:py-2 text-xs md:text-sm lg:text-sm xl:text-sm transition-all duration-300 ease-in-out flex items-center shadow-lg hover:shadow-xl transform hover:scale-105">
+                      <button className="flex items-center text-white bg-cyan-500 hover:bg-cyan-600 transition-colors duration-300 px-6 py-2 rounded-lg shadow-md">
                         <FaUserGraduate className="mr-2" />
                         Enroll
                       </button>
                     </Link>
                     <button
-                      onClick={() => openModal(`https://localhost:3000/courses/${item.heading.toLowerCase().replace(/ /g, "-")}`)}
-                      className="text-black border border-gray-600 mt-4 hover:bg-black hover:text-white font-bold rounded-sm px-8 py-2 md:py-2 lg:py-2 xl:py-2 text-xs md:text-sm lg:text-sm xl:text-sm transition-all duration-300 ease-in-out flex items-center shadow-lg hover:shadow-xl transform hover:scale-105"
+                      onClick={() =>
+                        openModal(
+                          `https://localhost:3000/courses/${item.heading
+                            .toLowerCase()
+                            .replace(/ /g, "-")}`
+                        )
+                      }
+                      className="flex items-center text-gray-600 border border-gray-600 hover:bg-gray-600 hover:text-white transition-colors duration-300 px-6 py-2 rounded-lg shadow-md"
                     >
                       <FaShareSquare className="mr-2" />
                       Share
                     </button>
                   </div>
 
-                  <hr className="border-gray-300" />
+                  <hr className="border-gray-200 mt-4" />
 
-                  <div className="flex justify-between pt-4 sm:pt-6">
-                    <div className="flex gap-2 sm:gap-4">
+                  <div className="flex justify-between py-4">
+                    <div className="flex items-center space-x-2">
                       <Image
-                        src={"/assets/courses/book-open.svg"}
+                        src="/assets/courses/book-open.svg"
                         alt="classes"
                         width={20}
                         height={20}
-                        className="inline-block m-auto"
+                        className="inline-block"
                       />
-                      <h3 className="text-sm sm:text-base font-medium text-black opacity-75">
+                      <p className="text-sm text-gray-700 font-medium">
                         {item.classes} classes
-                      </h3>
+                      </p>
                     </div>
-                    <div className="flex gap-2 sm:gap-4">
+                    <div className="flex items-center space-x-2">
                       <Image
-                        src={"/assets/courses/users.svg"}
+                        src="/assets/courses/users.svg"
                         alt="students"
                         width={20}
                         height={20}
-                        className="inline-block m-auto"
+                        className="inline-block"
                       />
-                      <h3 className="text-sm sm:text-base font-medium text-black opacity-75">
+                      <p className="text-sm text-gray-700 font-medium">
                         {item.students} students
-                      </h3>
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -221,4 +213,4 @@ const Courses = () => {
   );
 };
 
-export default Courses;
+export default Course;

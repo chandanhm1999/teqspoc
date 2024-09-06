@@ -10,7 +10,7 @@ const Timeline = () => {
       <div className=" flex flex-col justify-between gap-4 lg:mt-6 lg:flex-row lg:gap-0">
         <div className="text-4xl font-semibold lg:w-[45%] ">
           Gain the skills you need{" "}
-          <TextLight text={"for today&apos;s in-demand Jobs."} />
+          <TextLight text={"for todays in-demand Jobs."} />
         </div>
         <div className="flex flex-col items-start gap-10 lg:w-[40%]">
           <div className="text-[16px]">

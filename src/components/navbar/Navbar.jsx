@@ -51,14 +51,9 @@ const Navbar = () => {
                 <a href="/resources">Resources</a>
               </li>
 
-              {/* About us section */}
+              {/* refer us section */}
               <li className="cursor pointer font-semibold">
                 <a href="/refer">Refer & Earn</a>
-              </li>
-
-              {/* About us section */}
-              <li className="cursor pointer font-semibold">
-                <a href="/about">About us</a>
               </li>
 
               <li className="group relative cursor-pointer">
@@ -79,9 +74,13 @@ const Navbar = () => {
                       </li>
                     </Link>
                     <Link href="/freejobassistance">
-                    <li className="p-2 hover:bg-violet-200">
-                      Free Job Assistance
-                    </li>
+                      <li className="p-2 hover:bg-violet-200">
+                        Free Job Assistance
+                      </li>
+                    </Link>
+                    {/* About us section */}
+                    <Link href="/about">
+                      <li className="p-2 hover:bg-violet-200">About us</li>
                     </Link>
                   </ul>
                 </div>

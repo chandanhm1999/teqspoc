@@ -101,7 +101,7 @@ const Card = ({
           <Link href={path}>
             <button className="text-black border border-gray-400 mt-4 hover:bg-black hover:text-white font-bold rounded-sm px-8 py-2 md:py-2 lg:py-2 xl:py-2 text-xs md:text-sm lg:text-sm xl:text-sm transition-all duration-300 ease-in-out flex items-center shadow-lg hover:shadow-xl transform hover:scale-105">
               <FaBook className="mr-2" />
-              E-Book
+              Learn More
             </button>
           </Link>
           <button

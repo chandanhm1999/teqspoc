@@ -8,7 +8,7 @@ import { useState, useEffect } from "react";
 const slidesContent = [
   {
     id: 1,
-    img: "/assets/herohome/homeOne.jpg",
+    img: "/assets/herosec/2.jpg",
     alt: "teQspoc",
     title: "Unlock Your Tech Potential",
     description: [
@@ -20,7 +20,7 @@ const slidesContent = [
   },
   {
     id: 2,
-    img: "/assets/herohome/hometwo.jpg",
+    img: "/assets/herosec/3.jpg",
     alt: "teQspoc",
     title: "Master Cutting-Edge Tech",
     description: [
@@ -32,7 +32,7 @@ const slidesContent = [
   },
   {
     id: 3,
-    img: "/assets/herohome/homethree.jpg",
+    img: "/assets/herosec/4.jpg",
     alt: "teQspoc",
     title: "Transform Your Career",
     description: [
@@ -44,7 +44,19 @@ const slidesContent = [
   },
   {
     id: 4,
-    img: "/assets/herohome/homefour.jpg",
+    img: "/assets/herosec/5.jpg",
+    alt: "teQspoc",
+    title: "Lead in Your Industry",
+    description: [
+      "Become indispensable: Gain leadership skills.",
+      "Adapt to change: Stay ahead with the latest tools.",
+      "Join a global community: Access lifelong learning resources.",
+    ],
+    link: "/leadership",
+  },
+  {
+    id: 4,
+    img: "/assets/herosec/6.jpg",
     alt: "teQspoc",
     title: "Lead in Your Industry",
     description: [
@@ -101,7 +113,7 @@ const HeroBanner = () => {
   }, []);
 
   return (
-    <div className="relative text-white w-full h-screen mx-auto">
+    <div className="relative text-white w-full pt-15 h-screen mx-auto">
       <Carousel
         responsive={responsive}
         infinite={true}
@@ -127,24 +139,7 @@ const HeroBanner = () => {
               className={`w-full h-screen object-cover ${loaded ? 'animate-fade-in' : ''}`}
               priority={index === 0}
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex flex-col items-start justify-center p-4 md:p-8 md:pl-16 lg:pl-24">
-              <div className="w-full md:w-2/3 lg:w-1/2">
-                <h2 className="text-2xl md:text-4xl lg:text-5xl font-extrabold text-white mb-4 md:mb-6 animate-slide-up">
-                  {item.title}
-                </h2>
-                {item.description.map((line, idx) => (
-                  <p key={idx} className="text-sm md:text-lg lg:text-xl font-medium text-white animate-slide-in mb-2 md:mb-4">
-                    {line}
-                  </p>
-                ))}
-                <Link href={item.link} passHref>
-                  <button className="mt-4 md:mt-8 px-6 py-2 md:px-10 md:py-2 bg-white text-black font-semibold text-sm md:text-lg rounded-lg shadow-lg hover:bg-eucalyptus-dark hover:text-white transition-all duration-300 ease-in-out animate-fade-in">
-                    Learn More
-                  </button>
-                </Link>
-              </div>
             </div>
-          </div>
         ))}
       </Carousel>
     </div>
