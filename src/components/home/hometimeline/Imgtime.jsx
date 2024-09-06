@@ -4,12 +4,12 @@ const TimeLine = [
     {
       Logo: "/assets/TimeLineLogo/Logo1.svg",
       Heading: "Leadership",
-      Description: "Committed to ensuring the company's success.",
+      Description: "Committed to ensuring the companys success.",
     },
     {
       Logo: "/assets/TimeLineLogo/Logo2.svg",
       Heading: "Responsibility",
-      Description: "Our students' success is our foremost concern.",
+      Description: "Our students success is our foremost concern.",
     },
     {
       Logo: "/assets/TimeLineLogo/Logo3.svg",
