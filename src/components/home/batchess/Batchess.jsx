@@ -40,10 +40,10 @@ const Batchess = () => {
   ];
 
   return (
-    <div className="my-8 px-4">
+    <div className="my-4 md:my-8 lg:my-8 xl:my-8 px-4">
       {/* Header Section */}
-      <div className="flex flex-col md:flex-row justify-between p-2 sm:p-0  items-center mb-6">
-        <h3 className="text-2xl font-bold text-gray-800 lg:text-3xl xl:lg:text-3xl dark:text-white mb-4 md:mb-0">
+      <div className="flex flex-col md:flex-row justify-between p-2 sm:p-0  items-center mb-3 md:mb-6 lg:mb-6 xl:mb-6">
+        <h3 className="text-xl md:text-2xl lg:text-3xl xl:text-3xl font-bold text-gray-800 xl:lg:text-3xl dark:text-white mb-2 md:mb-0 lg:mb-4 xl:mb-4">
           Upcoming <TextLight text={"Batches"} />
         </h3>
         <Link

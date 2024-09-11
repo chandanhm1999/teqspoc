@@ -87,7 +87,7 @@ const CustomLeftArrow = ({ onClick }) => {
   return (
     <div
       onClick={() => onClick()}
-      className="absolute top-1/2 transform -translate-y-1/2 left-2 md:left-4 w-[24px] h-[24px] md:w-[30px] md:h-[30px] bg-gradient-to-br from-white to-darkblue rounded-full z-10 flex items-center justify-center cursor-pointer opacity-70 hover:opacity-100 transition-all duration-300 ease-in-out"
+      className="absolute top-2/3 sm:top-2/3 md:top-2/4 lg:top-2/4 xl:top-2/4 transform -translate-y-1/2 left-2 md:left-4 w-[24px] h-[24px] md:w-[30px] md:h-[30px] bg-gradient-to-br from-white to-darkblue rounded-full z-10 flex items-center justify-center cursor-pointer opacity-70 hover:opacity-100 transition-all duration-300 ease-in-out"
     >
       <FaAngleLeft className="text-white text-sm md:text-lg" />
     </div>
@@ -98,7 +98,7 @@ const CustomRightArrow = ({ onClick }) => {
   return (
     <div
       onClick={() => onClick()}
-      className="absolute top-1/2 transform -translate-y-1/2 right-2 md:right-4 w-[24px] h-[24px] md:w-[30px] md:h-[30px] bg-gradient-to-br from-white to-darkblue rounded-full z-10 flex items-center justify-center cursor-pointer opacity-70 hover:opacity-100 transition-all duration-300 ease-in-out"
+      className="absolute top-2/3 sm:top-2/3 md:top-2/4 lg:top-2/4 xl:top-2/4 transform -translate-y-1/2 right-2 md:right-4 w-[24px] h-[24px] md:w-[30px] md:h-[30px] bg-gradient-to-br from-white to-darkblue rounded-full z-10 flex items-center justify-center cursor-pointer opacity-70 hover:opacity-100 transition-all duration-300 ease-in-out"
     >
       <FaAngleRight className="text-white text-sm md:text-lg" />
     </div>
