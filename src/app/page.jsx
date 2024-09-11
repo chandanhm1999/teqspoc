@@ -14,8 +14,8 @@ export default function Home() {
       <Course />
       <Batchess />
       <Abc />
-      <Blog />
       <Timeline />
+      <Blog />
       <Instruct />
       <Demo />
     </main>

@@ -7,7 +7,7 @@ const Scrummaster = () => {
     <>
       <MainSec
         url="/assets/resourse/resou.jpg"
-        parent="Scrummaster"
+        parent="Scrummaster Interview Questions & Answers"
         title="Scrummaster"
       />
       <Scrummasterresources />

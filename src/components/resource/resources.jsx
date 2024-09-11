@@ -20,7 +20,7 @@ const postData = [
       des: "Dive into the world of .NET and elevate your coding skills with comprehensive tutorials and practical examples. Perfect for advancing your career in software development.",
       author: "Gopi",
       imgSrc: "/assets/resourse/dotnet.jpg",
-      path: "/resources/dotnetcertification",
+      path: "/resources/dotnet",
     },
     {
       heading: "Java",
@@ -28,7 +28,7 @@ const postData = [
       des: "Unlock the power of Java with a full-stack development course that covers everything from backend to frontend. Gain the skills needed to build robust and scalable applications.",
       author: "Gopi",
       imgSrc: "/assets/resourse/java.jpg",
-      path: "/resource/javacertification",
+      path: "/resources/javaresource",
     },
     {
       heading: "Software Testing",
@@ -36,7 +36,7 @@ const postData = [
       des: "Become a software testing guru with our in-depth course. Learn essential testing strategies and tools to ensure your software is bug-free and reliable.",
       author: "Gopi",
       imgSrc: "/assets/resourse/test.jpg",
-      path: "/resource/testing",
+      path: "/resources/testingres",
     },
     {
       heading: "Data Engineer",
@@ -44,7 +44,7 @@ const postData = [
       des: "Transform raw data into actionable insights with our Data Engineering course. Master the tools and techniques needed to handle big data and drive data-driven decisions.",
       author: "Gopi",
       imgSrc: "/assets/resourse/data.jpg",
-      path: "/resource/dataengineer",
+      path: "/resources/dataengineer",
     },
     {
       heading: "DevOps",
@@ -52,7 +52,7 @@ const postData = [
       des: "Streamline your development and operations with our DevOps course. Learn how to integrate development and operations to deliver software faster and more efficiently.",
       author: "Gopi",
       imgSrc: "/assets/resourse/devops.jpg",
-      path: "/resource/devops",
+      path: "/resources/devops",
     },
   ];  
 

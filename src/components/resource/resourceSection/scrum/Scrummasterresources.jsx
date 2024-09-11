@@ -100,8 +100,8 @@ const Scrummasterresources = () => {
                 key={index}
                 className="flex items-start space-x-3 hover:bg-gray-50 p-2 rounded transition duration-200 ease-in-out cursor-pointer"
               >
-                <FaQuestionCircle className="w-4 h-4 text-blue-400" />
-                <p className="text-gray-800 font-medium">
+              
+                <p className="text-gray-800 font-light">
                   {index + 1}. {faq.question}
                 </p>
               </li>
