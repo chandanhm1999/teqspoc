@@ -14,7 +14,7 @@ import TextLight from "./TextLight"
 const postData = [
   {
     heading: "Scrum Master",
-    imgSrc: "/assets/courses/scrum.svg",
+    imgSrc: "/assets/courses/scrumm.svg",
     name: "Industry-Experts",
     students: 150,
     classes: 12,

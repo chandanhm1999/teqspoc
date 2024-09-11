@@ -12,8 +12,8 @@ export default function Home() {
     <main className="">
       <HeroBanner />
       <Course />
-      <Abc />
       <Batchess />
+      <Abc />
       <Blog />
       <Timeline />
       <Instruct />

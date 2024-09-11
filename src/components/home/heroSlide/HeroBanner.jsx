@@ -113,7 +113,7 @@ const HeroBanner = () => {
   }, []);
 
   return (
-    <div className="relative text-white w-full pt-15 h-screen mx-auto">
+    <div className="relative text-white w-full mx-auto">
       <Carousel
         responsive={responsive}
         infinite={true}
@@ -130,16 +130,19 @@ const HeroBanner = () => {
         dotListClass="absolute bottom-4 md:bottom-6 lg:bottom-10 w-full flex justify-center space-x-2 z-10"
       >
         {slidesContent.map((item, index) => (
-          <div key={item.id} className="relative h-full">
+          <div
+            key={item.id}
+            className="relative h-[25vh] mt-12 sm:mt-12 md:lg:mt-12 lg:mt-2 xl:lg:mt-2 md:h-screen" // Adjusts height: 70% for mobile, full screen for larger screens
+          >
             <Image
               src={item.img}
               alt={item.alt}
               width={3840}
               height={2160}
-              className={`w-full h-screen object-cover ${loaded ? 'animate-fade-in' : ''}`}
+              className={`w-full h-full object-cover ${loaded ? 'animate-fade-in' : ''}`}
               priority={index === 0}
             />
-            </div>
+          </div>
         ))}
       </Carousel>
     </div>
