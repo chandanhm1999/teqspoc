@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import Image from "next/image";
-import { StarIcon } from "@heroicons/react/24/solid";
+import { FaStar } from "react-icons/fa";
 import { FaUserGraduate, FaShareSquare } from "react-icons/fa";
 import ShareModal from "./ShareModel";
 import EnrollmentModal from "./EnrollModal";
@@ -121,14 +121,14 @@ const Coursess = () => {
                     <h3 className="text-red-500 text-lg">{item.rating}</h3>
                     <div className="flex ml-2">
                       {[...Array(5)].map((_, index) => (
-                        <StarIcon key={index} className="h-4 w-4 star-icon" />
+                        <FaStar key={index} className="h-2 w-2 text-yellow-400" />
                       ))}
                     </div>
                   </div>
                   <h3 className="text-xl">${item.price}</h3>
                 </div>
-
-                <div className="flex justify-between pt-2">
+                <p className="flex items-center text-gray-600 cursor-pointer hover:text-black transition-colors duration-300">View syllabus</p>
+                <div className="flex justify-between">
                   <button
                     onClick={() => openEnrollModal(item)}
                     className="text-cyan-600 border border-cyan-400 mt-4 hover:bg-cyan-600 hover:text-white font-semibold rounded-sm px-6 py-2 md:py-2 lg:py-2 xl:py-2 text-xs md:text-sm lg:text-sm xl:text-sm transition-all duration-300 ease-in-out flex items-center shadow-lg hover:shadow-xl transform hover:scale-105"

@@ -1,4 +1,5 @@
 import Abc from "@/components/home/aboutcompany/Abc";
+import Batchess from "@/components/home/batchess/Batchess";
 import Blog from "@/components/home/blog/Blog";
 import Course from "@/components/home/course/Course";
 import Demo from "@/components/home/demo/Demo";
@@ -12,6 +13,7 @@ export default function Home() {
       <HeroBanner />
       <Course />
       <Abc />
+      <Batchess />
       <Blog />
       <Timeline />
       <Instruct />

@@ -12,7 +12,7 @@ const postData = [
       des: "Master the art of Scrum with insights from industry experts. Learn key techniques to lead teams effectively and deliver projects on time.",
       author: "Gopi",
       imgSrc: "/assets/resourse/scrummaster.jpg",
-      path: "/resource/scrummaster",
+      path: "/resources/scrummaster",
     },
     {
       heading: "DotNet",
@@ -20,7 +20,7 @@ const postData = [
       des: "Dive into the world of .NET and elevate your coding skills with comprehensive tutorials and practical examples. Perfect for advancing your career in software development.",
       author: "Gopi",
       imgSrc: "/assets/resourse/dotnet.jpg",
-      path: "/resource/dotnetcertification",
+      path: "/resources/dotnetcertification",
     },
     {
       heading: "Java",

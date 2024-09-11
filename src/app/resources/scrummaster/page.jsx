@@ -1,0 +1,18 @@
+import MainSec from "@/components/home/contact/mainSec/MainSec";
+import Scrummasterresources from "@/components/resource/resourceSection/scrum/Scrummasterresources";
+import React from "react";
+
+const Scrummaster = () => {
+  return (
+    <>
+      <MainSec
+        url="/assets/resourse/resou.jpg"
+        parent="Scrummaster"
+        title="Scrummaster"
+      />
+      <Scrummasterresources />
+    </>
+  );
+};
+
+export default Scrummaster;

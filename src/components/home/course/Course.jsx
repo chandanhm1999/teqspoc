@@ -5,7 +5,7 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import Link from "next/link";
 import Image from "next/image";
-import { StarIcon } from "@heroicons/react/24/solid";
+import { FaStar } from "react-icons/fa";
 import { FaUserGraduate, FaShareSquare } from "react-icons/fa";
 import ShareModal from "./ShareModel"; // Import the ShareModal component
 import TextLight from "./TextLight"
@@ -135,9 +135,9 @@ const Course = () => {
                       </h3>
                       <div className="ml-2 flex">
                         {[...Array(5)].map((_, index) => (
-                          <StarIcon
+                          <FaStar
                             key={index}
-                            className="h-4 w-4 text-yellow-400"
+                            className="h-2 w-2 text-yellow-400"
                           />
                         ))}
                       </div>
@@ -149,6 +149,7 @@ const Course = () => {
                       <h3 className="text-xl font-bold text-gray-900">${item.price}</h3>
                     </div>
                   </div>
+                  <p className="flex items-center text-gray-600 cursor-pointer hover:text-black transition-colors duration-300">View syllabus</p>
 
                   <div className="flex justify-between mt-4">
                     <Link href={`/enroll/${i}`} passHref>
