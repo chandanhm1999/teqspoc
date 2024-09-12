@@ -1,5 +1,6 @@
 import MainSec from "@/components/home/contact/mainSec/MainSec";
-import Devopsres from "@/components/resource/resourceSection/devopsres/devopsres";
+import Devopsres from "@/components/resource/resourceSection/devopsresponce/Devopsres";
+
 import React from "react";
 
 const Devops = () => {
