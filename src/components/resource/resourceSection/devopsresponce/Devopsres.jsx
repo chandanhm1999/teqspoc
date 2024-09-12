@@ -6,7 +6,7 @@ import { FaQuestionCircle, FaLightbulb } from "react-icons/fa";
 import TextLight from "./TextLight";
 
 const Devopsres = () => {
-  const [devopsFAQs] = useState([
+  const [faqs] = useState([
     {
       question: "What is DevOps?",
       answer:
