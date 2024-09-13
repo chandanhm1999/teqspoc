@@ -51,7 +51,7 @@ const FreeJob = () => {
       <div className="grid md:grid-cols-2 gap-10 py-10 px-8 relative z-10">
         <div className="text-center flex flex-col items-center justify-center">
           <Image
-            src="/assets/freejob/freeposter.png" // Ensure this image is available in the public folder
+            src="/assets/freejob/new.jpg" // Ensure this image is available in the public folder
             alt="Contact us"
             width={500}
             height={700}
@@ -63,10 +63,10 @@ const FreeJob = () => {
           <h2 className="text-3xl text-blue-700 font-extrabold text-center mb-2">
             Hey Learners
           </h2>
-          <p className="text-sm text-gray-600 font-semibold text-center mb-8">
+          <p className="text-sm text-gray-600 font-semibold text-center mb-6">
             Make progress towards your goal with one simple step!
           </p>
-          <div className="space-y-5">
+          <div className="space-y-4">
             <div className="flex space-x-4">
               <input
                 type="text"

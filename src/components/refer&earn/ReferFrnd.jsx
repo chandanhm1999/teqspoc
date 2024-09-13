@@ -85,13 +85,13 @@ const ReferFrnd = () => {
     <div className="font-sans max-w-6xl mx-auto relative bg-white shadow-lg rounded-3xl overflow-hidden mt-4 p-6">
       <ToastContainer />
 
-      <div className="absolute -bottom-8 -left-8 w-24 h-24 rounded-full bg-blue-500 opacity-30"></div>
-      <div className="absolute -top-8 -right-8 w-24 h-24 rounded-full bg-blue-500 opacity-30"></div>
+      <div className="absolute -bottom-8 -left-8 w-24 h-24 rounded-full bg-yellow-500 opacity-30"></div>
+      <div className="absolute -top-8 -right-8 w-24 h-24 rounded-full bg-yellow-500 opacity-30"></div>
 
       <div className="grid md:grid-cols-2 gap-10 py-10 px-8 relative z-10">
         <div className="text-center flex flex-col items-center justify-center">
           <Image
-            src="/assets/refer/refering.png" // Ensure this image is available in the public folder
+            src="/assets/refer/referingg.png" // Ensure this image is available in the public folder
             alt="Refer a Friend"
             width={500}
             height={700}
@@ -100,12 +100,12 @@ const ReferFrnd = () => {
         </div>
 
         <form onSubmit={handleSubmit} className="space-y-6">
-          <h2 className="text-xl text-blue-700 font-extrabold text-center mb-6">
+          <h2 className="text-xl text-yellow-600 font-extrabold text-center mb-6">
           Complete the form now to get attractive vouchers!
           </h2>
 
           <div className="space-y-4">
-            <label className="text-blue-700 font-bold font-sm">Your Details</label>
+            <label className="text-yellow-600 font-bold font-sm">Your Details</label>
             <div className="space-y-4">
               <div className="flex space-x-4">
                 <input
@@ -153,7 +153,7 @@ const ReferFrnd = () => {
               </div>
             </div>
 
-            <label className="text-blue-700 pt-4 font-bold font-sm">
+            <label className="text-yellow-600 pt-4 font-bold font-sm">
               Friend&apos;s Details
             </label>
 
@@ -244,7 +244,7 @@ const ReferFrnd = () => {
 
             <button
               type="submit"
-              className="text-white w-full bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 rounded-lg text-sm px-6 py-4 transition-transform transform hover:scale-105"
+              className="text-white w-full bg-gradient-to-r from-yellow-500 to-yellow-600 hover:from-yellow-600 hover:to-yellow-700 rounded-lg text-sm px-6 py-4 transition-transform transform hover:scale-105"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"

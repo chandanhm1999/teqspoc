@@ -7,7 +7,7 @@ const Devops = () => {
   return (
     <>
       <MainSec
-        url="/assets/resourse/resou.jpg"
+        url="/assets/resourse/interview/maindevops.jpg"
         parent="Devops Interview Questions & Answers"
         title="Devops Resourse"
       />

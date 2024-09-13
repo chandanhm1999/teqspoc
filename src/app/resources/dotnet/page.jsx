@@ -6,9 +6,9 @@ const Dotnet = () => {
   return (
     <>
       <MainSec
-        url="/assets/resourse/resou.jpg"
+        url="/assets/resourse/interview/maindotnet.jpg"
         parent="DotNet"
-        title="DotNet"
+        title="DotNet Interview Questions & Answers"
       />
       <DotnetR />
     </>

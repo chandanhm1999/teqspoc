@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Image from "next/image";
 
 const EnrollmentModal = ({ isOpen, onClose, course }) => {
   const [formData, setFormData] = useState({
@@ -28,7 +29,7 @@ const EnrollmentModal = ({ isOpen, onClose, course }) => {
         {/* Left Side Image - 40% Width on larger screens, hidden on smaller screens */}
         <div className="lg:w-2/5 w-full lg:block hidden mb-4 lg:mb-0">
           <img
-            src="https://via.placeholder.com/150" // Replace with your image URL
+            src="/assets/model/mode.png" // Replace with your image URL
             alt="Enrollment"
             className="rounded-lg object-cover w-full h-full"
           />
@@ -95,7 +96,6 @@ const EnrollmentModal = ({ isOpen, onClose, course }) => {
                 <option value="" disabled>Select Type</option>
                 <option value="online">Online</option>
                 <option value="offline">Offline</option>
-                <option value="live">Live</option>
               </select>
             </div>
             <div className="flex justify-end">

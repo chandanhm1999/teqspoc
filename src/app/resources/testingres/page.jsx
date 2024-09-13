@@ -6,7 +6,7 @@ const Testingres = () => {
   return (
     <>
       <MainSec
-        url="/assets/resourse/resou.jpg"
+        url="/assets/resourse/interview/testing.jpg"
         parent="Testing Interview Questions & Answers"
         title="Testing Interview Questions & Answers"
       />

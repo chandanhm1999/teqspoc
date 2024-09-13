@@ -8,7 +8,8 @@ import Image from "next/image";
 import { FaStar } from "react-icons/fa";
 import { FaUserGraduate, FaShareSquare } from "react-icons/fa";
 import ShareModal from "./ShareModel"; // Import the ShareModal component
-import TextLight from "./TextLight"
+import TextLight from "./TextLight";
+import EnrollmentModal from "../../coursespage/EnrollModal";
 
 // CAROUSEL DATA
 const postData = [
@@ -78,6 +79,8 @@ const responsive = {
 const Course = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [currentShareUrl, setCurrentShareUrl] = useState("");
+  const [isEnrollModalOpen, setIsEnrollModalOpen] = useState(false);
+  const [currentCourse, setCurrentCourse] = useState(null);
 
   const openModal = (courseUrl) => {
     setCurrentShareUrl(courseUrl);
@@ -88,12 +91,24 @@ const Course = () => {
     setIsModalOpen(false);
   };
 
+  const openEnrollModal = (course) => {
+    setCurrentCourse(course);
+    setIsEnrollModalOpen(true);
+  };
+
+  const closeEnrollModal = () => {
+    setIsEnrollModalOpen(false);
+  };
+
   return (
-    <div id="courses" className="py-5 sm:py-5 md:py-12 lg:py-12 xl:py-12 bg-gray-50">
+    <div
+      id="courses"
+      className="py-5 sm:py-5 md:py-12 lg:py-12 xl:py-12 bg-gray-50"
+    >
       <div className="container mx-auto px-5 sm:px-5 md:px-2 lg:px-2 xl:px-2">
         <div className="flex justify-between items-center mb-2 sm:mb-2 md:mb-4 lg:mb-4 xl:mb-6">
           <h3 className="text-xl md:text-2xl lg:text-3xl xl:text-3xl font-bold leading-tight text-gray-800">
-            Popular 
+            Popular
             <TextLight text={"Courses"} />
           </h3>
           <Link
@@ -125,8 +140,12 @@ const Course = () => {
                 </div>
 
                 <div className="px-4 py-4">
-                  <h4 className="text-sm md:text-lg lg:text-lg xl:text-xl font-bold text-gray-800">{item.heading}</h4>
-                  <p className="text-xs md:text-sm lg:text-sm xl:text-lg text-gray-500 mb-2">By: {item.name}</p>
+                  <h4 className="text-sm md:text-lg lg:text-lg xl:text-xl font-bold text-gray-800">
+                    {item.heading}
+                  </h4>
+                  <p className="text-xs md:text-sm lg:text-sm xl:text-lg text-gray-500 mb-2">
+                    By: {item.name}
+                  </p>
 
                   <div className="flex justify-between items-center py-2">
                     <div className="flex items-center">
@@ -146,18 +165,23 @@ const Course = () => {
                       <h3 className="text-green-500 text-xs font-semibold">
                         40% off
                       </h3>
-                      <h3 className="text-xl font-bold text-gray-900">${item.price}</h3>
+                      <h3 className="text-xl font-bold text-gray-900">
+                        ${item.price}
+                      </h3>
                     </div>
                   </div>
-                  <p className="flex items-center text-gray-600 text-sm md:text-sm lg:text-sm xl:text-lg cursor-pointer hover:text-black transition-colors duration-300">View syllabus</p>
+                  <p className="flex items-center text-gray-600 text-sm md:text-sm lg:text-sm xl:text-lg cursor-pointer hover:text-black transition-colors duration-300">
+                    View syllabus
+                  </p>
 
                   <div className="flex justify-between mt-4">
-                    <Link href={`/enroll/${i}`} passHref>
-                      <button className="flex items-center text-white bg-cyan-500 hover:bg-cyan-600 transition-colors duration-300 px-6 py-2 rounded-lg shadow-md">
-                        <FaUserGraduate className="mr-2" />
-                        Enroll
-                      </button>
-                    </Link>
+                    <button
+                      onClick={() => openEnrollModal(item)}
+                      className="flex items-center text-white bg-cyan-500 hover:bg-cyan-600 transition-colors duration-300 px-6 py-2 rounded-lg shadow-md"
+                    >
+                      <FaUserGraduate className="mr-2" />
+                      Enroll
+                    </button>
                     <button
                       onClick={() =>
                         openModal(
@@ -209,7 +233,16 @@ const Course = () => {
       </div>
 
       {/* Render the ShareModal component */}
-      <ShareModal isOpen={isModalOpen} onClose={closeModal} shareUrl={currentShareUrl} />
+      <ShareModal
+        isOpen={isModalOpen}
+        onClose={closeModal}
+        shareUrl={currentShareUrl}
+      />
+      <EnrollmentModal
+        isOpen={isEnrollModalOpen}
+        onClose={closeEnrollModal}
+        course={currentCourse}
+      />
     </div>
   );
 };

@@ -6,7 +6,7 @@ const Javaresource = () => {
   return (
     <>
       <MainSec
-        url="/assets/resourse/resou.jpg"
+        url="/assets/resourse/interview/java.jpg"
         parent="Java"
         title="Java Interview Questions & Answers"
       />

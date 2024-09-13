@@ -131,112 +131,13 @@ const Navbar = () => {
           <div className="md:hidden bg-gradient-to-l from-white via-blue-100 text-black shadow-lg">
             <ul className="flex flex-col gap-4 p-4">
               <li>
-                <a href="/#home">Home</a>
+                <a href="/">Home</a>
               </li>
-              <li onClick={toggleDropdown} className="cursor-pointer">
-                All
-                <FaCaretDown
-                  className={`inline ml-2 transition-all duration-200 ${
-                    isDropdownOpen ? "rotate-180" : ""
-                  }`}
-                />
+
+              {/* All Courses: */}
+              <li>
+                <a href="/courses">All Courses</a>
               </li>
-              {isDropdownOpen && (
-                <ul className="flex flex-col pl-4 text-sm">
-                  <li className="p-2 hover:bg-blue-200">
-                    <div className="p-2 text-black border-l-gray-400 shadow-lg rounded-lg cursor-pointer hover:border-gray-300 hover:shadow-xl transition-all duration-300 border-2 border-transparent flex items-center">
-                      <img
-                        src="/assets/navbar/scrum.png"
-                        alt="Scrum Master Logo"
-                        className="w-10 h-10 mr-2 rounded-full border-2 border-gray-200"
-                      />
-                      <div className="flex flex-col w-full">
-                        <h3 className="text-xs font-bold">Scrum Master</h3>
-                        <p className="text-xs opacity-90">
-                          Certified® Scrum Master
-                        </p>
-                      </div>
-                    </div>
-                  </li>
-                  <li className="p-2 hover:bg-blue-400">
-                    <div className="p-2 text-black border-l-gray-400 shadow-lg rounded-lg cursor-pointer hover:border-gray-300 hover:shadow-xl transition-all duration-300 border-2 border-transparent flex items-center">
-                      <img
-                        src="/assets/navbar/devops.png"
-                        alt="devops Logo"
-                        className="w-10 h-10 mr-2 rounded-full border-2 border-gray-200"
-                      />
-                      <div className="flex flex-col w-full">
-                        <h3 className="text-xs font-bold">
-                          DotNet® Certification
-                        </h3>
-                        <p className="text-xs opacity-90">
-                          FullStack Development
-                        </p>
-                      </div>
-                    </div>
-                  </li>
-                  <li className="p-2 hover:bg-blue-400">
-                    <div className="p-2 text-black border-l-gray-400 shadow-lg rounded-lg cursor-pointer hover:border-gray-300 hover:shadow-xl transition-all duration-300 border-2 border-transparent flex items-center">
-                      <img
-                        src="/assets/navbar/java.png"
-                        alt="java Logo"
-                        className="w-10 h-10 mr-2 rounded-full border-2 border-gray-200"
-                      />
-                      <div className="flex flex-col w-full">
-                        <h3 className="text-xs font-bold">
-                          Java® Certification
-                        </h3>
-                        <p className="text-xs opacity-90">
-                          FullStack Development
-                        </p>
-                      </div>
-                    </div>
-                  </li>
-                  <li className="p-2 hover:bg-blue-400">
-                    <div className="p-2 text-black border-l-gray-400 shadow-lg rounded-lg cursor-pointer hover:border-gray-300 hover:shadow-xl transition-all duration-300 border-2 border-transparent flex items-center">
-                      <img
-                        src="/assets/navbar/testing.png"
-                        alt="testing Logo"
-                        className="w-10 h-10 mr-2 rounded-full border-2 border-gray-200"
-                      />
-                      <div className="flex flex-col w-full">
-                        <h3 className="text-xs font-bold">Software Testing</h3>
-                        <p className="text-xs opacity-90">FullStack Testing</p>
-                      </div>
-                    </div>
-                  </li>
-                  <li className="p-2 hover:bg-blue-400">
-                    <div className="p-2 text-black border-l-gray-400 shadow-lg rounded-lg cursor-pointer hover:border-gray-300 hover:shadow-xl transition-all duration-300 border-2 border-transparent flex items-center">
-                      <img
-                        src="/assets/navbar/devops.png"
-                        alt="devops Logo"
-                        className="w-10 h-10 mr-2 rounded-full border-2 border-gray-200"
-                      />
-                      <div className="flex flex-col w-full">
-                        <h3 className="text-xs font-bold">Data Engineer</h3>
-                        <p className="text-xs opacity-90">
-                          Certified® Data Engineer
-                        </p>
-                      </div>
-                    </div>
-                  </li>
-                  <li className="p-2 hover:bg-blue-400">
-                    <div className="p-2 text-black border-l-gray-400 shadow-lg rounded-lg cursor-pointer hover:border-gray-300 hover:shadow-xl transition-all duration-300 border-2 border-transparent flex items-center">
-                      <img
-                        src="/assets/navbar/testing.png"
-                        alt="testing Logo"
-                        className="w-10 h-10 mr-2 rounded-full border-2 border-gray-200"
-                      />
-                      <div className="flex flex-col w-full">
-                        <h3 className="text-xs font-bold">Devops</h3>
-                        <p className="text-xs opacity-90">
-                          Certified® DevOps Course
-                        </p>
-                      </div>
-                    </div>
-                  </li>
-                </ul>
-              )}
 
               {/* resources: */}
 
@@ -250,41 +151,52 @@ const Navbar = () => {
               </li>
               {showDropdown && (
                 <ul className="flex flex-col pl-4 text-sm">
-                  <li className="p-2 hover:bg-blue-400">
-                    <div className="p-2 text-black border-r-gray-400 shadow-lg rounded-lg cursor-pointer hover:border-gray-300 hover:shadow-xl transition-all duration-300 border-2 border-transparent flex items-center">
-                      <img
-                        src="/assets/navbar/scrum.png"
-                        alt="Scrum Master Logo"
-                        className="w-10 h-10 mr-2 rounded-full border-2 border-gray-200"
-                      />
-                      <div className="flex flex-col w-full">
-                        <h3 className="text-xs font-bold">Scrum Master</h3>
-                        <p className="text-xs opacity-90">
-                          Your Guide to Scrum Mastery
-                        </p>
+                  <Link href="/resources/scrummaster">
+                    <li className="p-2 hover:bg-blue-400">
+                      <div className="p-2 text-black border-r-gray-400 shadow-lg rounded-lg cursor-pointer hover:border-gray-300 hover:shadow-xl transition-all duration-300 border-2 border-transparent flex items-center">
+                        <Image
+                          src="/assets/navbar/scrum.png"
+                          alt="Scrum Master Logo"
+                          width={20}
+                        height={20}
+                          className="w-10 h-10 mr-2 rounded-full border-2 border-gray-200"
+                        />
+                        <div className="flex flex-col w-full">
+                          <h3 className="text-xs font-bold">Scrum Master</h3>
+                          <p className="text-xs opacity-90">
+                            Your Guide to Scrum Mastery
+                          </p>
+                        </div>
                       </div>
-                    </div>
-                  </li>
-                  <li className="p-2 hover:bg-blue-400">
-                    <div className="p-2 text-black border-r-gray-400 shadow-lg rounded-lg cursor-pointer hover:border-gray-300 hover:shadow-xl transition-all duration-300 border-2 border-transparent flex items-center">
-                      <img
-                        src="/assets/navbar/devops.png"
-                        alt="devops Logo"
-                        className="w-10 h-10 mr-2 rounded-full border-2 border-gray-200"
-                      />
-                      <div className="flex flex-col w-full">
-                        <h3 className="text-xs font-bold">DotNet</h3>
-                        <p className="text-xs opacity-90">
-                          Mastering DotNet Essentials
-                        </p>
+                    </li>
+                  </Link>
+                  <Link href="/resources/dotnet">
+                    <li className="p-2 hover:bg-blue-400">
+                      <div className="p-2 text-black border-r-gray-400 shadow-lg rounded-lg cursor-pointer hover:border-gray-300 hover:shadow-xl transition-all duration-300 border-2 border-transparent flex items-center">
+                        <Image
+                          src="/assets/navbar/devops.png"
+                          alt="devops Logo"
+                          width={20}
+                        height={20}
+                          className="w-10 h-10 mr-2 rounded-full border-2 border-gray-200"
+                        />
+                        <div className="flex flex-col w-full">
+                          <h3 className="text-xs font-bold">DotNet</h3>
+                          <p className="text-xs opacity-90">
+                            Mastering DotNet Essentials
+                          </p>
+                        </div>
                       </div>
-                    </div>
-                  </li>
+                    </li>
+                  </Link>
+                  <Link href="/resources/javaresource">
                   <li className="p-2 hover:bg-blue-400">
                     <div className="p-2 text-black border-r-gray-400 shadow-lg rounded-lg cursor-pointer hover:border-gray-300 hover:shadow-xl transition-all duration-300 border-2 border-transparent flex items-center">
-                      <img
+                      <Image
                         src="/assets/navbar/java.png"
                         alt="java Logo"
+                        width={20}
+                        height={20}
                         className="w-10 h-10 mr-2 rounded-full border-2 border-gray-200"
                       />
                       <div className="flex flex-col w-full">
@@ -295,11 +207,15 @@ const Navbar = () => {
                       </div>
                     </div>
                   </li>
+                  </Link>
+                  <Link href="/resources/testingres">
                   <li className="p-2 hover:bg-blue-400">
                     <div className="p-2 text-black border-r-gray-400 shadow-lg rounded-lg cursor-pointer hover:border-gray-300 hover:shadow-xl transition-all duration-300 border-2 border-transparent flex items-center">
-                      <img
+                      <Image
                         src="/assets/navbar/testing.png"
                         alt="testing Logo"
+                        width={20}
+                        height={20}
                         className="w-10 h-10 mr-2 rounded-full border-2 border-gray-200"
                       />
                       <div className="flex flex-col w-full">
@@ -310,11 +226,15 @@ const Navbar = () => {
                       </div>
                     </div>
                   </li>
+                  </Link>
+                  <Link href="/resources/dataengineer">
                   <li className="p-2 hover:bg-blue-400">
                     <div className="p-2 text-black border-r-gray-400 shadow-lg rounded-lg cursor-pointer hover:border-gray-300 hover:shadow-xl transition-all duration-300 border-2 border-transparent flex items-center">
-                      <img
+                      <Image
                         src="/assets/navbar/devops.png"
                         alt="devops Logo"
+                        width={20}
+                        height={20}
                         className="w-10 h-10 mr-2 rounded-full border-2 border-gray-200"
                       />
                       <div className="flex flex-col w-full">
@@ -325,6 +245,7 @@ const Navbar = () => {
                       </div>
                     </div>
                   </li>
+                  </Link>
                 </ul>
               )}
 

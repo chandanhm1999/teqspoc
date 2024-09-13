@@ -112,7 +112,7 @@ const Dataengineerres = () => {
         <div className="w-full md:w-8/12 mb-8">
           <div className="relative">
             <Image
-              src="/assets/instruct/inst.jpg"
+              src="/assets/resourse/interview/dataengineer.jpg"
               alt="Featured Image"
               width={1200}
               height={600}
