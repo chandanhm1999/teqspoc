@@ -1,4 +1,5 @@
 import Coursess from "@/components/coursespage/Coursess";
+import Batchess from "@/components/home/batchess/Batchess";
 import ContactForm from "@/components/home/contact/contactForm/ContactForm";
 import Details from "@/components/home/contact/contactForm/Details";
 import MainSec from "@/components/home/contact/mainSec/MainSec";
@@ -14,6 +15,7 @@ const Courses = () => {
         title="Courses"
       />
       <Coursess />
+      <Batchess />
     </>
   );
 };

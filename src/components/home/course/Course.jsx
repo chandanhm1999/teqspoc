@@ -19,7 +19,8 @@ const postData = [
     name: "Industry-Experts",
     students: 150,
     classes: 12,
-    price: 20,
+    discount: 30000,
+    price: 20000,
     rating: 4.7,
   },
   {
@@ -28,7 +29,8 @@ const postData = [
     name: "Industry-Experts",
     students: 130,
     classes: 12,
-    price: 20,
+    discount: 30000,
+    price: 20000,
     rating: 4.7,
   },
   {
@@ -37,7 +39,8 @@ const postData = [
     name: "Industry-Experts",
     students: 120,
     classes: 12,
-    price: 20,
+    discount: 30000,
+    price: 20000,
     rating: 4.7,
   },
   {
@@ -46,7 +49,8 @@ const postData = [
     name: "Industry-Experts",
     students: 150,
     classes: 12,
-    price: 20,
+    discount: 30000,
+    price: 20000,
     rating: 4.7,
   },
   {
@@ -55,7 +59,8 @@ const postData = [
     name: "Industry-Experts",
     students: 150,
     classes: 12,
-    price: 20,
+    discount: 30000,
+    price: 20000,
     rating: 4.7,
   },
   {
@@ -64,7 +69,8 @@ const postData = [
     name: "Industry-Experts",
     students: 150,
     classes: 12,
-    price: 20,
+    discount: 30000,
+    price: 20000,
     rating: 4.7,
   },
 ];
@@ -149,7 +155,7 @@ const Course = () => {
 
                   <div className="flex justify-between items-center py-2">
                     <div className="flex items-center">
-                      <h3 className="text-red-500 text-xs md:text-sm lg:text-sm xl:text-lg font-medium">
+                      <h3 className="text-green-500 text-xs md:text-sm lg:text-sm xl:text-lg font-medium">
                         {item.rating}
                       </h3>
                       <div className="ml-2 flex">
@@ -163,10 +169,10 @@ const Course = () => {
                     </div>
                     <div className="flex items-center space-x-2">
                       <h3 className="text-green-500 text-xs font-semibold">
-                        40% off
+                        <del className="text-red-500">₹{item.discount}</del>
                       </h3>
                       <h3 className="text-xl font-bold text-gray-900">
-                        ${item.price}
+                      ₹{item.price}
                       </h3>
                     </div>
                   </div>

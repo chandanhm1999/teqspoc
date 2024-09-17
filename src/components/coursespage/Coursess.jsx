@@ -11,11 +11,12 @@ import EnrollmentModal from "./EnrollModal";
 const postData = [
   {
     heading: "Scrum Master",
-    imgSrc: "/assets/courses/scrum.svg",
+    imgSrc: "/assets/courses/scrumm.svg",
     name: "Industry-Experts",
     students: 150,
     classes: 12,
-    price: 20,
+    discount: 30000,
+    price: 20000,
     rating: 4.7,
   },
   {
@@ -24,7 +25,8 @@ const postData = [
     name: "Industry-Experts",
     students: 130,
     classes: 12,
-    price: 20,
+    discount: 30000,
+    price: 20000,
     rating: 4.7,
   },
   {
@@ -33,7 +35,8 @@ const postData = [
     name: "Industry-Experts",
     students: 120,
     classes: 12,
-    price: 20,
+    discount: 30000,
+    price: 20000,
     rating: 4.7,
   },
   {
@@ -42,7 +45,8 @@ const postData = [
     name: "Industry-Experts",
     students: 150,
     classes: 12,
-    price: 20,
+    discount: 30000,
+    price: 20000,
     rating: 4.7,
   },
   {
@@ -51,7 +55,8 @@ const postData = [
     name: "Industry-Experts",
     students: 150,
     classes: 12,
-    price: 20,
+    discount: 30000,
+    price: 20000,
     rating: 4.7,
   },
   {
@@ -60,7 +65,8 @@ const postData = [
     name: "Industry-Experts",
     students: 150,
     classes: 12,
-    price: 20,
+    discount: 30000,
+    price: 20000,
     rating: 4.7,
   },
 ];
@@ -98,10 +104,7 @@ const Coursess = () => {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
           {postData.map((item, i) => (
-            <div
-              key={i}
-              className="bg-white shadow-lg rounded-2xl course-card"
-            >
+            <div key={i} className="bg-white shadow-lg rounded-2xl course-card">
               <div className="relative rounded-t-2xl overflow-hidden">
                 <Image
                   src={item.imgSrc}
@@ -118,16 +121,28 @@ const Coursess = () => {
 
                 <div className="flex justify-between items-center py-2">
                   <div className="flex items-center">
-                    <h3 className="text-red-500 text-lg">{item.rating}</h3>
-                    <div className="flex ml-2">
-                      {[...Array(5)].map((_, index) => (
-                        <FaStar key={index} className="h-2 w-2 text-yellow-400" />
-                      ))}
-                    </div>
+                    <h3 className="text-green-500 text-lg">{item.rating}</h3>
+                    <div className="ml-2 flex">
+                        {[...Array(5)].map((_, index) => (
+                          <FaStar
+                            key={index}
+                            className="h-2 w-2 text-yellow-400"
+                          />
+                        ))}
+                      </div>
                   </div>
-                  <h3 className="text-xl">${item.price}</h3>
+                  <div className="flex items-center space-x-2">
+                    <h3 className="text-red-500 text-xs font-semibold">
+                      <del className="text-red-500">₹{item.discount}</del>
+                    </h3>
+                    <h3 className="text-xl font-bold text-gray-900">
+                      ₹{item.price}
+                    </h3>
+                  </div>
                 </div>
-                <p className="flex items-center text-gray-600 cursor-pointer hover:text-black transition-colors duration-300">View syllabus</p>
+                <p className="flex items-center text-gray-600 text-sm md:text-sm lg:text-sm xl:text-lg cursor-pointer hover:text-black transition-colors duration-300">
+                    View syllabus
+                </p>
                 <div className="flex justify-between">
                   <button
                     onClick={() => openEnrollModal(item)}
@@ -159,7 +174,9 @@ const Coursess = () => {
                       width={20}
                       height={20}
                     />
-                    <h3 className="text-sm opacity-75 ml-2">{item.classes} classes</h3>
+                    <h3 className="text-sm opacity-75 ml-2">
+                      {item.classes} classes
+                    </h3>
                   </div>
                   <div className="flex items-center">
                     <Image
@@ -168,7 +185,9 @@ const Coursess = () => {
                       width={20}
                       height={20}
                     />
-                    <h3 className="text-sm opacity-75 ml-2">{item.students} students</h3>
+                    <h3 className="text-sm opacity-75 ml-2">
+                      {item.students} students
+                    </h3>
                   </div>
                 </div>
               </div>

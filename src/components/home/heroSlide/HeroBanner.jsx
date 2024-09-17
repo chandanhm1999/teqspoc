@@ -45,7 +45,7 @@ const slidesContent = [
   {
     id: 4,
     img: "/assets/herosec/5.jpg",
-    alt: "teQspoc",
+    alt: "classroom training",
     title: "Lead in Your Industry",
     description: [
       "Become indispensable: Gain leadership skills.",
@@ -132,7 +132,7 @@ const HeroBanner = () => {
         {slidesContent.map((item, index) => (
           <div
             key={item.id}
-            className="relative h-[25vh] mt-12 sm:mt-12 md:lg:mt-12 lg:mt-2 xl:lg:mt-2 md:h-screen" // Adjusts height: 70% for mobile, full screen for larger screens
+            className="relative h-[35vh] mt-12 sm:mt-12 md:lg:mt-12 lg:mt-2 xl:lg:mt-2 md:h-screen" // Adjusts height: 70% for mobile, full screen for larger screens
           >
             <Image
               src={item.img}

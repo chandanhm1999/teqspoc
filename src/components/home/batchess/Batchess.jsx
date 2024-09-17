@@ -14,27 +14,63 @@ const Batchess = () => {
 
   const postData = [
     {
+      course: "Scrummaster",
+      duration: "2 Months",
       startDate: "16-Sep-2024",
       days: "Mon-Fri",
       type: "Weekdays Regular",
       batches: "08:00 AM & 10:00 AM",
-      time: "(Class 1Hr - 1:30Hrs) / Per Session",
+      time: "Flexible Time, 1 Hr/session",
       feeLink: "/courses/fees",
     },
     {
+      course: "DotNet",
+      duration: "2 Months",
       startDate: "18-Sep-2024",
       days: "Mon-Wed",
       type: "Weekdays Evening",
       batches: "05:00 PM & 06:00 PM",
-      time: "(Class 1Hr) / Per Session",
+      time: "Flexible Time, 1 Hr/session",
       feeLink: "/courses/fees",
     },
     {
+      course: "Java",
+      duration: "2 Months",
       startDate: "20-Sep-2024",
       days: "Sat-Sun",
       type: "Weekend Regular",
       batches: "09:00 AM & 11:00 AM",
-      time: "(Class 2Hrs) / Per Session",
+      time: "2 Hrs/session",
+      feeLink: "/courses/fees",
+    },
+    {
+      course: "Software Testing",
+      duration: "2 Months",
+      startDate: "20-Sep-2024",
+      days: "Sat-Sun",
+      type: "Weekend Regular",
+      batches: "09:00 AM & 11:00 AM",
+      time: "2 Hrs/session",
+      feeLink: "/courses/fees",
+    },
+    {
+      course: "Data Engineer",
+      duration: "2 Months",
+      startDate: "20-Sep-2024",
+      days: "Sat-Sun",
+      type: "Weekend Regular",
+      batches: "09:00 AM & 11:00 AM",
+      time: "2 Hrs/session",
+      feeLink: "/courses/fees",
+    },
+    {
+      course: "DevOps",
+      duration: "2 Months",
+      startDate: "20-Sep-2024",
+      days: "Sat-Sun",
+      type: "Weekend Regular",
+      batches: "09:00 AM & 11:00 AM",
+      time: "2 Hrs/session",
       feeLink: "/courses/fees",
     },
   ];
@@ -42,8 +78,8 @@ const Batchess = () => {
   return (
     <div className="my-4 md:my-8 lg:my-8 xl:my-8 px-4">
       {/* Header Section */}
-      <div className="flex flex-col md:flex-row justify-between p-2 sm:p-0  items-center mb-3 md:mb-6 lg:mb-6 xl:mb-6">
-        <h3 className="text-xl md:text-2xl lg:text-3xl xl:text-3xl font-bold text-gray-800 xl:lg:text-3xl dark:text-white mb-2 md:mb-0 lg:mb-4 xl:mb-4">
+      <div className="flex flex-col md:flex-row justify-between p-2 sm:p-0 items-center mb-3 md:mb-6 lg:mb-4 xl:mb-6">
+        <h3 className="text-xl md:text-2xl lg:text-3xl xl:text-3xl font-bold text-gray-800 dark:text-gray-900 mb-2 md:mb-0 lg:mb-2 xl:mb-4">
           Upcoming <TextLight text={"Batches"} />
         </h3>
         <Link
@@ -54,50 +90,45 @@ const Batchess = () => {
         </Link>
       </div>
 
-      {/* Cards Section */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        {postData.map((batch, index) => (
-          <div
-            key={index}
-            className="relative border border-transparent shadow-xl rounded-lg p-4 md:p-6 bg-gradient-to-r from-blue-500 to-indigo-600 text-white hover:shadow-2xl transition-shadow duration-300 transform hover:-translate-y-1 hover:scale-105"
-          >
-            <div className="absolute inset-0 bg-white opacity-10 blur-lg rounded-lg"></div>
-            {/* Content */}
-            <div className="relative z-10">
-              <div className="mb-4">
-                <div className="flex items-center text-sm md:text-base font-semibold text-white mb-2">
-                  <FaCalendarAlt className="text-yellow-300 mr-2 hover:animate-bounce" />
-                  {batch.startDate}
-                </div>
-                <div className="text-sm md:text-base text-white/90">
-                  {batch.days} - {batch.type}
-                </div>
-              </div>
-
-              <div className="mb-4">
-                <div className="flex items-center text-sm md:text-base font-semibold text-white mb-2">
-                  <FaBook className="text-yellow-300 mr-2 hover:animate-bounce" />
-                  Batches: {batch.batches}
-                </div>
-              </div>
-
-              <div className="mb-4">
-                <div className="flex items-center text-sm md:text-base font-semibold text-white mb-2">
-                  <FaClock className="text-yellow-300 mr-2 hover:animate-bounce" />
-                  Time: {batch.time}
-                </div>
-              </div>
-
-              <button
-                onClick={openModal}
-                className="inline-flex items-center bg-yellow-300 text-gray-800 px-4 py-2 rounded-lg shadow-lg hover:shadow-2xl transition-all duration-300 hover:bg-yellow-400"
+      {/* Table Section */}
+      <div className="overflow-x-auto">
+        <table className="min-w-full bg-white border border-gray-200 rounded-lg shadow-md">
+          <thead className="bg-gray-100 text-gray-600">
+            <tr>
+              <th className="py-3 px-4 text-left text-sm font-bold border-b border-gray-300">Course</th>
+              <th className="py-3 px-4 text-left text-sm font-bold border-b border-gray-300">Start Date</th>
+              <th className="py-3 px-4 text-left text-sm font-bold border-b border-gray-300">Days</th>
+              <th className="py-3 px-4 text-left text-sm font-bold border-b border-gray-300">Type</th>
+              <th className="py-3 px-4 text-left text-sm font-bold border-b border-gray-300">Batches</th>
+              <th className="py-3 px-4 text-left text-sm font-bold border-b border-gray-300">Time</th>
+              <th className="py-3 px-4 text-left text-sm font-bold border-b border-gray-300">Action</th>
+            </tr>
+          </thead>
+          <tbody className="text-gray-700">
+            {postData.map((batch, index) => (
+              <tr
+                key={index}
+                className={`border-b border-gray-200 ${index % 2 === 0 ? 'bg-gray-50' : 'bg-white'}`}
               >
-                <FaMoneyBillWave className="mr-2" />
-                View Fees
-              </button>
-            </div>
-          </div>
-        ))}
+                <td className="py-3 px-4 text-sm font-medium text-blue-600">{batch.course}</td>
+                <td className="py-3 px-4 text-sm">{batch.startDate}</td>
+                <td className="py-3 px-4 text-sm">{batch.days}</td>
+                <td className="py-3 px-4 text-sm">{batch.type}</td>
+                <td className="py-3 px-4 text-sm">{batch.batches}</td>
+                <td className="py-3 px-4 text-sm">{batch.time}</td>
+                <td className="py-3 px-4 text-sm">
+                  <button
+                    onClick={openModal}
+                    className="inline-flex items-center bg-blue-500 text-white px-5 py-3 text-sm font-bold rounded-sm shadow-md hover:bg-blue-600 transition-all duration-300"
+                  >
+                    <FaMoneyBillWave className="mr-1 text-sm" />
+                    Register
+                  </button>
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
       </div>
 
       {/* Modal */}
