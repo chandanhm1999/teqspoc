@@ -12,10 +12,10 @@ const Footer = () => {
   return (
     <footer className="bg-zinc-100 text-black px-4 py-4 sm:px-4 md:px-6 lg:px-8 xl:px-12">
       <div className="mx-auto">
-        <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center border-b border-black border-opacity-10 pb-8 mb-8">
+        <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center border-b border-black border-opacity-10 pb-4 mb-4">
           <div className="">
-            <Image src="/teqlogo.svg" width={150} height={50} alt="teqlogo" />
-            <p className="mt-2 text-sm md:text-sm lg:text-sm xl:text-sm 2xl:text-sm font-medium text-start sm:text-left ">
+            <Image src="/teq.svg" width={150} height={50} alt="teqlogo" />
+            <p className="text-sm md:text-sm lg:text-sm xl:text-sm 2xl:text-sm font-medium text-start sm:text-left">
               We offer top-notch online courses led by expert instructors to
               help you reach your full potential.
             </p>
@@ -50,23 +50,53 @@ const Footer = () => {
 
         <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center text-lg leading-relaxed text-opacity-70 mb-8">
           <ul className="space-y-2 mb-6 sm:mb-0">
-            <li className="font-bold">About US</li>
-            <li className="font-bold">Online Course</li>
-            <li className="font-bold">Offline Course</li>
+            <li className="font-semibold tracking-bold">About US</li>
+            <li className="font-semibold tracking-bold">Online Course</li>
+            <li className="font-semibold tracking-bold">Offline Course</li>
           </ul>
 
           <ul className="space-y-2 mb-6 sm:mb-0">
-            <li className="font-bold">Courses</li>
-            <li className="font-bold">Resourses</li>
-            <li className="font-bold">Become an Instructor</li>
+            <li className="font-semibold tracking-bold">Courses</li>
+            <li className="font-semibold tracking-bold">Resources</li>
+            <li className="font-semibold tracking-bold">Become an Instructor</li>
           </ul>
 
           <div className="flex space-x-4 text-2xl">
-            <FaLinkedin className="cursor-pointer transition duration-300 hover:opacity-80" />
-            <FaTwitter className="cursor-pointer transition duration-300 hover:opacity-80" />
-            <FaInstagram className="cursor-pointer transition duration-300 hover:opacity-80" />
-            <FaYoutube className="cursor-pointer transition duration-300 hover:opacity-80" />
-            <FaFacebookF className="cursor-pointer transition duration-300 hover:opacity-80" />
+            <Link
+              href="https://www.linkedin.com"
+              className="cursor-pointer transition duration-300 hover:opacity-80"
+              aria-label="LinkedIn"
+            >
+              <FaLinkedin />
+            </Link>
+            <Link
+              href="https://www.twitter.com"
+              className="cursor-pointer transition duration-300 hover:opacity-80"
+              aria-label="Twitter"
+            >
+              <FaTwitter />
+            </Link>
+            <Link
+              href="https://www.instagram.com"
+              className="cursor-pointer transition duration-300 hover:opacity-80"
+              aria-label="Instagram"
+            >
+              <FaInstagram />
+            </Link>
+            <Link
+              href="https://www.youtube.com"
+              className="cursor-pointer transition duration-300 hover:opacity-80"
+              aria-label="YouTube"
+            >
+              <FaYoutube />
+            </Link>
+            <Link
+              href="https://www.facebook.com"
+              className="cursor-pointer transition duration-300 hover:opacity-80"
+              aria-label="Facebook"
+            >
+              <FaFacebookF />
+            </Link>
           </div>
         </div>
 

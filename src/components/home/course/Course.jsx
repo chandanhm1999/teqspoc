@@ -17,6 +17,7 @@ const postData = [
     heading: "Scrum Master",
     imgSrc: "/assets/courses/scrumm.svg",
     name: "Industry-Experts",
+    syllabus: "/syllabus/scrummastersyllabus",
     students: 150,
     classes: 12,
     discount: 30000,
@@ -27,6 +28,7 @@ const postData = [
     heading: "DotNet FullStack",
     imgSrc: "/assets/courses/dotnet.svg",
     name: "Industry-Experts",
+    syllabus: "/syllabus/dotnetsyllabus",
     students: 130,
     classes: 12,
     discount: 30000,
@@ -37,6 +39,7 @@ const postData = [
     heading: "Java FullStack",
     imgSrc: "/assets/courses/javaaa.svg",
     name: "Industry-Experts",
+    syllabus: "/syllabus/javasyllabus",
     students: 120,
     classes: 12,
     discount: 30000,
@@ -47,6 +50,7 @@ const postData = [
     heading: "Software Testing",
     imgSrc: "/assets/courses/testing.svg",
     name: "Industry-Experts",
+    syllabus: "/syllabus/testingsyllabus",
     students: 150,
     classes: 12,
     discount: 30000,
@@ -57,6 +61,7 @@ const postData = [
     heading: "Data Engineer",
     imgSrc: "/assets/courses/data.svg",
     name: "Industry-Experts",
+    syllabus: "/syllabus/dataengineersyllabus",
     students: 150,
     classes: 12,
     discount: 30000,
@@ -67,6 +72,7 @@ const postData = [
     heading: "DevOps",
     imgSrc: "/assets/courses/devops.svg",
     name: "Industry-Experts",
+    syllabus: "/syllabus/devopssyllabus",
     students: 150,
     classes: 12,
     discount: 30000,
@@ -153,7 +159,7 @@ const Course = () => {
                     By: {item.name}
                   </p>
 
-                  <div className="flex justify-between items-center py-2">
+                  <div className="flex justify-between items-center">
                     <div className="flex items-center">
                       <h3 className="text-green-500 text-xs md:text-sm lg:text-sm xl:text-lg font-medium">
                         {item.rating}
@@ -172,12 +178,16 @@ const Course = () => {
                         <del className="text-red-500">₹{item.discount}</del>
                       </h3>
                       <h3 className="text-xl font-bold text-gray-900">
-                      ₹{item.price}
+                        ₹{item.price}
                       </h3>
                     </div>
                   </div>
                   <p className="flex items-center text-gray-600 text-sm md:text-sm lg:text-sm xl:text-lg cursor-pointer hover:text-black transition-colors duration-300">
-                    View syllabus
+                    {item.syllabus ? (
+                      <Link href={item.syllabus}>View syllabus</Link>
+                    ) : (
+                      <span>No syllabus available</span>
+                    )}
                   </p>
 
                   <div className="flex justify-between mt-4">
@@ -205,7 +215,7 @@ const Course = () => {
 
                   <hr className="border-gray-200 mt-4" />
 
-                  <div className="flex justify-between py-4">
+                  <div className="flex justify-between py-2">
                     <div className="flex items-center space-x-2">
                       <Image
                         src="/assets/courses/book-open.svg"

@@ -3,6 +3,7 @@ import "./globals.css";
 import Navbar from "@/components/navbar/Navbar";
 import "react-multi-carousel/lib/styles.css";
 import Footer from "@/components/footer/Footer";
+import WhatsApp from "@/components/whatsapp/whatsapp";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,6 +19,7 @@ export default function RootLayout({ children }) {
         <div className="">
         <Navbar /> 
         {children}
+        <WhatsApp />
         <Footer />
         </div>
       </body>

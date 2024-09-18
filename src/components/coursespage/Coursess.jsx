@@ -6,6 +6,7 @@ import { FaStar } from "react-icons/fa";
 import { FaUserGraduate, FaShareSquare } from "react-icons/fa";
 import ShareModal from "./ShareModel";
 import EnrollmentModal from "./EnrollModal";
+import Link from "next/link";
 
 // CAROUSEL DATA
 const postData = [
@@ -13,6 +14,7 @@ const postData = [
     heading: "Scrum Master",
     imgSrc: "/assets/courses/scrumm.svg",
     name: "Industry-Experts",
+    syllabus: "/syllabus/scrummastersyllabus",
     students: 150,
     classes: 12,
     discount: 30000,
@@ -23,6 +25,7 @@ const postData = [
     heading: "DotNet FullStack",
     imgSrc: "/assets/courses/dotnet.svg",
     name: "Industry-Experts",
+    syllabus: "/syllabus/dotnetsyllabus",
     students: 130,
     classes: 12,
     discount: 30000,
@@ -33,6 +36,7 @@ const postData = [
     heading: "Java FullStack",
     imgSrc: "/assets/courses/javaaa.svg",
     name: "Industry-Experts",
+    syllabus: "/syllabus/javasyllabus",
     students: 120,
     classes: 12,
     discount: 30000,
@@ -43,6 +47,7 @@ const postData = [
     heading: "Software Testing",
     imgSrc: "/assets/courses/testing.svg",
     name: "Industry-Experts",
+    syllabus: "/syllabus/testingsyllabus",
     students: 150,
     classes: 12,
     discount: 30000,
@@ -53,6 +58,7 @@ const postData = [
     heading: "Data Engineer",
     imgSrc: "/assets/courses/data.svg",
     name: "Industry-Experts",
+    syllabus: "/syllabus/dataengineersyllabus",
     students: 150,
     classes: 12,
     discount: 30000,
@@ -63,6 +69,7 @@ const postData = [
     heading: "DevOps",
     imgSrc: "/assets/courses/devops.svg",
     name: "Industry-Experts",
+    syllabus: "/syllabus/devopssyllabus",
     students: 150,
     classes: 12,
     discount: 30000,
@@ -123,13 +130,13 @@ const Coursess = () => {
                   <div className="flex items-center">
                     <h3 className="text-green-500 text-lg">{item.rating}</h3>
                     <div className="ml-2 flex">
-                        {[...Array(5)].map((_, index) => (
-                          <FaStar
-                            key={index}
-                            className="h-2 w-2 text-yellow-400"
-                          />
-                        ))}
-                      </div>
+                      {[...Array(5)].map((_, index) => (
+                        <FaStar
+                          key={index}
+                          className="h-2 w-2 text-yellow-400"
+                        />
+                      ))}
+                    </div>
                   </div>
                   <div className="flex items-center space-x-2">
                     <h3 className="text-red-500 text-xs font-semibold">
@@ -141,7 +148,11 @@ const Coursess = () => {
                   </div>
                 </div>
                 <p className="flex items-center text-gray-600 text-sm md:text-sm lg:text-sm xl:text-lg cursor-pointer hover:text-black transition-colors duration-300">
-                    View syllabus
+                  {item.syllabus ? (
+                    <Link href={item.syllabus}>View syllabus</Link>
+                  ) : (
+                    <span>No syllabus available</span>
+                  )}
                 </p>
                 <div className="flex justify-between">
                   <button
