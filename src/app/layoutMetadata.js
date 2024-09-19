@@ -1,0 +1,56 @@
+export const metadata = {
+  title: "Teqspoc - Expert Guidance and Endless Support",
+  description: "Teqspoc is your partner in tech education, offering expert guidance and endless support for learners in AI, Full Stack Development, Scrum Master, and more. Achieve your career goals with our cutting-edge courses and real-world projects.",
+  icons: {
+    icon: ["/teqlogo.png"],
+    apple: ["/teqlogo.png?v=4"],
+    shortcut: ["/teqlogo.png"],
+  },
+  metadataBase: new URL("https://www.teqspoc.com"),
+  category: "Edutech Platform",
+  keywords: [
+    "Teqspoc", 
+    "Edutech", 
+    "AI Learning", 
+    "Full Stack Development", 
+    "Scrum Master Training", 
+    "Tech Education", 
+    "Online Learning",
+    "Expert Guidance", 
+    "Endless Support"
+  ],
+  authors: [{ 
+    name: "Chandan HM", 
+    url: "https://chandan21.vercel.app" 
+  }],
+  creator: [{ 
+    name: "Cdevxgen Team", 
+    url: "https://www.cdevxgen.com" 
+  }],
+  openGraph: {
+    title: "Teqspoc - Expert Guidance and Endless Support",
+    description: "Teqspoc is a leader in tech education, offering cutting-edge courses in AI, Full Stack Development, Scrum Master training, and more. Empower your career with expert guidance and endless support.",
+    images: [
+      {
+        url: "/teqlogo.png",
+        alt: "Teqspoc",
+      },
+    ],
+    site_name: "Teqspoc",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Teqspoc - Expert Guidance and Endless Support",
+    description: "Teqspoc empowers learners to achieve their tech career goals with expert guidance and endless support. Courses include AI, Full Stack Development, Scrum Master training, and more.",
+    images: [
+      {
+        url: "/teqlogo.png",
+        alt: "Teqspoc",
+      },
+    ],
+  },
+  robots: "index, follow",
+  language: "en",
+  rating: "General",
+  viewport: "width=device-width, initial-scale=1",
+};
