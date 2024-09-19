@@ -2,9 +2,9 @@ export const metadata = {
   title: "Teqspoc - Expert Guidance and Endless Support",
   description: "Teqspoc is your partner in tech education, offering expert guidance and endless support for learners in AI, Full Stack Development, Scrum Master, and more. Achieve your career goals with our cutting-edge courses and real-world projects.",
   icons: {
-    icon: ["/teqlogo.png"],
-    apple: ["/teqlogo.png?v=4"],
-    shortcut: ["/teqlogo.png"],
+    icon: ["/teqspoc.png"],
+    apple: ["/teqspoc.png?v=4"],
+    shortcut: ["/teqspoc.png"],
   },
   metadataBase: new URL("https://www.teqspoc.com"),
   category: "Edutech Platform",
@@ -32,7 +32,7 @@ export const metadata = {
     description: "Teqspoc is a leader in tech education, offering cutting-edge courses in AI, Full Stack Development, Scrum Master training, and more. Empower your career with expert guidance and endless support.",
     images: [
       {
-        url: "/teqlogo.png",
+        url: "/teqspoc.png",
         alt: "Teqspoc",
       },
     ],
@@ -44,7 +44,7 @@ export const metadata = {
     description: "Teqspoc empowers learners to achieve their tech career goals with expert guidance and endless support. Courses include AI, Full Stack Development, Scrum Master training, and more.",
     images: [
       {
-        url: "/teqlogo.png",
+        url: "/teqspoc.png",
         alt: "Teqspoc",
       },
     ],
