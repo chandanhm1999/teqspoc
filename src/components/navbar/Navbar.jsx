@@ -82,6 +82,10 @@ const Navbar = () => {
                         Free Job Assistance
                       </li>
                     </Link>
+                    <Link href="/careers">
+                      <li className="p-2 hover:bg-violet-200">Careers</li>
+                    </Link>
+
                     {/* About us section */}
                     <Link href="/about">
                       <li className="p-2 hover:bg-violet-200">About us</li>
@@ -135,55 +139,66 @@ const Navbar = () => {
           <div className="md:hidden bg-gradient-to-l from-white via-blue-100 text-black shadow-lg">
             <ul className="flex flex-col gap-4 p-4">
               <li>
-                <Link href="/" onClick={handleMobileLinkClick}>
+                <Link href="/" className="font-semibold" onClick={handleMobileLinkClick}>
                   Home
                 </Link>
               </li>
 
               {/* All Courses */}
               <li>
-                <Link href="/courses" onClick={handleMobileLinkClick}>
+                <Link href="/courses" className="font-semibold" onClick={handleMobileLinkClick}>
                   All Courses
                 </Link>
               </li>
 
               {/* Resources */}
               <li>
-                <Link href="/resources" onClick={handleMobileLinkClick}>
+                <Link href="/resources" className="font-semibold" onClick={handleMobileLinkClick}>
                   Resources
                 </Link>
               </li>
 
               {/* About us */}
               <li>
-                <Link href="/about" onClick={handleMobileLinkClick}>
+                <Link href="/about" className="font-semibold" onClick={handleMobileLinkClick}>
                   About us
                 </Link>
               </li>
 
               {/* Refer */}
               <li>
-                <Link href="/refer" onClick={handleMobileLinkClick}>
+                <Link href="/refer" className="font-semibold" onClick={handleMobileLinkClick}>
                   Refer & Earn
                 </Link>
               </li>
 
               <li>
-                <Link href="/instructor" onClick={handleMobileLinkClick}>
+                <Link href="/instructor" className="font-semibold" onClick={handleMobileLinkClick}>
                   Become an Instructor
                 </Link>
               </li>
 
               <Link href="/freejobassistance">
-                <li className=" hover:bg-violet-200" onClick={handleMobileLinkClick}>
+                <li
+                  className=" hover:bg-violet-200 font-semibold"
+                  onClick={handleMobileLinkClick}
+                >
                   Free Job Assistance
                 </li>
+              </Link>
+
+              <Link href="/careers"
+              className="font-semibold"
+              onClick={handleMobileLinkClick}
+              >
+                <li className=" hover:bg-violet-200 font-semibold">Careers</li>
               </Link>
             </ul>
             <Link href="/contact">
               <div className="justify-center text-center items-center p-3">
                 <button
                   type="button"
+                  onClick={handleMobileLinkClick}
                   className="text-white text-lg bg-gradient-to-r from-cyan-400 via-cyan-500 to-cyan-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-bold rounded-lg px-5 py-2.5 text-center me-2 mb-2"
                 >
                   Contact Us

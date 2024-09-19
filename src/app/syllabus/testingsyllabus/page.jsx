@@ -1,8 +1,8 @@
 import React from "react";
 import MainSec from "@/components/home/contact/mainSec/MainSec";
-import Testings from "@/components/syllabus/testings/testings";
+import Testings from "@/components/syllabus/testings/Testings";
 
-const Dotnetsyllabus = () => {
+const Testingsyllabus = () => {
   return (
     <>
       <MainSec
@@ -15,4 +15,4 @@ const Dotnetsyllabus = () => {
   );
 };
 
-export default Dotnetsyllabus;
+export default Testingsyllabus;

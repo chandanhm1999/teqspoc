@@ -23,7 +23,7 @@ const Footer = () => {
           <ul className="flex flex-col sm:flex-row sm:space-x-8 space-y-4 sm:space-y-0 text-lg font-medium tracking-wide">
             <li>
               <Link
-                href="/about"
+                href="/refer"
                 className="transition text-black duration-300 hover:text-peach hover:underline"
               >
                 Refer & Earn
@@ -31,7 +31,7 @@ const Footer = () => {
             </li>
             <li>
               <Link
-                href="/gallery"
+                href="/freejobassistance"
                 className="transition duration-300 hover:text-peach hover:underline"
               >
                 Free Job Assistance
@@ -50,15 +50,39 @@ const Footer = () => {
 
         <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center text-lg leading-relaxed text-opacity-70 mb-8">
           <ul className="space-y-2 mb-6 sm:mb-0">
-            <li className="font-semibold tracking-bold">About US</li>
-            <li className="font-semibold tracking-bold">Online Course</li>
-            <li className="font-semibold tracking-bold">Offline Course</li>
+            <li className="font-semibold tracking-bold">
+              <Link href="/about" >
+                About us
+              </Link>
+            </li>
+            <li className="font-semibold tracking-bold">
+              <Link href="/courses">
+                All Courses
+              </Link>
+            </li>
+            <li className="font-semibold tracking-bold">
+              <Link href="/resources">
+                Resources
+              </Link>
+            </li>
           </ul>
 
           <ul className="space-y-2 mb-6 sm:mb-0">
-            <li className="font-semibold tracking-bold">Courses</li>
-            <li className="font-semibold tracking-bold">Resources</li>
-            <li className="font-semibold tracking-bold">Become an Instructor</li>
+            <li className="font-semibold tracking-bold">
+              <Link href="/careers">
+                <li className=" ">Careers</li>
+              </Link>
+            </li>
+            <li className="font-semibold tracking-bold">
+              <Link href="/freejobassistance">
+                <li className=" ">Free Job Assistance</li>
+              </Link>
+            </li>
+            <li className="font-semibold tracking-bold">
+              <Link href="/more">
+                <li className=" ">More</li>
+              </Link>
+            </li>
           </ul>
 
           <div className="flex space-x-4 text-2xl">
