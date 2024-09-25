@@ -8,53 +8,96 @@ import TextLight from "./TextLight";
 const Javas = () => {
   const [syllabus] = useState([
     {
-      title: "Introduction to Java",
-      duration: "1 week",
-      content: "Overview of Java, its history, and the Java Virtual Machine (JVM).",
+      section: "Introduction to Java and OOPS",
+      topics: [
+        "Java Tokens- Comments, Identifiers, Keywords, Separators",
+        "Working with Java Editor Softwares – Editplus, NetBeans, Eclipse",
+        "Packages with static imports",
+        "Working with jar",
+      ],
     },
     {
-      title: "Object-Oriented Programming in Java",
-      duration: "2 weeks",
-      content: "Understanding classes, objects, inheritance, polymorphism, and encapsulation.",
+      section: "Modifiers, Datatypes, and Control Flow",
+      topics: [
+        "Modifiers – File level, Access level and Non-access level",
+        "Datatypes, Literals, Variables, Type Conversion, Casting & Promotion",
+        "Reading runtime values from keyboard and Properties File",
+        "Operators and Control Statements",
+      ],
     },
     {
-      title: "Data Types, Variables, and Operators",
-      duration: "1 week",
-      content: "Exploring primitive data types, variable declarations, and operators in Java.",
+      section: "Methods, Variables, and Constructors",
+      topics: [
+        "Method and Types of methods",
+        "Variable and Types of Variables",
+        "Constructor and Types of constructors",
+        "Block and Types of Blocks",
+      ],
     },
     {
-      title: "Control Statements and Loops",
-      duration: "1 week",
-      content: "Conditional statements, loops, and switch-case statements.",
+      section: "Execution Flow and Architecture",
+      topics: [
+        "Declarations, Invocations and Executions",
+        "Compiler & JVM Architecture with Reflection API",
+        "Static Members and their execution control flow",
+        "Non-Static Members and their execution control flow",
+        "Final Variables and their rules",
+      ],
     },
     {
-      title: "Exception Handling",
-      duration: "1 week",
-      content: "Handling errors and exceptions using try-catch, throw, throws, and finally.",
+      section: "OOP Principles and Advanced Concepts",
+      topics: [
+        "Classes and Types of classes",
+        "OOPS- Fundamentals, Models, Relations and Principles",
+        "Coupling and Cohesion (MVC and LCRP Architectures)",
+        "Types of objects & Garbage Collection",
+        "Arrays and Var-arg types",
+        "Enum and Annotation",
+      ],
     },
     {
-      title: "Collections Framework",
-      duration: "2 weeks",
-      content: "Introduction to Java Collections: List, Set, Map, and how to use them.",
+      section: "Design Patterns and Java API",
+      topics: [
+        "Design Patterns",
+        "Java API and Project",
+        "API and API Documentation",
+        "Fundamental Classes – Object, Class, System, Runtime",
+        "String Handling",
+      ],
     },
     {
-      title: "File Handling in Java",
-      duration: "1 week",
-      content: "Working with files, reading/writing data, and using I/O streams.",
+      section: "Advanced Java Features",
+      topics: [
+        "Exception Handling and Assertions",
+        "Multithreading with JVM Architecture",
+        "IO Streams (File IO)",
+        "Wrapper Classes with Auto boxing and unboxing",
+        "Collections with Generics",
+        "Java 5, 6, 7, 8 new features",
+        "Inner classes",
+      ],
     },
     {
-      title: "Multithreading in Java",
-      duration: "1 week",
-      content: "Understanding threads, the lifecycle of threads, and concurrency control.",
+      section: "Hibernate and ORM",
+      topics: [
+        "Hibernate Training Course Overview",
+        "Advantages of Hibernate compared to JDBC",
+        "Introduction to ORM (Object Relational Mapping)",
+        "Hibernate Resources",
+        "Configuration file",
+        "Mapping file",
+        "Persistent class or POJO",
+        "Client application",
+        "Hibernate Architecture",
+        "Installation and Directory Structure",
+      ],
     },
-    // Add more syllabus items if needed
   ]);
 
   return (
     <main className="container mx-auto mt-8 px-4">
       <div className="flex flex-wrap justify-between">
-        
-        {/* Right column for syllabus details (Now on the left side) */}
+        {/* Right column for syllabus details */}
         <div className="w-full md:w-8/12 mb-8">
           <div className="relative">
             <Image
@@ -70,37 +113,36 @@ const Javas = () => {
             </h2>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
-            {syllabus.map((item, index) => (
-              <div key={index} className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
-                <div className="flex items-center space-x-4 mb-3">
-                  <FaBook className="w-6 h-6 text-blue-500" />
-                  <h4 className="text-xl font-semibold text-gray-800">{item.title}</h4>
-                </div>
-                <div className="flex items-center space-x-2 text-sm text-gray-600 mb-3">
-                  <FaCalendarAlt className="w-4 h-4 text-gray-500" />
-                  <span>{item.duration}</span>
-                </div>
-                <p className="text-gray-700 leading-relaxed">{item.content}</p>
+          <div className="mt-6">
+            {syllabus.map((module, index) => (
+              <div key={index} className="mb-6">
+                <h3 className="text-2xl font-bold text-blue-600 mb-4">{module.section}</h3>
+                <ul className="list-disc list-inside space-y-2">
+                  {module.topics.map((topic, idx) => (
+                    <li key={idx} className="text-gray-700 text-lg">
+                      {topic}
+                    </li>
+                  ))}
+                </ul>
               </div>
             ))}
           </div>
         </div>
 
-        {/* Left column for syllabus list (Now on the right side) */}
+        {/* Left column for syllabus list */}
         <div className="w-full md:w-3/12 mb-8">
           <h3 className="text-2xl font-extrabold mb-4 text-center">
             Java Syllabus
             <TextLight text={"Courses"} />
           </h3>
           <ul className="list-none space-y-4">
-            {syllabus.map((item, index) => (
+            {syllabus.map((module, index) => (
               <li
                 key={index}
                 className="flex items-start space-x-3 hover:bg-blue-100 p-3 rounded-lg transition duration-200 ease-in-out cursor-pointer"
               >
                 <p className="text-gray-800 font-medium">
-                  {index + 1}. {item.title}
+                  {index + 1}. {module.section}
                 </p>
               </li>
             ))}

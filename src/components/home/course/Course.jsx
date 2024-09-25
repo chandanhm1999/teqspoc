@@ -10,6 +10,9 @@ import { FaUserGraduate, FaShareSquare } from "react-icons/fa";
 import ShareModal from "./ShareModel"; // Import the ShareModal component
 import TextLight from "./TextLight";
 import EnrollmentModal from "../../coursespage/EnrollModal";
+import { FaShare } from "react-icons/fa";
+import { FaShareAlt } from "react-icons/fa";
+
 
 // CAROUSEL DATA
 const postData = [
@@ -119,7 +122,7 @@ const Course = () => {
     >
       <div className="container mx-auto px-5 sm:px-5 md:px-2 lg:px-2 xl:px-2">
         <div className="flex justify-between items-center mb-2 sm:mb-2 md:mb-4 lg:mb-4 xl:mb-6">
-          <h3 className="text-xl md:text-2xl lg:text-3xl xl:text-3xl font-bold leading-tight text-gray-800">
+          <h3 className="text-xl md:text-2xl lg:text-3xl xl:text-3xl font-bold leading-tight text-[#1F2937]">
             Popular
             <TextLight text={"Courses"} />
           </h3>
@@ -184,7 +187,13 @@ const Course = () => {
                   </div>
                   <p className="flex items-center text-gray-600 text-sm md:text-sm lg:text-sm xl:text-lg cursor-pointer hover:text-black transition-colors duration-300">
                     {item.syllabus ? (
-                      <Link href={item.syllabus}>View syllabus</Link>
+                      <Link
+                        href={item.syllabus}
+                        className=" text-gray-600 hover:text-black flex items-center"
+                      >
+                        View syllabus
+                        <FaShare className="ml-1 mt-1" />
+                      </Link>
                     ) : (
                       <span>No syllabus available</span>
                     )}
@@ -208,7 +217,7 @@ const Course = () => {
                       }
                       className="flex items-center text-gray-600 border border-gray-600 hover:bg-gray-600 hover:text-white transition-colors duration-300 px-6 py-2 rounded-lg shadow-md"
                     >
-                      <FaShareSquare className="mr-2" />
+                      <FaShareAlt className="mr-2" />
                       Share
                     </button>
                   </div>

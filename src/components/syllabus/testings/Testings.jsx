@@ -2,59 +2,112 @@
 
 import { useState } from "react";
 import Image from "next/image";
-import { FaBook, FaCalendarAlt } from "react-icons/fa";
+import { FaBook } from "react-icons/fa";
 import TextLight from "./TextLight";
 
 const Testings = () => {
-  const [syllabus] = useState([
+  const [manualTestingSyllabus] = useState([
     {
-      title: "Introduction to Software Testing",
-      duration: "1 week",
-      content: "Understanding the basics of software testing, types, and importance.",
+      title: "Introduction to testing",
+      content: [
+        "Verification vs validation",
+        "Types of Applications",
+        "Probabilities of getting an error in an application",
+      ],
     },
     {
-      title: "Manual Testing Fundamentals",
-      duration: "2 weeks",
-      content: "Test planning, test case design, execution, and bug reporting.",
+      title: "SDLC – Software Development Life Cycle",
+      content: [
+        "Waterfall",
+        "Prototype",
+        "Spiral",
+        "Incremental (Agile methodology and Scrum Framework)",
+        "V-Model",
+        "Advantages and Disadvantages of each software development life cycle",
+      ],
     },
     {
-      title: "Automation Testing Basics",
-      duration: "2 weeks",
-      content: "Introduction to automation tools like Selenium, and creating automated scripts.",
+      title: "Principles of Testing",
+      content: [
+        "STLC –Software Testing Life Cycle",
+        "Difference between Test case, Use case and Scenario",
+        "How to prepare test plan and strategy",
+        "How to prepare a test case template?",
+      ],
     },
     {
-      title: "Test Management Tools",
-      duration: "1 week",
-      content: "Working with tools like JIRA, TestRail, and Bugzilla for tracking and management.",
+      title: "Test Case Design Technique",
+      content: [
+        "Boundary Value Analysis",
+        "Equivalence Partitioning",
+        "Decision Table",
+        "State Transition Diagram",
+        "Use Case Testing",
+      ],
     },
     {
-      title: "API Testing",
-      duration: "1 week",
-      content: "Testing APIs using tools like Postman and understanding RESTful services.",
+      title: "Bug Life cycle",
+      content: [
+        "How to Prepare the Bug template?",
+        "Bug Tracking tool",
+        "Types of Testing",
+      ],
     },
     {
-      title: "Performance Testing",
-      duration: "1 week",
-      content: "Introduction to performance testing tools like JMeter and LoadRunner.",
+      title: "Difference between Static and Dynamic testing",
+      content: [
+        "Difference between Functional and Non-functional testing",
+        "Black box testing and its types",
+        "White box testing and its types",
+        "System Integration Testing vs User Acceptance Testing",
+      ],
     },
     {
-      title: "Security Testing",
-      duration: "1 week",
-      content: "Basics of security testing, vulnerabilities, and tools like OWASP ZAP.",
+      title: "Integration testing",
+      content: [
+        "Incremental Approach – Top-Down, Bottom-up, and Hybrid",
+        "Requirement traceability matrix",
+      ],
+    },
+  ]);
+
+  const [automationTestingSyllabus] = useState([
+    {
+      title: "Pre-Selenium",
+      content: [
+        "Setup Java environment – Download JDK and Setup eclipse",
+        "Core Java - Keywords and Syntax",
+        "Variables, operators, and control flows",
+        "OOPs overview from Java context",
+        "Exception Handling, File and DB handling",
+      ],
     },
     {
-      title: "Test Automation Frameworks",
-      duration: "2 weeks",
-      content: "Building and managing automation frameworks, including keyword-driven and data-driven frameworks.",
+      title: "Selenium",
+      content: [
+        "Introduction to Automation Testing",
+        "What is Selenium? Components of Selenium Suite",
+        "Selenium WebDriver Basics",
+        "Handling WebElements, Alerts, and Pop-ups",
+        "WebDriver TestNG - Annotations, Parallel Execution",
+        "Reports using TestNG, ReportNG",
+      ],
     },
-    // Add more syllabus items if needed
+    {
+      title: "Post Selenium",
+      content: [
+        "Maven Project Management Tool",
+        "Version Control Tool GITHUB",
+        "Continuous Integration Testing using Jenkins",
+        "Log4j",
+      ],
+    },
   ]);
 
   return (
     <main className="container mx-auto mt-8 px-4">
       <div className="flex flex-wrap justify-between">
-        
-        {/* Right column for syllabus details (Now on the left side) */}
+        {/* Right column for syllabus details */}
         <div className="w-full md:w-8/12 mb-8">
           <div className="relative">
             <Image
@@ -70,40 +123,61 @@ const Testings = () => {
             </h2>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
-            {syllabus.map((item, index) => (
-              <div key={index} className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
-                <div className="flex items-center space-x-4 mb-3">
-                  <FaBook className="w-6 h-6 text-blue-500" />
-                  <h4 className="text-xl font-semibold text-gray-800">{item.title}</h4>
-                </div>
-                <div className="flex items-center space-x-2 text-sm text-gray-600 mb-3">
-                  <FaCalendarAlt className="w-4 h-4 text-gray-500" />
-                  <span>{item.duration}</span>
-                </div>
-                <p className="text-gray-700 leading-relaxed">{item.content}</p>
+          {/* Manual Testing Syllabus */}
+          <section className="mt-6">
+            <h3 className="text-2xl font-semibold text-gray-800 mb-4">
+              Manual Testing Course Syllabus
+            </h3>
+            {manualTestingSyllabus.map((item, index) => (
+              <div key={index} className="mb-6">
+                <h4 className="text-xl font-semibold text-gray-700">{item.title}</h4>
+                <ul className="list-disc list-inside ml-5 text-gray-600">
+                  {item.content.map((contentItem, idx) => (
+                    <li key={idx}>{contentItem}</li>
+                  ))}
+                </ul>
               </div>
             ))}
-          </div>
+          </section>
+
+          {/* Automation Testing Syllabus */}
+          <section className="mt-6">
+            <h3 className="text-2xl font-semibold text-gray-800 mb-4">
+              Automation Testing Course Syllabus
+            </h3>
+            {automationTestingSyllabus.map((item, index) => (
+              <div key={index} className="mb-6">
+                <h4 className="text-xl font-semibold text-gray-700">{item.title}</h4>
+                <ul className="list-disc list-inside ml-5 text-gray-600">
+                  {item.content.map((contentItem, idx) => (
+                    <li key={idx}>{contentItem}</li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </section>
         </div>
 
-        {/* Left column for syllabus list (Now on the right side) */}
+        {/* Left column for syllabus list */}
         <div className="w-full md:w-3/12 mb-8">
           <h3 className="text-2xl font-extrabold mb-4 text-center">
             Software Testing Syllabus
             <TextLight text={"Courses"} />
           </h3>
           <ul className="list-none space-y-4">
-            {syllabus.map((item, index) => (
-              <li
-                key={index}
-                className="flex items-start space-x-3 hover:bg-blue-100 p-3 rounded-lg transition duration-200 ease-in-out cursor-pointer"
-              >
-                <p className="text-gray-800 font-medium">
-                  {index + 1}. {item.title}
-                </p>
-              </li>
-            ))}
+            {[...manualTestingSyllabus, ...automationTestingSyllabus].map(
+              (item, index) => (
+                <li
+                  key={index}
+                  className="flex items-start space-x-3 hover:bg-blue-100 p-3 rounded-lg transition duration-200 ease-in-out cursor-pointer"
+                >
+                  <FaBook className="w-6 h-6 text-blue-500" />
+                  <p className="text-gray-800 font-medium">
+                    {index + 1}. {item.title}
+                  </p>
+                </li>
+              )
+            )}
           </ul>
         </div>
       </div>

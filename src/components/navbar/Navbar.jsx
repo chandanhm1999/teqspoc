@@ -61,7 +61,7 @@ const Navbar = () => {
               </li>
 
               <li className="group relative cursor-pointer">
-                <a
+                <Link
                   href="/#home"
                   className="flex h-[72px] font-semibold items-center gap-[2px]"
                 >
@@ -69,7 +69,7 @@ const Navbar = () => {
                   <span>
                     <FaCaretDown className="transition-all text-xl duration-200 group-hover:rotate-180" />
                   </span>
-                </a>
+                </Link>
                 <div className="absolute -left-9 z-[9999] hidden w-[250px] rounded-md bg-white p-2 text-black group-hover:block">
                   <ul className="space-y-3">
                     <Link href="/instructor">
@@ -102,16 +102,16 @@ const Navbar = () => {
               {/* Phone number section */}
               <div className="flex items-center gap-2 pr-2 group">
                 <li>
-                  <BiPhoneCall className="h-[40px] w-[40px] rounded-md bg-primary bg-blue-700 p-2 text-2xl cursor-pointer text-white group-hover:bg-black/90" />
+                  <BiPhoneCall className="h-[40px] w-[40px] rounded-md bg-primary bg-blue-500 p-2 text-2xl cursor-pointer text-white group-hover:bg-black/90" />
                 </li>
                 <li>
-                  <a href="tel:+918105780072">
+                  <Link href="tel:+918105780072">
                     <div className="text-sm cursor-pointer">Call us on</div>
                     <div className="text-lg">
                       {" "}
                       <div>+91 8105780072</div>
                     </div>
-                  </a>
+                  </Link>
                 </li>
               </div>
             </ul>

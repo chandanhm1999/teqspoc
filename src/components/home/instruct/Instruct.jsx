@@ -18,7 +18,7 @@ const Instruct = () => {
           />
         </div>
         <div className="lg:w-[50%] flex gap-8 flex-col">
-          <h1 className="lg:w-[50%] text-2xl font-bold text-gray-800 lg:text-4xl xl:lg:text-4xl dark:text-white">
+          <h1 className="lg:w-[50%] text-2xl font-bold text-[#1F2937] lg:text-4xl xl:lg:text-4xl dark:text-white">
             Join Our Team of
             <TextLight text={"Instructors"} />
           </h1>

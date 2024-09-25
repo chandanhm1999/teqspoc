@@ -37,11 +37,11 @@ const Blog = () => {
   return (
     <section className="mx-auto p-6 md:p-12 antialiased bg-white">
       <div className="text-center mb-12">
-        <h3 className="text-2xl font-bold text-gray-800 lg:text-3xl xl:lg:text-3xl dark:text-white mb-4">
+        <h3 className="text-2xl font-bold text-[#1F2937] lg:text-3xl xl:lg:text-3xl dark:text-white mb-4">
           Comprehensive  
           <TextLight text={"Training "} />Solutions
         </h3>
-        <p className="text-sm text-gray-600 max-w-4xl mx-auto">
+        <p className="text-sm text-[#4B5563] max-w-4xl mx-auto">
           From Beginner to Expert, we deliver tailored learning experiences
           through multiple formats, including Classroom, Virtual, Weekend, and
           Corporate sessions. Our extensive course catalog covers the latest
@@ -65,10 +65,10 @@ const Blog = () => {
               />
             </div>
             <div className="p-4 md:w-1/2">
-              <h1 className="text-lg font-semibold text-gray-800 mt-4 md:mt-0">
+              <h1 className="text-lg font-semibold text-[#4B5563] mt-4 md:mt-0">
                 {card.title}
               </h1>
-              <p className="text-base text-gray-400 mt-2 leading-relaxed">
+              <p className="text-base text-[#a3aebc] mt-2 leading-relaxed">
                 {card.description}
               </p>
             </div>

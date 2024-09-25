@@ -50,38 +50,26 @@ const Footer = () => {
 
         <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center text-lg leading-relaxed text-opacity-70 mb-8">
           <ul className="space-y-2 mb-6 sm:mb-0">
-            <li className="font-semibold tracking-bold">
-              <Link href="/about" >
-                About us
-              </Link>
+            <li className="font-semibold tracking-bold hover:underline">
+              <Link href="/about">About us</Link>
             </li>
-            <li className="font-semibold tracking-bold">
-              <Link href="/courses">
-                All Courses
-              </Link>
+            <li className="font-semibold tracking-bold hover:underline">
+              <Link href="/courses">All Courses</Link>
             </li>
-            <li className="font-semibold tracking-bold">
-              <Link href="/resources">
-                Resources
-              </Link>
+            <li className="font-semibold tracking-bold hover:underline">
+              <Link href="/resources">Resources</Link>
             </li>
           </ul>
 
           <ul className="space-y-2 mb-6 sm:mb-0">
-            <li className="font-semibold tracking-bold">
-              <Link href="/careers">
-                <li className=" ">Careers</li>
-              </Link>
+            <li className="font-semibold tracking-bold hover:underline">
+              <Link href="/careers">Careers</Link>
             </li>
-            <li className="font-semibold tracking-bold">
-              <Link href="/freejobassistance">
-                <li className=" ">Free Job Assistance</li>
-              </Link>
+            <li className="font-semibold tracking-bold hover:underline">
+              <Link href="/freejobassistance">Free Job Assistance</Link>
             </li>
-            <li className="font-semibold tracking-bold">
-              <Link href="/more">
-                <li className=" ">More</li>
-              </Link>
+            <li className="font-semibold tracking-bold hover:underline">
+              <Link href="/contact">More</Link>
             </li>
           </ul>
 

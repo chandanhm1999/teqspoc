@@ -4,6 +4,8 @@ import Image from "next/image";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { FaChalkboardTeacher, FaMoneyBillWave, FaUsers, FaLightbulb } from "react-icons/fa";
+import Link from "next/link";
+import CareersTable from "./CareersTable";
 
 const Career = () => {
     const [formData, setFormData] = useState({
@@ -37,13 +39,13 @@ const Career = () => {
             <section className="relative bg-blue-50 py-16 px-8 rounded-lg shadow-lg">
                 <div className="flex flex-wrap justify-between items-center">
                     <div className="w-full md:w-7/12">
-                        <h1 className="text-4xl font-bold text-blue-800 mb-4">Join the Expert Community at Teqspoc</h1>
+                        <h1 className="text-4xl font-bold text-blue-800 mb-4">We are hiring</h1>
                         <p className="text-lg text-gray-600 mb-6">
-                            Passionate about sharing your knowledge? Empower future generations while growing your career at Teqspoc.
+                            Passionate about sharing your knowledge? Empower future generations while growing your career at TeQSpoc.
                         </p>
-                        <a href="#apply" className="inline-block bg-blue-600 text-white font-bold py-3 px-6 rounded-lg shadow-lg hover:bg-blue-700 transition duration-300">
+                        <Link href="#apply" className="inline-block bg-blue-500 text-white font-bold py-3 px-6 rounded-lg shadow-sm hover:bg-green-600 transition duration-300">
                             Become an Instructor
-                        </a>
+                        </Link>
                     </div>
                     <div className="w-full md:w-5/12">
                         <Image
@@ -56,6 +58,8 @@ const Career = () => {
                     </div>
                 </div>
             </section>
+
+            <CareersTable />
 
             {/* Why Join Section */}
             <section className="my-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 text-center">
@@ -84,7 +88,7 @@ const Career = () => {
             {/* Application Form and Additional Content Section */}
             <section id="apply" className="my-12 grid grid-cols-1 md:grid-cols-2 gap-8">
                 <form onSubmit={handleSubmit} className="bg-white p-8 shadow-lg rounded-lg">
-                    <h2 className="text-3xl font-bold text-center text-blue-800 mb-6">Careers at TeqSpoc</h2>
+                    <h2 className="text-3xl font-bold text-center text-blue-800 mb-6">Careers at TeQSpoc</h2>
                     <div className="mb-6">
                         <input
                             type="text"
@@ -161,9 +165,9 @@ const Career = () => {
 
                 {/* Additional Content Section */}
                 <div className="bg-white p-8 shadow-lg rounded-lg">
-                    <h2 className="text-3xl font-bold text-blue-800 mb-6">Unlock Your Potential with Teqspoc</h2>
+                    <h2 className="text-3xl font-bold text-blue-800 mb-6">Unlock Your Potential with TeQSpoc</h2>
                     <p className="text-lg text-gray-600 mb-4">
-                        Join Teqspoc and be part of an innovative, collaborative, and growth-oriented workplace. Explore exciting opportunities below:
+                        Join TeQSpoc and be part of an innovative, collaborative, and growth-oriented workplace. Explore exciting opportunities below:
                     </p>
                     <ul className="list-disc list-inside text-gray-700 space-y-4">
                         <li>
@@ -176,7 +180,7 @@ const Career = () => {
                         </li>
                         <li>
                             <span className="font-semibold">Career Mentors:</span> 
-                            Shape the future workforce by guiding aspiring minds as a mentor at Teqspoc.
+                            Shape the future workforce by guiding aspiring minds as a mentor at TeQSpoc.
                         </li>
                         <li>
                             <span className="font-semibold">Program Counsellors:</span> 

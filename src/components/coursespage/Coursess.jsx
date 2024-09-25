@@ -7,6 +7,8 @@ import { FaUserGraduate, FaShareSquare } from "react-icons/fa";
 import ShareModal from "./ShareModel";
 import EnrollmentModal from "./EnrollModal";
 import Link from "next/link";
+import { FaShare } from "react-icons/fa";
+import { FaShareAlt } from "react-icons/fa";
 
 // CAROUSEL DATA
 const postData = [
@@ -142,14 +144,20 @@ const Coursess = () => {
                     <h3 className="text-red-500 text-xs font-semibold">
                       <del className="text-red-500">₹{item.discount}</del>
                     </h3>
-                    <h3 className="text-xl font-bold text-gray-900">
+                    <h3 className="text-xl font-bold text-[#1F2937]">
                       ₹{item.price}
                     </h3>
                   </div>
                 </div>
-                <p className="flex items-center text-gray-600 text-sm md:text-sm lg:text-sm xl:text-lg cursor-pointer hover:text-black transition-colors duration-300">
+                <p className="flex items-center text-[#354458] text-sm md:text-sm lg:text-sm xl:text-lg cursor-pointer hover:text-black transition-colors duration-300">
                   {item.syllabus ? (
-                    <Link href={item.syllabus}>View syllabus</Link>
+                    <Link
+                      href={item.syllabus}
+                      className=" text-gray-600 hover:text-black flex items-center"
+                    >
+                      View syllabus
+                      <FaShare className="ml-1 mt-1" />
+                    </Link>
                   ) : (
                     <span>No syllabus available</span>
                   )}
@@ -171,7 +179,7 @@ const Coursess = () => {
                     }
                     className="text-black border border-gray-400 mt-4 hover:bg-gray-400 hover:text-white font-semibold rounded-sm px-6 py-2 md:py-2 lg:py-2 xl:py-2 text-xs md:text-sm lg:text-sm xl:text-sm transition-all duration-300 ease-in-out flex items-center shadow-lg hover:shadow-xl transform hover:scale-105"
                   >
-                    <FaShareSquare className="mr-2" /> Share
+                    <FaShareAlt className="mr-2" /> Share
                   </button>
                 </div>
 

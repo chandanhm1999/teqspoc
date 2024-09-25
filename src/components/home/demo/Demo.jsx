@@ -5,15 +5,15 @@ import TextLight from "./TextLight";
 
 const Demo = () => {
   return (
-    <div className="bg-white dark:bg-gray-800 h-full py-6 sm:py-8 lg:py-12">
+    <div className="bg-[#1F2937] h-full py-6 sm:py-8 lg:py-12">
       <div className="mx-auto max-w-screen-2xl px-4 md:px-8">
         <div className="mb-4 flex items-center justify-between gap-8 sm:mb-8 md:mb-12">
           <div className="flex items-center gap-12">
-            <h2 className="text-2xl font-bold text-gray-800 lg:text-3xl xl:lg:text-3xl dark:text-white">
+            <h2 className="text-2xl font-bold text-white lg:text-3xl xl:lg:text-3xl dark:text-white">
               Discover
             </h2>
 
-            <p className="hidden max-w-screen-sm text-gray-500 dark:text-gray-300 md:block">
+            <p className="hidden max-w-screen-sm text-gray-200 dark:text-gray-300 md:block">
               top-tier courses crafted by industry experts, designed to elevate
               your skills and knowledge. Learn from the best to stay ahead in
               your field and achieve your <TextLight text={"career goals."} />

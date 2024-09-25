@@ -79,7 +79,7 @@ const Batchess = () => {
     <div className="my-4 md:my-8 lg:my-8 xl:my-8 px-4">
       {/* Header Section */}
       <div className="flex flex-col md:flex-row justify-between p-2 sm:p-0 items-center mb-3 md:mb-6 lg:mb-4 xl:mb-6">
-        <h3 className="text-xl md:text-2xl lg:text-3xl xl:text-3xl font-bold text-gray-800 dark:text-gray-900 mb-2 md:mb-0 lg:mb-2 xl:mb-4">
+        <h3 className="text-xl md:text-2xl lg:text-3xl xl:text-3xl font-bold text-[#1F2937] dark:text-[#1F2937] mb-2 md:mb-0 lg:mb-2 xl:mb-4">
           Upcoming <TextLight text={"Batches"} />
         </h3>
         <Link
