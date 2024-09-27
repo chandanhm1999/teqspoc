@@ -1,11 +1,11 @@
-import MainSec from "@/components/home/contact/mainSec/MainSec";
+import MainP from "@/components/mainCont/MainP";
 import Dataengineerres from "@/components/resource/resourceSection/dataengineerres/Dataengineerres";
 import React from "react";
 
 const Dataengineer = () => {
   return (
     <>
-      <MainSec
+      <MainP
         url="/assets/resourse/interview/data.jpg"
         parent="DataEngineer Interview Questions & Answers"
         title="DataEngineer Resourse"

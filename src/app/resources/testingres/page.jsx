@@ -1,11 +1,11 @@
 import React from "react";
-import MainSec from "@/components/home/contact/mainSec/MainSec";
+import MainP from "@/components/mainCont/MainP";
 import Testingress from "@/components/resource/resourceSection/testingress/Testingress";
 
 const Testingres = () => {
   return (
     <>
-      <MainSec
+      <MainP
         url="/assets/resourse/interview/testing.jpg"
         parent="Testing Interview Questions & Answers"
         title="Testing Interview Questions & Answers"

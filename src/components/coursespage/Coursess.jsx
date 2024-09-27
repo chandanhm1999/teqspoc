@@ -13,7 +13,7 @@ import { FaShareAlt } from "react-icons/fa";
 // CAROUSEL DATA
 const postData = [
   {
-    heading: "Scrum Master",
+    heading: "scrummaster",
     imgSrc: "/assets/courses/scrumm.svg",
     name: "Industry-Experts",
     syllabus: "/syllabus/scrummastersyllabus",
@@ -24,7 +24,7 @@ const postData = [
     rating: 4.7,
   },
   {
-    heading: "DotNet FullStack",
+    heading: "dotnet",
     imgSrc: "/assets/courses/dotnet.svg",
     name: "Industry-Experts",
     syllabus: "/syllabus/dotnetsyllabus",
@@ -35,7 +35,7 @@ const postData = [
     rating: 4.7,
   },
   {
-    heading: "Java FullStack",
+    heading: "javaresource",
     imgSrc: "/assets/courses/javaaa.svg",
     name: "Industry-Experts",
     syllabus: "/syllabus/javasyllabus",
@@ -46,7 +46,7 @@ const postData = [
     rating: 4.7,
   },
   {
-    heading: "Software Testing",
+    heading: "testingres",
     imgSrc: "/assets/courses/testing.svg",
     name: "Industry-Experts",
     syllabus: "/syllabus/testingsyllabus",
@@ -57,7 +57,7 @@ const postData = [
     rating: 4.7,
   },
   {
-    heading: "Data Engineer",
+    heading: "dataengineer",
     imgSrc: "/assets/courses/data.svg",
     name: "Industry-Experts",
     syllabus: "/syllabus/dataengineersyllabus",
@@ -68,7 +68,7 @@ const postData = [
     rating: 4.7,
   },
   {
-    heading: "DevOps",
+    heading: "devops",
     imgSrc: "/assets/courses/devops.svg",
     name: "Industry-Experts",
     syllabus: "/syllabus/devopssyllabus",
@@ -172,7 +172,7 @@ const Coursess = () => {
                   <button
                     onClick={() =>
                       openModal(
-                        `https://localhost:3000/courses/${item.heading
+                        `https://teqspoc.vercel.app/resources/${item.heading
                           .toLowerCase()
                           .replace(/ /g, "-")}`
                       )

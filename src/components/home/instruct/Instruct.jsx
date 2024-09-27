@@ -28,7 +28,7 @@ const Instruct = () => {
             resources to make an impact.
           </p>
           <div className="w-fit">
-            <Button linkto={"/signup"}>
+            <Button linkto={"/instructor"}>
               <div className="flex items-center gap-3">
                 Begin Your Teaching Journey Today
                 <FaArrowRight />

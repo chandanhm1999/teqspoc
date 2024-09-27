@@ -1,4 +1,4 @@
-import MainSec from "@/components/home/contact/mainSec/MainSec";
+import MainP from "@/components/mainCont/MainP";
 import Devopsres from "@/components/resource/resourceSection/devopsresponce/Devopsres";
 
 import React from "react";
@@ -6,10 +6,10 @@ import React from "react";
 const Devops = () => {
   return (
     <>
-      <MainSec
+      <MainP
         url="/assets/resourse/interview/maindevops.jpg"
         parent="Devops Interview Questions & Answers"
-        title="Devops Resourse"
+        title="Devops Interview Questions & Answers"
       />
       <Devopsres />
     </>
