@@ -1,3 +1,4 @@
+import Demo from "@/components/home/demo/Demo";
 import MainP from "@/components/mainCont/MainP";
 import Dataengineerres from "@/components/resource/resourceSection/dataengineerres/Dataengineerres";
 import React from "react";
@@ -11,6 +12,7 @@ const Dataengineer = () => {
         title="DataEngineer Resourse"
       />
       <Dataengineerres />
+      <Demo />
     </>
   );
 };

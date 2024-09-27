@@ -85,8 +85,8 @@ const ReferFrnd = () => {
     <div className="font-sans max-w-6xl mx-auto relative bg-white shadow-lg rounded-3xl overflow-hidden mt-4 p-6">
       <ToastContainer />
 
-      <div className="absolute -bottom-8 -left-8 w-24 h-24 rounded-full bg-blue-500 opacity-30"></div>
-      <div className="absolute -top-8 -right-8 w-24 h-24 rounded-full bg-blue-500 opacity-30"></div>
+      <div className="absolute -bottom-8 -left-8 w-24 h-24 rounded-full bg-[#304259] opacity-30"></div>
+      <div className="absolute -top-8 -right-8 w-24 h-24 rounded-full bg-[#304259] opacity-30"></div>
 
       <div className="grid md:grid-cols-2 gap-10 py-10 px-8 relative z-10">
         <div className="text-center flex flex-col items-center justify-center">
@@ -100,12 +100,12 @@ const ReferFrnd = () => {
         </div>
 
         <form onSubmit={handleSubmit} className="space-y-6">
-          <h2 className="text-xl text-blue-600 font-extrabold text-center mb-6">
+          <h2 className="text-xl text-[#1f2937] font-bold text-center mb-6">
           Complete the form now to get attractive vouchers!
           </h2>
 
           <div className="space-y-4">
-            <label className="text-blue-600 font-bold font-sm">Your Details</label>
+            <label className="text-[#4b5563] font-medium font-sm">Your Details</label>
             <div className="space-y-4">
               <div className="flex space-x-4">
                 <input
@@ -153,7 +153,7 @@ const ReferFrnd = () => {
               </div>
             </div>
 
-            <label className="text-blue-600 pt-4 font-bold font-sm">
+            <label className="text-[#4b5563] pt-4 font-medium font-sm">
               Friend&apos;s Details
             </label>
 
@@ -244,7 +244,7 @@ const ReferFrnd = () => {
 
             <button
               type="submit"
-              className="text-white w-full bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 rounded-lg text-sm px-6 py-4 transition-transform transform hover:scale-105"
+              className="text-white w-full bg-gradient-to-r from-[#263b5c] to-[#304259] hover:from-[#6a7e9b] hover:to-[#253b5c] rounded-lg text-sm px-6 py-4 transition-transform transform hover:scale-105"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"

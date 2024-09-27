@@ -14,6 +14,7 @@ import { FaShareAlt } from "react-icons/fa";
 const postData = [
   {
     heading: "scrummaster",
+    mainheading: "Scrum Master",
     imgSrc: "/assets/courses/scrumm.svg",
     name: "Industry-Experts",
     syllabus: "/syllabus/scrummastersyllabus",
@@ -25,6 +26,7 @@ const postData = [
   },
   {
     heading: "dotnet",
+    mainheading: "Dotnet",
     imgSrc: "/assets/courses/dotnet.svg",
     name: "Industry-Experts",
     syllabus: "/syllabus/dotnetsyllabus",
@@ -36,6 +38,7 @@ const postData = [
   },
   {
     heading: "javaresource",
+    mainheading: "Java",
     imgSrc: "/assets/courses/javaaa.svg",
     name: "Industry-Experts",
     syllabus: "/syllabus/javasyllabus",
@@ -47,6 +50,7 @@ const postData = [
   },
   {
     heading: "testingres",
+    mainheading: "Testing",
     imgSrc: "/assets/courses/testing.svg",
     name: "Industry-Experts",
     syllabus: "/syllabus/testingsyllabus",
@@ -58,6 +62,7 @@ const postData = [
   },
   {
     heading: "dataengineer",
+    mainheading: "Data Engineer",
     imgSrc: "/assets/courses/data.svg",
     name: "Industry-Experts",
     syllabus: "/syllabus/dataengineersyllabus",
@@ -69,6 +74,7 @@ const postData = [
   },
   {
     heading: "devops",
+    mainheading: "Devops",
     imgSrc: "/assets/courses/devops.svg",
     name: "Industry-Experts",
     syllabus: "/syllabus/devopssyllabus",
@@ -117,7 +123,7 @@ const Coursess = () => {
               <div className="relative rounded-t-2xl overflow-hidden">
                 <Image
                   src={item.imgSrc}
-                  alt="course"
+                  alt={item.mainheading}
                   width={389}
                   height={262}
                   className="object-cover w-full"
@@ -125,7 +131,9 @@ const Coursess = () => {
               </div>
 
               <div className="px-4 py-2">
-                <h4 className="course-heading">{item.heading}</h4>
+                <h4 className="text-sm md:text-lg lg:text-lg xl:text-xl font-bold text-gray-800">
+                  {item.mainheading}
+                </h4>
                 <h3 className="text-xs opacity-75">{item.name}</h3>
 
                 <div className="flex justify-between items-center py-2">

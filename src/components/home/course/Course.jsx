@@ -13,11 +13,11 @@ import EnrollmentModal from "../../coursespage/EnrollModal";
 import { FaShare } from "react-icons/fa";
 import { FaShareAlt } from "react-icons/fa";
 
-
 // CAROUSEL DATA
 const postData = [
   {
-    heading: "Scrum Master",
+    heading: "scrummaster",
+    mainheading: "Scrum Master",
     imgSrc: "/assets/courses/scrumm.svg",
     name: "Industry-Experts",
     syllabus: "/syllabus/scrummastersyllabus",
@@ -28,7 +28,8 @@ const postData = [
     rating: 4.7,
   },
   {
-    heading: "DotNet FullStack",
+    heading: "dotnet",
+    mainheading: "Dotnet",
     imgSrc: "/assets/courses/dotnet.svg",
     name: "Industry-Experts",
     syllabus: "/syllabus/dotnetsyllabus",
@@ -39,7 +40,8 @@ const postData = [
     rating: 4.7,
   },
   {
-    heading: "Java FullStack",
+    heading: "javaresource",
+    mainheading: "Java",
     imgSrc: "/assets/courses/javaaa.svg",
     name: "Industry-Experts",
     syllabus: "/syllabus/javasyllabus",
@@ -50,7 +52,8 @@ const postData = [
     rating: 4.7,
   },
   {
-    heading: "Software Testing",
+    heading: "testingres",
+    mainheading: "Testing",
     imgSrc: "/assets/courses/testing.svg",
     name: "Industry-Experts",
     syllabus: "/syllabus/testingsyllabus",
@@ -61,7 +64,8 @@ const postData = [
     rating: 4.7,
   },
   {
-    heading: "Data Engineer",
+    heading: "dataengineer",
+    mainheading: "Data Engineer",
     imgSrc: "/assets/courses/data.svg",
     name: "Industry-Experts",
     syllabus: "/syllabus/dataengineersyllabus",
@@ -72,7 +76,8 @@ const postData = [
     rating: 4.7,
   },
   {
-    heading: "DevOps",
+    heading: "devops",
+    mainheading: "Devops",
     imgSrc: "/assets/courses/devops.svg",
     name: "Industry-Experts",
     syllabus: "/syllabus/devopssyllabus",
@@ -147,7 +152,7 @@ const Course = () => {
                 <div className="relative overflow-hidden rounded-t-2xl">
                   <Image
                     src={item.imgSrc}
-                    alt={item.heading}
+                    alt={item.mainheading}
                     width={389}
                     height={262}
                     className="m-auto object-cover h-auto w-full rounded-t-2xl"
@@ -156,7 +161,7 @@ const Course = () => {
 
                 <div className="px-4 py-4">
                   <h4 className="text-sm md:text-lg lg:text-lg xl:text-xl font-bold text-gray-800">
-                    {item.heading}
+                    {item.mainheading}
                   </h4>
                   <p className="text-xs md:text-sm lg:text-sm xl:text-lg text-gray-500 mb-2">
                     By: {item.name}
@@ -199,26 +204,24 @@ const Course = () => {
                     )}
                   </p>
 
-                  <div className="flex justify-between mt-4">
+                  <div className="flex justify-between">
                     <button
                       onClick={() => openEnrollModal(item)}
-                      className="flex items-center text-white bg-cyan-500 hover:bg-cyan-600 transition-colors duration-300 px-6 py-2 rounded-lg shadow-md"
+                      className="text-cyan-600 border border-cyan-400 mt-4 hover:bg-cyan-600 hover:text-white font-semibold rounded-sm px-6 py-2 md:py-2 lg:py-2 xl:py-2 text-xs md:text-sm lg:text-sm xl:text-sm transition-all duration-300 ease-in-out flex items-center shadow-lg hover:shadow-xl transform hover:scale-105"
                     >
-                      <FaUserGraduate className="mr-2" />
-                      Enroll
+                      <FaUserGraduate className="mr-2" /> Enroll
                     </button>
                     <button
                       onClick={() =>
                         openModal(
-                          `https://localhost:3000/courses/${item.heading
+                          `https://teqspoc.vercel.app/resources/${item.heading
                             .toLowerCase()
                             .replace(/ /g, "-")}`
                         )
                       }
-                      className="flex items-center text-gray-600 border border-gray-600 hover:bg-gray-600 hover:text-white transition-colors duration-300 px-6 py-2 rounded-lg shadow-md"
+                      className="text-black border border-gray-400 mt-4 hover:bg-gray-400 hover:text-white font-semibold rounded-sm px-6 py-2 md:py-2 lg:py-2 xl:py-2 text-xs md:text-sm lg:text-sm xl:text-sm transition-all duration-300 ease-in-out flex items-center shadow-lg hover:shadow-xl transform hover:scale-105"
                     >
-                      <FaShareAlt className="mr-2" />
-                      Share
+                      <FaShareAlt className="mr-2" /> Share
                     </button>
                   </div>
 

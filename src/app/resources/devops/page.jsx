@@ -1,3 +1,4 @@
+import Demo from "@/components/home/demo/Demo";
 import MainP from "@/components/mainCont/MainP";
 import Devopsres from "@/components/resource/resourceSection/devopsresponce/Devopsres";
 
@@ -12,6 +13,7 @@ const Devops = () => {
         title="Devops Interview Questions & Answers"
       />
       <Devopsres />
+      <Demo />
     </>
   );
 };

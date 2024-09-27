@@ -85,8 +85,8 @@ const Details = () => {
             Visit us
           </h2>
           <p className="mt-2 text-sm text-blue-500 dark:text-blue-400">
-            <a href="https://maps.app.goo.gl/DfFWsy1XRc7o6heP8">
-              22, 13th Main, Near MNTI, KG Halli, Jalahalli West, Bengaluru-15.
+            <a href="https://maps.app.goo.gl/sVp2xziE3L4xsbUx8">
+              5th Chandra Layout, Marathahalli, Bengaluru, Karnataka 560037
             </a>
           </p>
         </div>
