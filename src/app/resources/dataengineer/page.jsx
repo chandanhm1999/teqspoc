@@ -9,7 +9,7 @@ const Dataengineer = () => {
       <MainP
         url="/assets/resourse/interview/data.jpg"
         parent="DataEngineer Interview Questions & Answers"
-        title="DataEngineer Resourse"
+        title="Data Engineer Interview Questions & Answers"
       />
       <Dataengineerres />
       <Demo />

@@ -38,15 +38,16 @@ const Career = () => {
             {/* Hero Section */}
             <section className="relative bg-blue-50 py-16 px-8 rounded-lg shadow-lg">
                 <div className="flex flex-wrap justify-between items-center">
-                    <div className="w-full md:w-7/12">
-                        <h1 className="text-4xl font-bold text-blue-800 mb-4">We are hiring</h1>
-                        <p className="text-lg text-gray-600 mb-6">
-                            Passionate about sharing your knowledge? Empower future generations while growing your career at TeQSpoc.
-                        </p>
-                        <Link href="#apply" className="inline-block bg-blue-500 text-white font-bold py-3 px-6 rounded-lg shadow-sm hover:bg-green-600 transition duration-300">
-                            Become an Instructor
-                        </Link>
-                    </div>
+                <div className="w-full md:w-7/12 bg-gradient-to-r from-blue-100 via-blue-50 to-blue-100 p-8 rounded-lg shadow-lg">
+    <h1 className="text-5xl font-extrabold text-blue-900 mb-4 tracking-tight">
+        Join Our Team!
+    </h1>
+    <p className="text-xl text-gray-700 mb-6 leading-relaxed">
+        Are you passionate about sharing your knowledge? Empower the next generation while advancing your career at 
+        <span className="text-blue-800 font-semibold"> TeQSpoc.</span>
+    </p>
+</div>
+
                     <div className="w-full md:w-5/12">
                         <Image
                             src="/assets/carrers/hiring.jpg"

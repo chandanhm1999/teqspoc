@@ -8,7 +8,7 @@ import ShareModal from "./ShareModelResourse"; // Import the ShareModal componen
 const postData = [
     {
       heading: "Scrum Master",
-      heading2: "Scrum Master",
+      heading2: "Scrummaster Interview Questions & Answers",
       des: "Master the art of Scrum with insights from industry experts. Learn key techniques to lead teams effectively and deliver projects on time.",
       author: "Gopi",
       imgSrc: "/assets/resourse/scrummaster.jpg",
@@ -16,7 +16,7 @@ const postData = [
     },
     {
       heading: "DotNet",
-      heading2: "DotNet",
+      heading2: "DotNet Interview Questions & Answers",
       des: "Dive into the world of .NET and elevate your coding skills with comprehensive tutorials and practical examples. Perfect for advancing your career in software development.",
       author: "Gopi",
       imgSrc: "/assets/resourse/dotnet.jpg",
@@ -24,7 +24,7 @@ const postData = [
     },
     {
       heading: "Java",
-      heading2: "Java FullStack Development",
+      heading2: "Java Interview Questions & Answers",
       des: "Unlock the power of Java with a full-stack development course that covers everything from backend to frontend. Gain the skills needed to build robust and scalable applications.",
       author: "Gopi",
       imgSrc: "/assets/resourse/java.jpg",
@@ -32,7 +32,7 @@ const postData = [
     },
     {
       heading: "Software Testing",
-      heading2: "Software Testing",
+      heading2: "Testing Interview Questions & Answers",
       des: "Become a software testing guru with our in-depth course. Learn essential testing strategies and tools to ensure your software is bug-free and reliable.",
       author: "Gopi",
       imgSrc: "/assets/resourse/test.jpg",
@@ -40,7 +40,7 @@ const postData = [
     },
     {
       heading: "Data Engineer",
-      heading2: "Data Engineer",
+      heading2: "Data Engineer Interview Questions & Answers",
       des: "Transform raw data into actionable insights with our Data Engineering course. Master the tools and techniques needed to handle big data and drive data-driven decisions.",
       author: "Gopi",
       imgSrc: "/assets/resourse/data.jpg",
@@ -48,7 +48,7 @@ const postData = [
     },
     {
       heading: "DevOps",
-      heading2: "DevOps",
+      heading2: "Devops Interview Questions & Answers",
       des: "Streamline your development and operations with our DevOps course. Learn how to integrate development and operations to deliver software faster and more efficiently.",
       author: "Gopi",
       imgSrc: "/assets/resourse/devops.jpg",

@@ -12,6 +12,7 @@ import TextLight from "./TextLight";
 import EnrollmentModal from "../../coursespage/EnrollModal";
 import { FaShare } from "react-icons/fa";
 import { FaShareAlt } from "react-icons/fa";
+import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
 // CAROUSEL DATA
 const postData = [
@@ -89,6 +90,24 @@ const postData = [
   },
 ];
 
+const CustomLeftArrow = ({ onClick }) => (
+  <button
+    onClick={onClick}
+    className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-white/50 hover:bg-white rounded-full shadow-md p-2 z-10"
+  >
+    <FaChevronLeft className="h-6 w-6 text-gray-700" />
+  </button>
+);
+
+const CustomRightArrow = ({ onClick }) => (
+  <button
+    onClick={onClick}
+    className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-white/50 hover:bg-white rounded-full shadow-md p-2 z-10"
+  >
+    <FaChevronRight className="h-6 w-6 text-gray-700" />
+  </button>
+);
+
 const responsive = {
   desktop: { breakpoint: { max: 3000, min: 1480 }, items: 4 },
   laptop: { breakpoint: { max: 1480, min: 1024 }, items: 4 },
@@ -143,8 +162,10 @@ const Course = () => {
         <Carousel
           responsive={responsive}
           infinite={true}
-          containerClass="carousel-container"
+          containerClass="carousel-container relative"
           itemClass="carousel-item-padding-40-px"
+          customLeftArrow={<CustomLeftArrow />}
+          customRightArrow={<CustomRightArrow />}
         >
           {postData.map((item, i) => (
             <div key={i} className="px-2 py-2">
@@ -194,7 +215,7 @@ const Course = () => {
                     {item.syllabus ? (
                       <Link
                         href={item.syllabus}
-                        className=" text-gray-600 hover:text-black flex items-center"
+                        className=" text-blue-600 hover:text-black flex items-center"
                       >
                         View syllabus
                         <FaShare className="ml-1 mt-1" />

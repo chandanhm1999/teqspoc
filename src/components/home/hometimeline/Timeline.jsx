@@ -17,7 +17,7 @@ const Timeline = () => {
             In the modern world, teQspoc sets its own standards. To stay
             competitive, you need more than just professional expertise.
           </div>
-          <Button active={false} linkto={"/signup"}>
+          <Button active={false} linkto={"/resources"}>
             <div className="">Learn More</div>
           </Button>
         </div>
