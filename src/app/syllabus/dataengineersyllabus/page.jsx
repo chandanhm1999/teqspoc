@@ -1,6 +1,7 @@
 import React from "react";
 import MainSec from "@/components/home/contact/mainSec/MainSec";
 import Datas from "@/components/syllabus/datas/Datas";
+import ContactUsSection from "@/components/sysContact/ContactUsSection";
 
 const Dataengineersyllabus = () => {
   return (
@@ -11,6 +12,7 @@ const Dataengineersyllabus = () => {
         title="DataEngineer-Syllabus"
       />
       <Datas />
+      <ContactUsSection />
     </>
   );
 };

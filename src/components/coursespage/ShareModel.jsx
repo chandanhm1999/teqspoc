@@ -1,5 +1,6 @@
 import React from "react";
 import { FaWhatsapp, FaInstagram, FaLinkedin } from "react-icons/fa";
+import { FaFacebook } from "react-icons/fa6";
 
 const ShareModal = ({ isOpen, onClose, shareUrl }) => {
   const copyToClipboard = () => {
@@ -29,6 +30,7 @@ const ShareModal = ({ isOpen, onClose, shareUrl }) => {
           Copy Link
         </button>
         <div className="flex justify-around mb-4">
+          {/* WhatsApp */}
           <a
             href={`https://api.whatsapp.com/send?text=${encodeURIComponent(shareUrl)}`}
             target="_blank"
@@ -37,14 +39,19 @@ const ShareModal = ({ isOpen, onClose, shareUrl }) => {
           >
             <FaWhatsapp />
           </a>
+
+          {/* Instagram (Fallback message as direct share is not possible) */}
           <a
-            href={`https://www.instagram.com/?url=${encodeURIComponent(shareUrl)}`}
-            target="_blank"
-            rel="noopener noreferrer"
+            href="#"
+            onClick={() =>
+              alert("Instagram doesn't support direct link sharing. Please copy the link and share it manually.")
+            }
             className="text-pink-600 text-2xl"
           >
             <FaInstagram />
           </a>
+
+          {/* LinkedIn */}
           <a
             href={`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(shareUrl)}`}
             target="_blank"
@@ -52,6 +59,16 @@ const ShareModal = ({ isOpen, onClose, shareUrl }) => {
             className="text-blue-700 text-2xl"
           >
             <FaLinkedin />
+          </a>
+
+          {/* Facebook */}
+          <a
+            href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(shareUrl)}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-600 text-2xl"
+          >
+            <FaFacebook />
           </a>
         </div>
         <button

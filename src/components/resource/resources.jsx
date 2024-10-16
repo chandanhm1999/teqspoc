@@ -15,6 +15,38 @@ const postData = [
       path: "/resources/scrummaster",
     },
     {
+      heading: "HR Recruiter",
+      heading2: "HR Recruiter Interview Questions & Answers",
+      des: "Master the art of recruitment with our in-depth HR recruiter guides, covering essential skills, strategies, and best practices for hiring top talent.",
+      author: "Gopi",
+      imgSrc: "/assets/resourse/hr-recruiter.jpg",
+      path: "/resources/hrrecruiter"
+    },
+    {
+      heading: "Python",
+      heading2: "Python Interview Questions & Answers",
+      des: "Enhance your Python programming expertise with detailed tutorials and problem-solving techniques to help you excel in coding interviews and projects.",
+      author: "Gopi",
+      imgSrc: "/assets/resourse/python.jpg",
+      path: "/resources/pythonsmain"
+    },
+    {
+      heading: "AI/ML",
+      heading2: "AI/ML Interview Questions & Answers",
+      des: "Explore the exciting field of AI and Machine Learning with comprehensive examples, interview questions, and key concepts to boost your career in tech.",
+      author: "Gopi",
+      imgSrc: "/assets/resourse/ai-ml.jpg",
+      path: "/resources/aiml"
+    },
+    {
+      heading: "Software Testing",
+      heading2: "Testing Interview Questions & Answers",
+      des: "Become a software testing guru with our in-depth course. Learn essential testing strategies and tools to ensure your software is bug-free and reliable.",
+      author: "Gopi",
+      imgSrc: "/assets/resourse/test.jpg",
+      path: "/resources/testingres",
+    },
+    {
       heading: "DotNet",
       heading2: "DotNet Interview Questions & Answers",
       des: "Dive into the world of .NET and elevate your coding skills with comprehensive tutorials and practical examples. Perfect for advancing your career in software development.",
@@ -29,14 +61,6 @@ const postData = [
       author: "Gopi",
       imgSrc: "/assets/resourse/java.jpg",
       path: "/resources/javaresource",
-    },
-    {
-      heading: "Software Testing",
-      heading2: "Testing Interview Questions & Answers",
-      des: "Become a software testing guru with our in-depth course. Learn essential testing strategies and tools to ensure your software is bug-free and reliable.",
-      author: "Gopi",
-      imgSrc: "/assets/resourse/test.jpg",
-      path: "/resources/testingres",
     },
     {
       heading: "Data Engineer",

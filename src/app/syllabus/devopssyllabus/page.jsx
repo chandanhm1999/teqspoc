@@ -1,6 +1,7 @@
 import React from "react";
 import MainSec from "@/components/home/contact/mainSec/MainSec";
 import DevOpsSyllabus from "@/components/syllabus/devOpsSyllabus/DevOpsSyllabus";
+import ContactUsSection from "@/components/sysContact/ContactUsSection";
 
 const Devopssyllabus = () => {
   return (
@@ -11,6 +12,7 @@ const Devopssyllabus = () => {
         title="Devops-Syllabus"
       />
       <DevOpsSyllabus />
+      <ContactUsSection />
     </>
   );
 };

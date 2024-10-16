@@ -10,80 +10,154 @@ const JavaRR = () => {
     {
       question: "What is Java?",
       answer:
-        "Java is a high-level, object-oriented programming language developed by Sun Microsystems. It is designed to be platform-independent, which means that Java programs can run on any device that has a Java Virtual Machine (JVM).",
+        "Java is a high-level, object-oriented programming language designed for platform independence and security.",
     },
     {
-      question: "What is the JVM?",
+      question: "What are the main features of Java?",
       answer:
-        "The Java Virtual Machine (JVM) is an abstract machine that provides the environment in which Java bytecode can be executed. It enables Java's platform independence by translating bytecode into machine code for the host system.",
+        "Platform independence, object-oriented, robustness, security, multithreading, and rich API.",
     },
     {
-      question: "What is the difference between JDK and JRE?",
+      question: "What is the difference between JDK, JRE, and JVM?",
       answer:
-        "The Java Development Kit (JDK) is a software development kit used to develop Java applications, including the JRE and development tools like the compiler and debugger. The Java Runtime Environment (JRE) provides the libraries and JVM needed to run Java applications but does not include development tools.",
+        "JDK (Java Development Kit) is for development, JRE (Java Runtime Environment) is for running applications, and JVM (Java Virtual Machine) executes Java bytecode.",
     },
     {
-      question: "What are Java's access modifiers?",
+      question: "What is an object in Java?",
       answer:
-        "Java has four access modifiers: `public`, `protected`, `default` (no modifier), and `private`. They determine the visibility of classes, methods, and variables across different parts of the program.",
+        "An object is an instance of a class, encapsulating data and behavior.",
     },
     {
-      question: "What is inheritance in Java?",
+      question: "What is a class in Java?",
       answer:
-        "Inheritance is a fundamental concept in object-oriented programming where a new class (subclass) inherits properties and behaviors from an existing class (superclass). It allows for code reusability and hierarchical class organization.",
+        "A class is a blueprint for creating objects, defining attributes and methods.",
+    },
+    {
+      question: "Explain inheritance in Java.",
+      answer:
+        "Inheritance allows one class to inherit the properties and methods of another, promoting code reuse.",
     },
     {
       question: "What is polymorphism in Java?",
       answer:
-        "Polymorphism in Java allows objects to be treated as instances of their parent class rather than their actual class. It enables a single method to have different implementations, which is typically achieved through method overriding and method overloading.",
+        "Polymorphism allows methods to do different things based on the object calling them, achieved through method overloading and overriding.",
     },
     {
-      question: "What is encapsulation in Java?",
+      question: "What are interfaces in Java?",
       answer:
-        "Encapsulation is the concept of wrapping data (variables) and code (methods) together as a single unit called a class. It restricts direct access to some of the object's components, which is achieved by using access modifiers and getter/setter methods.",
+        "An interface defines a contract of methods without implementation. Classes that implement it must provide concrete methods.",
     },
     {
-      question: "What are Java interfaces?",
+      question: "What is the difference between an interface and an abstract class?",
       answer:
-        "Interfaces in Java are abstract types that allow you to specify methods that a class must implement. Unlike classes, interfaces cannot have instance variables or method implementations (prior to Java 8). They are used to achieve abstraction and multiple inheritance.",
+        "Abstract classes can have both abstract and concrete methods and support single inheritance, while interfaces can only have abstract methods and support multiple inheritance.",
     },
     {
-      question: "What is the difference between `==` and `.equals()` in Java?",
+      question: "What are Java Collections?",
       answer:
-        "`==` checks if two references point to the same object in memory, while `.equals()` checks if two objects are logically equivalent, based on the implementation of the `equals()` method in the class.",
+        "Java Collections is a framework for storing and manipulating groups of objects, including lists, sets, and maps.",
+    },
+    {
+      question: "What is the difference between ArrayList and LinkedList?",
+      answer:
+        "ArrayList provides fast random access and slower insertions, while LinkedList provides faster insertions and deletions but slower access.",
     },
     {
       question: "What is exception handling in Java?",
       answer:
-        "Exception handling in Java is a mechanism to handle runtime errors, allowing the program to continue executing or to perform specific actions when an error occurs. It is done using `try`, `catch`, `finally`, and `throw` statements.",
+        "Exception handling is a mechanism to handle runtime errors using try, catch, finally, throw, and throws.",
     },
     {
-      question: "What is a Java thread?",
+      question: "What is a constructor in Java?",
       answer:
-        "A thread in Java is a lightweight process that allows concurrent execution of two or more parts of a program. Threads share the same memory space and can be managed using the `Thread` class or implementing the `Runnable` interface.",
+        "A constructor initializes objects when they are created and has the same name as the class.",
     },
     {
-      question: "What is the Java Collections Framework?",
+      question: "What are static members in Java?",
       answer:
-        "The Java Collections Framework is a set of classes and interfaces that implement commonly used data structures and algorithms, such as lists, sets, maps, and queues. It provides standard methods for storing, retrieving, and manipulating collections of objects.",
+        "Static members belong to the class rather than instances and can be accessed without creating an object.",
     },
     {
-      question: "What is a Java lambda expression?",
+      question: "What is the final keyword in Java?",
       answer:
-        "A lambda expression in Java provides a clear and concise way to represent a single method interface (functional interface) using an expression. It allows you to write anonymous methods that can be passed as arguments or assigned to variables.",
+        "The final keyword restricts modifications: final variables cannot be reassigned, final methods cannot be overridden, and final classes cannot be extended.",
     },
     {
-      question: "What is the difference between `ArrayList` and `LinkedList` in Java?",
+      question: "What is multithreading in Java?",
       answer:
-        "`ArrayList` uses a dynamic array to store elements, which provides fast random access but slower insertions and deletions. `LinkedList`, on the other hand, uses a doubly linked list, which provides faster insertions and deletions but slower access times.",
+        "Multithreading is the ability of Java to perform multiple tasks concurrently using threads.",
     },
     {
-      question: "What is the `final` keyword in Java?",
+      question: "What is the Java Virtual Machine (JVM)?",
       answer:
-        "The `final` keyword in Java is used to define constants, prevent method overriding, and inheritance. It can be applied to variables (to make them constants), methods (to prevent overriding), and classes (to prevent inheritance).",
+        "JVM is an abstract machine that executes Java bytecode, enabling platform independence.",
     },
-    // ... Add more questions and answers  
-  ]);  
+    {
+      question: "What is the difference between == and equals() in Java?",
+      answer:
+        "== compares object references, while equals() compares the content of objects.",
+    },
+    {
+      question: "What is garbage collection in Java?",
+      answer:
+        "Garbage collection automatically reclaims memory by removing objects that are no longer referenced.",
+    },
+    {
+      question: "What is the Singleton design pattern?",
+      answer:
+        "The Singleton pattern ensures a class has only one instance and provides a global access point.",
+    },
+    {
+      question: "What is method overloading?",
+      answer:
+        "Method overloading allows multiple methods with the same name but different parameters in a class.",
+    },
+    {
+      question: "What is method overriding?",
+      answer:
+        "Method overriding provides a specific implementation of a method in a subclass that already exists in the superclass.",
+    },
+    {
+      question: "What is the use of the this keyword in Java?",
+      answer:
+        "this refers to the current instance of a class and is used to differentiate instance variables from parameters.",
+    },
+    {
+      question: "What is the difference between an abstract class and an interface?",
+      answer:
+        "An abstract class can have both abstract and concrete methods; an interface can only have abstract methods (prior to Java 8).",
+    },
+    {
+      question: "What are Java annotations?",
+      answer:
+        "Annotations provide metadata about the program and can be used for various purposes, including documentation and compile-time checking.",
+    },
+    {
+      question: "What is a Java try-with-resources statement?",
+      answer:
+        "This statement ensures that resources (like files) are closed automatically after use, improving resource management.",
+    },
+    {
+      question: "What are lambda expressions in Java?",
+      answer:
+        "Lambda expressions provide a concise way to represent functional interfaces (single abstract method interfaces) using an expression instead of an implementation.",
+    },
+    {
+      question: "What is the Stream API in Java?",
+      answer:
+        "The Stream API allows processing sequences of elements (like collections) in a functional style, enabling operations like filtering, mapping, and reducing.",
+    },
+    {
+      question: "What is the difference between ArrayList and Vector?",
+      answer:
+        "ArrayList is not synchronized and is generally faster; Vector is synchronized and thread-safe but slower due to overhead.",
+    },
+    {
+      question: "What is the volatile keyword in Java?",
+      answer:
+        "The volatile keyword indicates that a variable's value may be changed by different threads, ensuring visibility of changes to the variable across threads.",
+    },
+  ]);   
 
   return (
     <main className="container mx-auto mt-8 px-4">
@@ -124,7 +198,7 @@ const JavaRR = () => {
             </h2>
           </div>
           <p className="text-gray-700 mt-6 mb-4 leading-relaxed">
-            Are you preparing for a Java interview? Here are 15
+            Are you preparing for a Java interview? Here are 30
             essential questions to help you succeed in your interview and
             demonstrate your mastery of Scrum.
           </p>

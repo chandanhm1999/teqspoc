@@ -1,6 +1,7 @@
 import React from 'react'
 import MainSec from "@/components/home/contact/mainSec/MainSec";
-import Scrummasters from '@/components/syllabus/scrummasters/scrummasters';
+import Scrummasters from '@/components/syllabus/scrummasters/Scrummasters';
+import ContactUsSection from '@/components/sysContact/ContactUsSection';
 
 const Scrummastersyllabus = () => {
   return (
@@ -11,6 +12,7 @@ const Scrummastersyllabus = () => {
         title="Scrummaster-Syllabus"
       />
       <Scrummasters />
+      <ContactUsSection />
     </>
   )
 }

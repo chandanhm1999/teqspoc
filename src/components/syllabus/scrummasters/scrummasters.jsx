@@ -2,63 +2,124 @@
 
 import { useState } from "react";
 import Image from "next/image";
-import { FaBook, FaCalendarAlt } from "react-icons/fa";
 import TextLight from "./TextLight";
 
 const Scrummasters = () => {
   const [syllabus] = useState([
     {
-      title: "Introduction to Scrum Framework",
-      duration: "1 week",
-      content: "Overview of Scrum, roles, artifacts, and ceremonies.",
+      section: "Module 1: Introduction to Agile and Scrum",
+      topics: [
+        "Overview of Agile Methodology",
+        "History and evolution of Agile",
+        "Agile principles and values (Agile Manifesto)",
+        "Benefits of Agile vs. traditional project management",
+        "Introduction to Scrum",
+        "What is Scrum?",
+        "Key roles: Scrum Master, Product Owner, Development Team",
+        "Scrum framework overview",
+      ],
     },
     {
-      title: "Scrum Roles and Responsibilities",
-      duration: "2 weeks",
-      content: "Deep dive into Scrum Master, Product Owner, and Development Team roles.",
+      section: "Module 2: Scrum Roles and Responsibilities",
+      topics: [
+        "Scrum Master Role",
+        "Responsibilities and duties",
+        "Servant leadership and coaching",
+        "Facilitating Scrum events",
+        "Product Owner Role",
+        "Responsibilities and duties",
+        "Managing the product backlog",
+        "Prioritization techniques",
+        "Development Team Role",
+        "Characteristics of a self-organizing team",
+        "Cross-functional skills and collaboration",
+        "Team dynamics and collaboration tools",
+      ],
     },
     {
-      title: "Agile Principles & Practices",
-      duration: "1 week",
-      content: "Agile manifesto, principles, and how Scrum fits within Agile.",
+      section: "Module 3: Scrum Events",
+      topics: [
+        "Sprint Planning",
+        "Purpose and process",
+        "Defining the sprint goal and scope",
+        "Daily Scrum (Stand-up)",
+        "Purpose and format",
+        "Techniques for effective stand-ups",
+        "Sprint Review",
+        "Purpose and process",
+        "Demonstrating work completed and gathering feedback",
+        "Sprint Retrospective",
+        "Purpose and process",
+        "Continuous improvement and action items",
+      ],
     },
     {
-      title: "Sprint Planning and Estimation",
-      duration: "1 week",
-      content: "How to plan sprints, estimation techniques like story points and velocity.",
+      section: "Module 4: Scrum Artifacts",
+      topics: [
+        "Product Backlog",
+        "Definition and importance",
+        "Backlog refinement techniques",
+        "User stories and acceptance criteria",
+        "Sprint Backlog",
+        "Definition and purpose",
+        "Creating and managing the sprint backlog",
+        "Increment",
+        "Definition and importance of a potentially shippable product increment",
+        "Definition of Done (DoD) and its significance",
+      ],
     },
     {
-      title: "Product Backlog & User Stories",
-      duration: "2 weeks",
-      content: "Writing user stories, managing product backlogs, and prioritization techniques.",
+      section: "Module 5: Agile Metrics and Reporting",
+      topics: [
+        "Common Agile Metrics",
+        "Velocity, burn-down and burn-up charts",
+        "Cumulative flow diagrams",
+        "Lead time and cycle time",
+        "Using Metrics for Improvement",
+        "Interpreting metrics to drive decisions",
+        "Measuring team performance and productivity",
+      ],
     },
     {
-      title: "Sprint Reviews & Retrospectives",
-      duration: "1 week",
-      content: "Conducting effective sprint reviews and retrospectives for continuous improvement.",
+      section: "Module 6: Facilitating Scrum and Agile Practices",
+      topics: [
+        "Facilitation Skills",
+        "Active listening, questioning, and conflict resolution",
+        "Techniques for effective facilitation",
+        "Coaching the Team",
+        "Supporting team members and promoting collaboration",
+        "Building a culture of trust and accountability",
+        "Scaling Scrum",
+        "Introduction to frameworks like SAFe, LeSS, and Nexus",
+        "Challenges and best practices in scaling Scrum",
+      ],
     },
     {
-      title: "Scrum Metrics and Reporting",
-      duration: "1 week",
-      content: "Measuring team performance with velocity, burndown charts, and other metrics.",
-    },
-    {
-      title: "Handling Stakeholders and Changes",
-      duration: "2 weeks",
-      content: "Managing stakeholders and incorporating changes during sprints.",
+      section: "Module 7: Real-World Scenarios and Case Studies",
+      topics: [
+        "Common Challenges in Scrum",
+        "Addressing team dysfunctions and impediments",
+        "Handling stakeholder expectations",
+        "Case Studies",
+        "Analyzing real-world Scrum implementations",
+        "Lessons learned and best practices",
+        "Recommended Tools and Technologies",
+        "Project Management Tools: Jira, Trello, or Asana",
+        "Collaboration Tools: Slack, Microsoft Teams, or Zoom",
+        "Agile Metrics Tools: Burndown charts, velocity tracking tools",
+      ],
     },
   ]);
 
   return (
     <main className="container mx-auto mt-8 px-4">
       <div className="flex flex-wrap justify-between">
-        
-        {/* Right column for syllabus details (Now on the left side) */}
+        {/* Right column for syllabus details */}
         <div className="w-full md:w-8/12 mb-8">
           <div className="relative">
             <Image
               src="/assets/resourse/interview/scrum.jpg"
-              alt="Featured Image"
+              alt="Scrum Master Course Image"
               width={1200}
               height={600}
               className="w-full h-64 object-cover rounded-lg shadow-md"
@@ -69,37 +130,36 @@ const Scrummasters = () => {
             </h2>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
-            {syllabus.map((item, index) => (
-              <div key={index} className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
-                <div className="flex items-center space-x-4 mb-3">
-                  <FaBook className="w-6 h-6 text-blue-500" />
-                  <h4 className="text-xl font-semibold text-gray-800">{item.title}</h4>
-                </div>
-                <div className="flex items-center space-x-2 text-sm text-gray-600 mb-3">
-                  <FaCalendarAlt className="w-4 h-4 text-gray-500" />
-                  <span>{item.duration}</span>
-                </div>
-                <p className="text-gray-700 leading-relaxed">{item.content}</p>
+          <div className="mt-6 ml-4">
+            {syllabus.map((module, index) => (
+              <div key={index} className="mb-6">
+                <h3 className="text-xl font-bold text-gray-600 mb-4">{module.section}</h3>
+                <ul className="list-disc list-inside space-y-2">
+                  {module.topics.map((topic, idx) => (
+                    <li key={idx} className="text-gray-700 text-[16px]">
+                      {topic}
+                    </li>
+                  ))}
+                </ul>
               </div>
             ))}
           </div>
         </div>
 
-        {/* Left column for syllabus list (Now on the right side) */}
+        {/* Left column for syllabus list */}
         <div className="w-full md:w-3/12 mb-8">
           <h3 className="text-2xl font-extrabold mb-4 text-center">
-            Scrum Master Syllabus
-            <TextLight text={"Courses"} />
+            Scrum Master
+            <TextLight text={"Syllabus"} />
           </h3>
           <ul className="list-none space-y-4">
-            {syllabus.map((item, index) => (
+            {syllabus.map((module, index) => (
               <li
                 key={index}
                 className="flex items-start space-x-3 hover:bg-blue-100 p-3 rounded-lg transition duration-200 ease-in-out cursor-pointer"
               >
                 <p className="text-gray-800 font-medium">
-                  {index + 1}. {item.title}
+                  {index + 1}. {module.section}
                 </p>
               </li>
             ))}

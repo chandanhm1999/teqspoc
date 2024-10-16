@@ -116,10 +116,10 @@ const Javas = () => {
           <div className="mt-6">
             {syllabus.map((module, index) => (
               <div key={index} className="mb-6">
-                <h3 className="text-2xl font-bold text-gray-600 mb-4">{module.section}</h3>
+                <h3 className="text-xl font-bold text-gray-600 mb-4">{module.section}</h3>
                 <ul className="list-disc list-inside space-y-2">
                   {module.topics.map((topic, idx) => (
-                    <li key={idx} className="text-gray-700 text-lg">
+                    <li key={idx} className="text-gray-700 text-[16px]">
                       {topic}
                     </li>
                   ))}
