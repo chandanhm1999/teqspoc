@@ -1,6 +1,7 @@
 import React from "react";
 import MainSec from "@/components/home/contact/mainSec/MainSec";
 import Pythons from "@/components/syllabus/pythons/Pythons";
+import ContactUsSection from "@/components/sysContact/ContactUsSection";
 
 const Pythonsyllabus = () => {
   return (
@@ -11,6 +12,7 @@ const Pythonsyllabus = () => {
         title="Python-Syllabus"
       />
       <Pythons />
+      <ContactUsSection />
     </>
   );
 };

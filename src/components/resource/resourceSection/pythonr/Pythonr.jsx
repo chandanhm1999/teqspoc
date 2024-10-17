@@ -5,7 +5,7 @@ import Image from "next/image";
 import { FaQuestionCircle, FaLightbulb } from "react-icons/fa";
 import TextLight from "./TextLight";
 
-const Amilr = () => {
+const Pythonr = () => {
   const [faqs] = useState([
     {
       question: "What is Python?",
@@ -166,7 +166,7 @@ const Amilr = () => {
         <div className="w-full md:w-8/12 mb-8">
           <div className="relative">
             <Image
-              src="/assets/resourse/interview/ml.jpg"
+              src="/assets/resourse/interview/Pythonr.jpg"
               alt="Featured Image"
               width={1200}
               height={600}
@@ -174,18 +174,18 @@ const Amilr = () => {
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-50 rounded-lg"></div>
             <h2 className="absolute bottom-4 left-4 text-white text-3xl font-extrabold z-10">
-            AI/ML Interview Questions
+            Python Interview Questions
             </h2>
           </div>
           <p className="text-gray-700 mt-6 mb-4 leading-relaxed">
-            Are you preparing for a AI/ML interview? Here are 19
+            Are you preparing for a Python interview? Here are 19
             essential questions to help you succeed in your interview and
-            demonstrate your mastery of AI/ML.
+            demonstrate your mastery of Python.
           </p>
 
           <div className="bg-white p-6 rounded-lg shadow-md">
             <h3 className="text-2xl font-bold text-gray-800 mb-4">
-              Top AI/ML Interview Questions & Answers
+              Top Python Interview Questions & Answers
             </h3>
             <div className="divide-y divide-gray-300">
               {faqs.map((faq, index) => (
@@ -211,4 +211,4 @@ const Amilr = () => {
   );
 };
 
-export default Amilr;
+export default Pythonr;

@@ -4,7 +4,7 @@ import { useState } from "react";
 import Image from "next/image";
 import TextLight from "./TextLight";
 
-const Scrummasters = () => {
+const ScrummastersS = () => {
   const [syllabus] = useState([
     {
       section: "Module 1: Introduction to Agile and Scrum",
@@ -170,4 +170,4 @@ const Scrummasters = () => {
   );
 };
 
-export default Scrummasters;
+export default ScrummastersS;

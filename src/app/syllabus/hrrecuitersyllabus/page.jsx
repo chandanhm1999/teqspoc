@@ -1,6 +1,7 @@
 import React from "react";
 import MainSec from "@/components/home/contact/mainSec/MainSec";
 import Hr from "../../../components/syllabus/hrrecuiter/Hr";
+import ContactUsSection from "@/components/sysContact/ContactUsSection";
 
 const Hrrecuitersyllabus = () => {
   return (
@@ -11,6 +12,7 @@ const Hrrecuitersyllabus = () => {
         title="HR Recuiter-Syllabus"
       />
       <Hr />
+      <ContactUsSection />
     </>
   );
 };

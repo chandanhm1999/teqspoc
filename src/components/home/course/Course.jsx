@@ -41,7 +41,7 @@ const postData = [
     rating: 4.7,
   },
   {
-    heading: "python",
+    heading: "pythonsmain",
     mainheading: "Python",
     imgSrc: "/assets/courses/python.svg",
     name: "Industry-Experts",
