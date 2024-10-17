@@ -23,7 +23,7 @@ const SectionTwo = () => {
               We are qualified and experienced in providing expert guidance and
               endless support
             </h2>
-            <p className="text-gray-700 text-xs md:text-sm lg:text-sm xl:text-lg">
+            <p className="text-black/60 text-xs md:text-sm lg:text-sm xl:text-lg">
               We understand that in today&apos;s world, it&apos;s important to have
               reliable resources. That&apos;s why we focus on delivering content that
               is not only accurate but also easy to understand and helpful.

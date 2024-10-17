@@ -4,6 +4,7 @@ import ContactForm from "@/components/home/contact/contactForm/ContactForm";
 import Details from "@/components/home/contact/contactForm/Details";
 import MainSec from "@/components/home/contact/mainSec/MainSec";
 import Course from "@/components/home/course/Course";
+import ContactUsSection from "@/components/sysContact/ContactUsSection";
 import React from "react";
 
 const Courses = () => {
@@ -16,6 +17,7 @@ const Courses = () => {
       />
       <Coursess />
       <Batchess />
+      <ContactUsSection />
     </>
   );
 };

@@ -56,7 +56,7 @@ const Abc = () => {
     return (
         <div className='text-start my-4'>
             <div className="mx-auto px-2 sm:px-6 lg:px-4">
-                <h2 className="text-xl font-bold text-[#1F2937] lg:text-xl dark:text-white">Trusted by companies of all sizes</h2>
+                <h2 className="text-xl font-bold text-black/80 lg:text-xl">Trusted by companies of all sizes</h2>
                 <div className="py-14">
                     <Carousel
                         responsive={responsive}

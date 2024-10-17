@@ -149,7 +149,7 @@ const Coursess = () => {
   return (
     <div id="courses" className="py-8">
       <div className="mx-auto px-4 lg:px-8">
-        <h3 className="text-xl md:text-2xl lg:text-3xl font-bold mb-4">
+        <h3 className="text-xl text-black/80 md:text-2xl lg:text-3xl font-bold mb-4">
           Popular courses.
         </h3>
 

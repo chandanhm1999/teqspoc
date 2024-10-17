@@ -182,7 +182,7 @@ const Course = () => {
     >
       <div className="container mx-auto px-5 sm:px-5 md:px-2 lg:px-2 xl:px-2">
         <div className="flex justify-between items-center mb-2 sm:mb-2 md:mb-4 lg:mb-4 xl:mb-6">
-          <h3 className="text-xl md:text-2xl lg:text-3xl xl:text-3xl font-bold leading-tight text-[#1F2937]">
+          <h3 className="text-xl md:text-2xl lg:text-3xl xl:text-3xl font-bold leading-tight text-black/80">
             Popular
             <TextLight text={"Courses"} />
           </h3>
