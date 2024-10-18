@@ -14,7 +14,6 @@ import { FaShare } from "react-icons/fa";
 import { FaShareAlt } from "react-icons/fa";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
-//data
 const postData = [
   {
     heading: "scrummaster",
