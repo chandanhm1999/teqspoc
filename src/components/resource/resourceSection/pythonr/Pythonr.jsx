@@ -2,25 +2,25 @@
 
 import { useState } from "react";
 import Image from "next/image";
-import { FaQuestionCircle, FaLightbulb } from "react-icons/fa";
+import { FaLightbulb } from "react-icons/fa";
 import TextLight from "./TextLight";
 
 const Pythonr = () => {
   const [faqs] = useState([
     {
       question: "What is Python?",
-      answer: 
+      answer:
         "Python is a high-level, interpreted programming language known for its simplicity and readability. It supports multiple programming paradigms including object-oriented, functional, and procedural programming.",
     },
     {
       question: "What are Python’s key features?",
       answer:
-        "• Simple and easy to learn\n• Interpreted language\n• Object-oriented\n• Dynamically typed\n• Extensive libraries and frameworks\n• Cross-platform compatibility",
+        "• Simple and easy to learn\n• Interpreted language\n• Object-oriented\n• Dynamically typed\n• Extensive libraries and frameworks\n• Cross-platform",
     },
     {
       question: "How is memory managed in Python?",
       answer:
-        "Memory management in Python is handled by the Python memory manager.\n\n• Private Heap: Stores all objects and data structures.\n• Garbage Collection: Manages and deallocates unused memory.\n• Reference Counting: Tracks the number of references to objects.",
+        "Memory management in Python is handled by the Python memory manager. It includes:\n• Private Heap: Stores all objects and data structures.\n• Garbage Collection: Automatically manages and deallocates unused memory.\n• Reference Counting: Tracks the number of references to objects.",
     },
     {
       question: "What are Python’s built-in data types?",
@@ -34,11 +34,12 @@ const Pythonr = () => {
     },
     {
       question: "What is PEP 8?",
-      answer: 
+      answer:
         "PEP 8 is the style guide for writing Python code. It ensures readability and consistency.",
     },
     {
-      question: "What is the difference between append() and extend() in Python?",
+      question:
+        "What is the difference between append() and extend() in Python?",
       answer:
         "• append(): Adds an element to the end of the list as a single item.\n• extend(): Adds elements of an iterable to the list.",
     },
@@ -50,7 +51,7 @@ const Pythonr = () => {
     {
       question: "What is a lambda function?",
       answer:
-        "A lambda function is an anonymous function expressed as:\n\nlambda arguments: expression",
+        "A lambda function is an anonymous function expressed as lambda arguments: expression.",
     },
     {
       question: "What is the difference between shallow copy and deep copy?",
@@ -60,7 +61,7 @@ const Pythonr = () => {
     {
       question: "How is exception handling done in Python?",
       answer:
-        "Using try-except blocks:\n\ntry:\n    # risky code\nexcept ExceptionType:\n    # handling code",
+        "Using try-except blocks:\ntry:\n    # risky code\nexcept ExceptionType:\n    # handling code",
     },
     {
       question: "What is the difference between is and ==?",
@@ -70,12 +71,12 @@ const Pythonr = () => {
     {
       question: "What are Python decorators?",
       answer:
-        "Decorators are functions that modify the behavior of another function or method. They extend functionality without modifying the code.",
+        "Decorators are functions that modify the behavior of another function or method. They are used to extend functionality without modifying the code itself.",
     },
     {
       question: "What is a generator in Python?",
       answer:
-        "A generator is a function that returns an iterator object, using the yield keyword to produce values one at a time.",
+        "A generator is a function that returns an iterator object that can be iterated upon one value at a time using the yield keyword.",
     },
     {
       question: "What is a module in Python?",
@@ -85,12 +86,17 @@ const Pythonr = () => {
     {
       question: "How do you create a virtual environment in Python?",
       answer:
-        "To create a virtual environment:\n\npython -m venv myenv\n\nActivate it:\n• Windows: myenv\\Scripts\\activate\n• Mac/Linux: source myenv/bin/activate",
+        "To create a virtual environment:\npython -m venv myenv\nActivate it:\n• Windows: myenv\\Scripts\\activate\n• Mac/Linux: source myenv/bin/activate",
     },
     {
       question: "What is GIL (Global Interpreter Lock)?",
       answer:
-        "GIL is a mutex in CPython that allows only one thread to execute Python bytecode at a time, limiting multi-threading performance in CPU-bound tasks.",
+        "GIL is a mutex in CPython that allows only one thread to execute Python bytecode at a time, which limits multi-threading performance in CPU-bound tasks.",
+    },
+    {
+      question: "What is a Python class and how do you create one?",
+      answer:
+        "class MyClass:\n    def __init__(self, name):\n        self.name = name",
     },
     {
       question: "What is the difference between __str__() and __repr__()?",
@@ -100,7 +106,7 @@ const Pythonr = () => {
     {
       question: "What is list comprehension in Python?",
       answer:
-        "A concise way to create lists:\n\nsquares = [x**2 for x in range(10)]",
+        "A concise way to create lists:\nsquares = [x**2 for x in range(10)]",
     },
     {
       question: "What is the difference between a function and a method?",
@@ -108,14 +114,40 @@ const Pythonr = () => {
         "• Function: A standalone block of code.\n• Method: A function associated with an object (e.g., a method in a class).",
     },
     {
-      question: "How do you handle files in Python?",
+      question:
+        "What is the difference between remove(), pop(), and del in lists?",
       answer:
-        "Files are opened using the open() function:\n\nwith open('file.txt', 'r') as file:\n    data = file.read()",
+        "• remove(): Removes the first matching element by value.\n• pop(): Removes an element by index and returns it.\n• del: Deletes an element by index or slices of elements.",
+    },
+    {
+      question: "How can you handle files in Python?",
+      answer:
+        "Files are opened using the open() function:\nwith open('file.txt', 'r') as file:\n    data = file.read()\nThe with statement ensures the file is closed automatically.",
     },
     {
       question: "What is monkey patching in Python?",
       answer:
-        "Monkey patching allows you to dynamically change a class or module at runtime, often used for testing purposes.",
+        "Monkey patching allows you to dynamically change a class or module at runtime. It is often used for testing purposes.",
+    },
+    {
+      question: "What are Python metaclasses?",
+      answer:
+        "A metaclass defines the behavior of classes and is the class of a class. Metaclasses allow customization of class creation.",
+    },
+    {
+      question: "What is the pass statement?",
+      answer:
+        "The pass statement is used as a placeholder for future code. It does nothing when executed but allows you to create empty code blocks.",
+    },
+    {
+      question: "How can you manage packages in Python?",
+      answer:
+        "Python packages are managed using pip (Python Package Installer):\npip install package_name",
+    },
+    {
+      question: "What is the difference between Python 2 and Python 3?",
+      answer:
+        "• Python 3 has better Unicode support.\n• Division of integers behaves differently (/ in Python 3 is float division, and // is integer division).\n• Python 3 supports print() as a function, not a statement.",
     },
     {
       question: "What is the use of super() in Python?",
@@ -123,21 +155,11 @@ const Pythonr = () => {
         "super() is used to call the parent class method in a child class, ensuring proper method resolution order (MRO) in multiple inheritance.",
     },
     {
-      question: "How do you manage packages in Python?",
-      answer:
-        "Python packages are managed using pip:\n\npip install package_name",
-    },
-    {
-      question: "What is the difference between Python 2 and Python 3?",
-      answer:
-        "• Python 3 has better Unicode support.\n• Integer division uses / for float division and // for integer division.\n• print() is a function in Python 3.",
-    },
-    {
       question: "How do you handle multiple exceptions in Python?",
       answer:
-        "Using try-except blocks for multiple exceptions:\n\ntry:\n    # code\nexcept (TypeError, ValueError):\n    # handling code",
+        "Multiple exceptions can be handled using:\ntry:\n    # code\nexcept (TypeError, ValueError):\n    # handling code",
     },
-  ]);  
+  ]);
 
   return (
     <main className="container mx-auto mt-8 px-4">
@@ -174,13 +196,13 @@ const Pythonr = () => {
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-50 rounded-lg"></div>
             <h2 className="absolute bottom-4 left-4 text-white text-3xl font-extrabold z-10">
-            Python Interview Questions
+              Python Interview Questions
             </h2>
           </div>
           <p className="text-gray-700 mt-6 mb-4 leading-relaxed">
-            Are you preparing for a Python interview? Here are 19
-            essential questions to help you succeed in your interview and
-            demonstrate your mastery of Python.
+            Are you preparing for a Python interview? Here are 30 essential
+            questions to help you succeed in your interview and demonstrate your
+            mastery of Python.
           </p>
 
           <div className="bg-white p-6 rounded-lg shadow-md">

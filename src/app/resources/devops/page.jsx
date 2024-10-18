@@ -1,6 +1,7 @@
-import Demo from "@/components/home/demo/Demo";
+
 import MainP from "@/components/mainCont/MainP";
 import Devopsres from "@/components/resource/resourceSection/devopsresponce/Devopsres";
+import ContactUsSection from "@/components/sysContact/ContactUsSection";
 
 import React from "react";
 
@@ -13,7 +14,7 @@ const Devops = () => {
         title="Devops Interview Questions & Answers"
       />
       <Devopsres />
-      <Demo />
+      <ContactUsSection />
     </>
   );
 };

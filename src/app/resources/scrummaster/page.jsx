@@ -1,6 +1,6 @@
-import Demo from "@/components/home/demo/Demo";
 import MainP from "@/components/mainCont/MainP";
 import Scrummasterresources from "@/components/resource/resourceSection/scrum/Scrummasterresources";
+import ContactUsSection from "@/components/sysContact/ContactUsSection";
 import React from "react";
 
 const Scrummaster = () => {
@@ -12,7 +12,7 @@ const Scrummaster = () => {
         title="Scrummaster Interview Questions & Answers"
       />
       <Scrummasterresources />
-      <Demo />
+      <ContactUsSection />
     </>
   );
 };

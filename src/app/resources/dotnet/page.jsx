@@ -1,6 +1,6 @@
-import Demo from "@/components/home/demo/Demo";
 import MainP from "@/components/mainCont/MainP";
 import DotnetR from "@/components/resource/resourceSection/dotnet/DotnetR";
+import ContactUsSection from "@/components/sysContact/ContactUsSection";
 import React from "react";
 
 const Dotnet = () => {
@@ -12,7 +12,7 @@ const Dotnet = () => {
         title="DotNet Interview Questions & Answers"
       />
       <DotnetR />
-      <Demo />
+      <ContactUsSection />
     </>
   );
 };

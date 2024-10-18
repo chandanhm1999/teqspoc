@@ -13,174 +13,69 @@ const Scrummasterresources = () => {
         "Scrum is an Agile framework for managing complex projects through iterative progress, promoting collaboration, accountability, and continuous improvement.",
     },
     {
-      question: "What are the roles in Scrum?",
+      question: "What Are the Benefits of Implementing Scrum?",
       answer:
-        "The three key roles are the Scrum Master (facilitates the process), the Product Owner (manages the product backlog), and the Development Team (delivers the product increment).",
+        "Increase productivity, Enhance ability to manage changing priorities, Improve business alignment, Reduce project risk and cost, Enhance software quality, Enhanced project visibility and team morale.",
     },
     {
-      question: "What is a Sprint?",
+      question: "What is Sprint 0 and Spike?",
       answer:
-        "A Sprint is a time-boxed iteration (typically 1-4 weeks) during which a specific set of work is completed and delivered.",
+        "Sprint Zero: The purpose of Sprint Zero is to create the project's basic structure and plumbing so that future sprints can add value efficiently. Sprint Zero tasks include: Creating the project's skeleton, including research spikes, Acquiring servers or hardware resources, Assembling the team, Developing the initial backlog items, Designing the application architecture. \n\nSpike: A Spike is a research method that helps the Scrum Team maintain control over the delivery and remain committed to the sprint goal. Synonyms for a Spike include Proof of Concept (PoC) and Research Spike.",
     },
     {
-      question: "What is the Product Backlog?",
+      question: "What is Empirical Process Control in Scrum?",
       answer:
-        "The Product Backlog is an ordered list of all desired work on the project, maintained by the Product Owner, and continuously refined.",
+        "Empirical process control is a core principle of Scrum that helps teams improve their product development and management practices. It's a way of managing work based on experience and observation, rather than detailed planning and defined processes. Empirical Process works with the help of Transparency, Inspection, and Adaptation.",
     },
     {
-      question: "What is the Definition of Done (DoD)?",
+      question: "What are the key skills of a Scrum Master?",
       answer:
-        "The Definition of Done is a shared understanding among the team of what it means for work to be complete, ensuring quality and consistency.",
+        "Some key skills for a Scrum Master include: Conflict resolution, Coaching, Project management, Servant leadership, Adaptability, Problem solving, Organizational skills.",
     },
     {
-      question: "What are the key Scrum events?",
+      question: "What is a Burnup and Burndown Chart?",
       answer:
-        "The key events are Sprint Planning, Daily Scrum, Sprint Review, and Sprint Retrospective.",
+        "Burnup and burndown charts are both visual tools used in project management to track progress and ensure deadlines are met. \n\nBurnup chart: Tracks the amount of work that has been completed and the total project scope. Burnup charts are useful for identifying scope creep and planning for changes in scope. \n\nBurndown chart: Tracks the amount of work remaining for a project. Burndown charts are useful for communicating the total effort against the amount of work within each iteration.",
     },
     {
-      question: "How do you handle conflicts in a Scrum team?",
+      question: "How is Estimation Done in a Scrum Project?",
       answer:
-        "I promote open communication, facilitate discussions, and encourage a collaborative approach to resolving conflicts.",
+        "Estimation in a Scrum project can be done using: \n\nPlanning Poker, T-shirt sizes, Large/Uncertain/Small method, Dot Voting.",
     },
     {
-      question: "What is the difference between a Scrum Master and a Project Manager?",
+      question: "What are some risks in Scrum? How are they handled?",
       answer:
-        "A Scrum Master focuses on facilitating the Scrum process and empowering the team, while a Project Manager often has a more directive role in traditional project management.",
+        "Some risks in Scrum include technical risks, budget risks, scope creep, communication risks, and business risks. These risks are managed through sprint planning, daily scrums, sprint reviews, retrospectives, and iterative risk management.",
     },
     {
-      question: "What techniques do you use for backlog refinement?",
+      question: "What are the three pillars of Scrum?",
       answer:
-        "Techniques include user story mapping, estimation using Planning Poker, and conducting regular refinement meetings.",
+        "The three pillars of Scrum are Transparency, Inspection, and Adaptation. Transparency ensures clear communication, Inspection involves regularly assessing progress and outcomes, and Adaptation ensures ongoing development.",
     },
     {
-      question: "How do you measure the success of a Scrum team?",
+      question: "How can you assure that the user stories meet the requirements?",
       answer:
-        "Success can be measured using metrics like velocity, sprint burndown charts, and quality indicators (e.g., defect rates).",
+        "To ensure user stories meet requirements, you can: Define clear acceptance criteria, Collaborate with stakeholders, Refine user stories, Apply the INVEST criteria, Use user story mapping.",
     },
     {
-      question: "What is Agile?",
+      question: "What are the five steps of Risk Management?",
       answer:
-        "Agile is a project management methodology emphasizing flexibility, collaboration, and iterative progress, aimed at delivering high-quality products.",
+        "The five steps of risk management are: Risk identification, Risk analysis, Risk in order of severity, Solving the risk, Risk review.",
     },
     {
-      question: "How do you ensure the team follows Agile principles?",
+      question: "When should you use Waterfall over Scrum?",
       answer:
-        "I promote Agile values through training, fostering a culture of transparency, and encouraging regular reflection and adaptation.",
+        "Waterfall may be a good choice for projects with well-defined requirements and minimal changes, while Scrum is better for projects with unknowns and risks. Waterfall works well for regulated industries and larger teams.",
     },
     {
-      question: "How do you facilitate a Daily Scrum?",
+      question: "What type of metrics or reports have you used?",
       answer:
-        "I ensure the meeting stays focused, encourages each team member to share progress and impediments, and keeps it time-boxed (usually 15 minutes).",
+        "Scrum Masters use various metrics and reports including Sprint Burndown, Velocity, Defect Trend Charts, Sprint Review Reports, and Escaped Defects.",
     },
     {
-      question: "What is a Sprint Review?",
+      question: "How many Scrum teams have you managed at one time?",
       answer:
-        "A Sprint Review is a meeting at the end of the sprint where the team demonstrates the work completed to stakeholders and gathers feedback.",
-    },
-    {
-      question: "What is a Sprint Retrospective?",
-      answer:
-        "A Sprint Retrospective is a meeting where the team reflects on the sprint, discussing what went well, what didn’t, and how to improve in the next sprint.",
-    },
-    {
-      question: "How do you deal with a non-communicative team member?",
-      answer:
-        "I would address the issue privately, seek to understand their concerns, and encourage participation in a supportive way.",
-    },
-    {
-      question: "What is the role of a Scrum Master during a Sprint?",
-      answer:
-        "The Scrum Master facilitates Scrum events, removes impediments, coaches the team, and ensures adherence to Scrum practices.",
-    },
-    {
-      question: "What is Agile estimation?",
-      answer:
-        "Agile estimation involves predicting the effort required to complete backlog items, often using story points or ideal hours.",
-    },
-    {
-      question: "How do you handle changing requirements?",
-      answer:
-        "Scrum is designed to embrace change. I would facilitate discussions with the Product Owner to prioritize and integrate changes into the backlog.",
-    },
-    {
-      question: "What tools do you use for Scrum project management?",
-      answer:
-        "Common tools include Jira, Trello, and Confluence for tracking tasks and managing documentation.",
-    },
-    {
-      question: "What is a user story?",
-      answer:
-        "A user story is a brief description of a feature from the perspective of an end user, focusing on the value delivered.",
-    },
-    {
-      question: "What is a burndown chart?",
-      answer:
-        "A burndown chart is a visual representation of work completed versus remaining work in a sprint, helping track progress.",
-    },
-    {
-      question: "How do you handle a Product Owner who is unavailable?",
-      answer:
-        "I encourage collaboration with other stakeholders for clarifications and document questions for the Product Owner to address when they are available.",
-    },
-    {
-      question: "What is the significance of the velocity metric?",
-      answer:
-        "Velocity measures the amount of work completed in a sprint, helping teams estimate future sprints and plan capacity.",
-    },
-    {
-      question: "How do you promote collaboration among team members?",
-      answer:
-        "I encourage open communication, team-building activities, and collaborative tools to foster a supportive team environment.",
-    },
-    {
-      question: "What are the challenges of being a Scrum Master?",
-      answer:
-        "Challenges include managing team dynamics, addressing resistance to change, and balancing stakeholder expectations.",
-    },
-    {
-      question: "How do you ensure effective communication in a remote team?",
-      answer:
-        "I promote the use of communication tools (e.g., Slack, Zoom), schedule regular check-ins, and encourage face-to-face interactions when possible.",
-    },
-    {
-      question: "What do you do if the team does not meet the sprint goal?",
-      answer:
-        "I would facilitate a discussion during the Sprint Retrospective to analyze the reasons, identify lessons learned, and adjust future plans.",
-    },
-    {
-      question: "How do you keep the team motivated?",
-      answer:
-        "I recognize achievements, promote a positive culture, and encourage team members to share their ideas and contribute to decision-making.",
-    },
-    {
-      question: "What is scaling Scrum?",
-      answer:
-        "Scaling Scrum involves adapting the Scrum framework for larger projects or organizations, using frameworks like SAFe, LeSS, or Nexus to coordinate multiple teams.",
-    },
-    {
-      question: "What are Agile ceremonies, and why are they important?",
-      answer:
-        "Agile ceremonies include Sprint Planning, Daily Scrum, Sprint Review, and Sprint Retrospective. They are essential for maintaining team alignment, collaboration, and continuous improvement.",
-    },
-    {
-      question: "How do you handle a team member who consistently misses deadlines?",
-      answer:
-        "I would have a one-on-one conversation to understand their challenges, offer support, and help them develop a plan for improvement.",
-    },
-    {
-      question: "What are the advantages of using Scrum?",
-      answer:
-        "Advantages include increased flexibility, better collaboration, faster delivery of high-quality products, and improved stakeholder engagement.",
-    },
-    {
-      question: "How do you prioritize the backlog?",
-      answer:
-        "The Product Owner prioritizes the backlog based on factors like business value, stakeholder feedback, and team capacity.",
-    },
-    {
-      question: "What is a spike in Agile?",
-      answer:
-        "A spike is a time-boxed research activity to explore a problem or gather information for better estimation and decision-making.",
+        "A skilled Scrum Master can effectively manage two to three Scrum teams at once.",
     },
     {
       question: "What techniques do you use for conflict resolution in Scrum?",
@@ -188,41 +83,182 @@ const Scrummasterresources = () => {
         "Techniques include active listening, mediation, focusing on common goals, and fostering a collaborative environment.",
     },
     {
-      question: "What is the role of a Scrum Master in a cross-functional team?",
+      question: "How do you measure the success of a Scrum team?",
       answer:
-        "The Scrum Master facilitates collaboration among team members with diverse skills, ensuring effective communication and a shared understanding of goals.",
+        "Success can be measured using metrics like velocity, sprint burndown charts, and quality indicators (e.g., defect rates).",
     },
     {
-      question: "How do you encourage feedback from stakeholders?",
+      question: "How do you handle a situation where the Product Owner is not actively engaged or available?",
       answer:
-        "I encourage stakeholders to participate in Sprint Reviews and create open channels of communication to gather continuous feedback.",
+        "If the product owner is not engaged, strategies include talking to the product owner, delegating tasks, pairing with an expert, escalating if necessary, and bringing in an end-user.",
+    },
+    {
+      question: "How do you handle scope changes or feature additions during a sprint?",
+      answer:
+        "To handle scope changes during a sprint: Understand the change, assess urgency, re-prioritize, document the change, and use agile ceremonies to adjust.",
+    },
+    {
+      question: "What is Scope creep, and how do you handle it?",
+      answer:
+        "Scope creep refers to uncontrolled changes after the project begins. Handling includes monitoring progress, establishing a baseline scope, and managing all change requests.",
+    },
+    {
+      question: "How do you handle situations where team members resist adopting Scrum practices?",
+      answer:
+        "Strategies include understanding the resistance, educating, coaching, removing obstacles, and ensuring agile ceremonies are productive.",
+    },
+    {
+      question: "How do you handle situations where the team struggles to meet sprint commitments consistently?",
+      answer:
+        "Strategies include setting realistic goals, facilitating retrospectives, learning from mistakes, adjusting sprint backlog, and ensuring accountability.",
+    },
+    {
+      question: "How do you ensure that the team embraces a mindset of continuous delivery and frequent releases?",
+      answer:
+        "Encourage collaboration, automate testing, use infrastructure as code (IaC), implement continuous monitoring, and promote an agile mindset focused on flexibility and responsiveness.",
+    },
+    {
+      question: "How do you handle situations where team members express dissatisfaction or frustration with the Scrum process?",
+      answer:
+        "Encourage open communication, improve transparency, emphasize retrospectives, and foster a positive work environment.",
+    },
+    {
+      question: "How do you handle situations where the team's velocity is consistently lower than expected?",
+      answer:
+        "Avoid obsession with metrics, automate processes, focus on removing impediments, reduce work item size, and pay down technical debt.",
+    },
+    {
+      question: "How do you handle situations where the team faces challenges with cross-functional collaboration?",
+      answer:
+        "Promote communication, set clear goals, celebrate wins, align on shared goals, and provide feedback to build lasting trust.",
+    },
+    {
+      question: "How does a Scrum Master track Sprint progress?",
+      answer: 
+        "A Scrum Master tracks sprint progress by using a sprint burndown chart to monitor the amount of work remaining to be completed each day and with below activities: Daily Scrum meetings, Scrum retrospectives, Sprint planning, Escaped defects, Defect density, Sprint burndown, Team velocity.",
+    },
+    {
+      question: "What is user story mapping?",
+      answer: 
+        "User story mapping represents and arranges user stories that help with understanding system functionalities, system backlog, planning releases, and providing value to customers. They arrange user stories based on their priority on the horizontal axis. On the vertical axis, they are represented based on the increasing levels of sophistication.",
+    },
+    {
+      question: "What is the distinction between MVP and MMP?",
+      answer: 
+        "Minimum Viable Product(MVP) is the prototype of a product with basic features released in the market so that early customers can use and provide critical feedback on the product. Minimum Marketable Product is the functional software that is ready for monetization. It consists of all the minimum essential features. It is ready to be launched in the market. It saves you the time of building the whole product with all functionalities. You can give the customers what they want.",
+    },
+    {
+      question: "Are user stories estimated in hours or days? If not, why?",
+      answer: 
+        "Using hours or days to estimate user stories may sound practical but isn’t so in reality. Here’s why- Few tasks are impossible to estimate. For instance, legacy tasks. If an estimate is given to one team member, but another completes the task, the estimate is a waste. Everything is dependent on the experience of the developer when it comes to completing the task. Teams face an error of judgment and simply go with the best possible scenario.",
+    },
+    {
+      question: "What is the difference between a Scrum Master and a Project Manager?",
+      answer: 
+        "A Scrum Master focuses on facilitating the Scrum process and empowering the team, while a Project Manager often has a more directive role in traditional project management.",
+    },
+    {
+      question: "How do you keep the team motivated?",
+      answer: 
+        "I recognize achievements, promote a positive culture, and encourage team members to share their ideas and contribute to decision-making.",
     },
     {
       question: "What is a potentially shippable product increment?",
-      answer:
+      answer: 
         "It is the output of a Sprint that meets the Definition of Done and is ready for release, providing value to the customer.",
     },
     {
-      question: "What is the Scrum value of courage?",
-      answer:
-        "Courage encourages team members to take risks, voice their opinions, and make difficult decisions, fostering a culture of transparency and growth.",
-    },
-    {
       question: "How do you identify and remove impediments?",
-      answer:
+      answer: 
         "I regularly check in with team members, observe workflows, and facilitate discussions to identify obstacles and work collaboratively to resolve them.",
     },
     {
-      question: "What is the importance of a Scrum board?",
-      answer:
-        "A Scrum board visually represents the status of work items, enhancing transparency and helping the team track progress and manage tasks effectively.",
-    },
-    {
       question: "What techniques do you use for team building?",
-      answer:
+      answer: 
         "Techniques include team outings, workshops, icebreaker activities, and promoting open communication to build trust and collaboration.",
     },
+    {
+      question: "What are some common anti-patterns in Scrum?",
+      answer: 
+        "Common anti-patterns include micromanaging, lack of time-boxing, inadequate communication, and ignoring the retrospective process.",
+    },
+    {
+      question: "How do you help the team manage their workload?",
+      answer: 
+        "I facilitate capacity planning discussions, encourage the use of velocity metrics, and support the team in setting realistic goals.",
+    },
+    {
+      question: "What are the difference between issue and Risks?",
+      answer: 
+        "The main difference between a risk and an issue is that a risk is a potential problem that could happen in the future, while an issue is a problem that is already happening or has happened.",
+    },
+    {
+      question: "What is CI/CD pipeline?",
+      answer: 
+        "A CI/CD pipeline is a series of automated steps that help software development teams streamline the process of creating, testing, and deploying applications.",
+    },
+    {
+      question: "What is DoD?",
+      answer: 
+        "Definition of Done (DoD) is a checklist of items that need to be completed to declare a project or task as ‘Done.’ The checklist includes written codes, comments on coding, unit tests, integration testing, design documents, and release notes.",
+    },
+    {
+      question: "What are the tools used in Scrum projects?",
+      answer: 
+        "The popular tools used in Scrum are: Jira, Microsoft Azure DevOps, Trello, Asana.",
+    },
+    {
+      question: "What are the responsibilities of a Product Owner?",
+      answer: 
+        "Defines the vision for the project. Anticipates the needs of the customer and creates appropriate user stories. Evaluates project progress. Acts as a liaison for all product-related questions.",
+    },
+    {
+      question: "Explain what is scrum of scrum?",
+      answer: 
+        "Scrum of scrum is used to refer the meeting after the daily scrum. The responsible person from each team attends the meeting and discusses their work and answers the questions like: Since the last meeting, what is the progress of the team? What your team is expected to do or should accomplish before the next meeting? What are the obstacles your team faced while completing the task? Were you going to allot any of your work to the following team?",
+    },
+    {
+      question: "Your team is constantly failing to meet commitments, and its performance velocity is volatile. What might the possible reasons be? How would you address this issue?",
+      answer: 
+        "There are many possible factors that might combine to make a team’s velocity volatile. Such factors might include: New team members are being onboarded. Team members are leaving. Levels of seniority. Working in uncharted territory. Working with legacy code, probably undocumented. Unexpected technical debt. Holidays and sick leave. Executive intervention.",
+    },
+    {
+      question: "What does the Scrum Master do to enhance the productivity of the development team?",
+      answer: 
+        "The Scrum Master facilitates their decisions and eliminates hurdles of the development. Take note, the Scrum Master doesn’t manage the development team as they are responsible for their own management. The Scrum Master shields them from extrinsic troubles.",
+    },
+    {
+      question: "Should velocity be increased for optimum productivity?",
+      answer: 
+        "No, velocity should not be increased for optimum productivity. Velocity matters but it does not equal productivity. Ideally, the higher a team's velocity, the more software functionality they are delivering, and the more value is created for customers. Sprint velocity can be used in sprint project management to evaluate and estimate team productivity.",
+    },
+    {
+      question: "How is a Scrum Master, a servant leader?",
+      answer: 
+        "Yes, a Scrum Master is a servant leader because their role is to support and facilitate their team members: Coach: Scrum Masters coach team members on Agile and Scrum best practices. They also help team members grow and improve. Remove impediments: Scrum Masters remove obstacles that are blocking the team's progress. Create a safe environment: Scrum Masters create a psychologically safe environment for the team. This allows team members to feel more autonomous and organize themselves. Lead by example: Scrum Masters lead by example by demonstrating adherence to Scrum values. Respect rights: Scrum Masters respect the rights of developers to self-manage. Provide clarity: Scrum Masters provide clarity to the team about what is expected of them. Ensure ethics: Scrum Masters guide the team to deliver the product at the expected value and standard.",
+    },
+    {
+      question: "Explain the distinction between epics, stories, and tasks?",
+      answer: 
+        "In project management, epics, stories, and tasks are different in the following ways: Epics: The highest-level goal of a project, epics are large items that are broken down into smaller parts. They are often written in a user story format and are used to provide context and direction for planning the development process. Epics are usually developed by the customer or product owner. Stories: Stories are used to plan big projects or to-dos that are part of multiple sprints. They provide further detail on what each team member needs to do. Tasks: Tasks are single to-dos that are assigned to one employee and planned in a specific sprint. They are usually defined by the people doing the work, such as developers or QA. Tasks are often part of a story and cross-linked.",
+    },
+    {
+      question: "What are the three C’s in an User Story?",
+      answer: 
+        "Card: It is a written account of the story that is utilized to plan and estimate. To keep user stories succinct, they are manually written on index 'cards.' Conversation: The Conversation is required to learn more about the Card. The conversation encourages the agile team to work together in small steps to develop a shared understanding of the problem and potential solutions. Confirmation: Confirmation is an acceptance criteria that contains the fundamental requirements and turns them into test criteria so that we can determine when the user story has been properly provided.",
+    },
+    {
+      question: "What are the obstacles to the Agile process?",
+      answer: 
+        "Some of the obstacles that could be faced are: Not having appropriate or sufficient tools and technologies. The lack of active involvement from the customers. Team members that are lacking in skills and capability. The inability to design systems based on unseen requirements. Successfully adopting the Agile culture to the organization.",
+    },
+    {
+      question: "What is refactoring?",
+      answer: 
+        "Refactoring is making changes to code without altering its functionality to increase performance.",
+    },
   ]);
+  
 
   return (
     <main className="container mx-auto mt-8 px-4">
@@ -264,7 +300,7 @@ const Scrummasterresources = () => {
             </h2>
           </div>
           <p className="text-gray-700 mt-6 mb-4 leading-relaxed">
-            Are you preparing for a Scrum Master interview? Here are 43
+            Are you preparing for a Scrum Master interview? Here are 50
             essential questions to help you succeed in your interview and
             demonstrate your mastery of Scrum.
           </p>

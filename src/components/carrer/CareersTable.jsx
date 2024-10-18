@@ -5,12 +5,16 @@ import Link from "next/link";
 
 const CareersTable = () => {
   const courseData = [
-    { course: "Scrummaster", position: "Scrum Master Trainee", experience: "0-1 years" },
-    { course: "DotNet", position: ".NET Developer Trainee", experience: "0-1 years" },
-    { course: "Java", position: "Java Developer Trainee", experience: "0-1 years" },
-    { course: "Software Testing", position: "Software Tester Trainee", experience: "0-1 years" },
-    { course: "Data Engineer", position: "Data Engineer Trainee", experience: "0-1 years" },
-    { course: "DevOps", position: "DevOps Engineer Trainee", experience: "0-1 years" },
+    { course: "Scrummaster", position: "Scrum Master Trainer", experience: "3+ years" },
+    { course: "HR Recuiter", position: "HR Recuiter Trainer", experience: "3+ years" },
+    { course: "Python", position: "Python Trainer - Developer", experience: "3+ years" },
+    { course: "Software Testing", position: "Software Tester - Trainer", experience: "3+ years" },
+    { course: "AI/MI", position: "AI/MI Trainer - Developer", experience: "3+ years" },
+    { course: "DotNet", position: ".NET Trainer - Developer", experience: "3+ years" },
+    { course: "Java", position: "Java Trainer - Developer", experience: "3+ years" },
+    { course: "Software Testing", position: "Software Tester Trainer - Developer", experience: "3+ years" },
+    { course: "Data Engineer", position: "Data Engineer - Trainer", experience: "3+ years" },
+    { course: "DevOps", position: "DevOps Engineer - Trainer", experience: "3+ years" },
   ];
 
   return (

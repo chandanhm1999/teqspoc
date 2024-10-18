@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import Image from "next/image";
-import { FaQuestionCircle, FaLightbulb } from "react-icons/fa";
+import { FaLightbulb } from "react-icons/fa";
 import TextLight from "./TextLight";
 
 const Testingress = () => {
@@ -133,105 +133,6 @@ const Testingress = () => {
         "A testing phase is considered 'done' when all planned test cases are executed, all critical bugs are resolved, and the application meets the defined acceptance criteria and quality standards.",
     },
   ]);
-  
-  const [automationTestingFaqs] = useState([
-    {
-      question: "What is automation testing?",
-      answer:
-        "Automation testing is the use of specialized software tools to execute tests automatically, compare actual outcomes with expected results, and report the findings. It enhances efficiency and accuracy in the testing process, especially for repetitive tasks.",
-    },
-    {
-      question: "What are the advantages of automation testing over manual testing?",
-      answer:
-        "Advantages include:\n - Speed: Tests run faster than manual execution.\n - Consistency: Automation eliminates human error, ensuring consistent execution.\n - Reusability: Test scripts can be reused across versions.\n - Coverage: Automation allows for extensive testing.\n - Continuous Integration: Automated tests can easily be integrated into CI/CD pipelines.",
-    },
-    {
-      question: "What types of testing can be automated?",
-      answer:
-        "Types of testing suitable for automation include:\n - Regression testing\n - Smoke testing\n - Performance testing\n - Load testing\n - Functional testing\n - API testing\n - End-to-end testing.",
-    },
-    {
-      question: "What is Selenium?",
-      answer:
-        "Selenium is an open-source framework for automating web applications. It supports multiple programming languages (Java, Python, C#) and browsers. Testers can write scripts to interact with web applications.",
-    },
-    {
-      question: "What is a test automation framework?",
-      answer:
-        "A test automation framework is a structured approach for test automation. It includes guidelines for test script development, data management, reporting, and tool integration.",
-    },
-    {
-      question: "What are some popular automation testing tools?",
-      answer:
-        "Widely used automation testing tools include Selenium, TestNG, JUnit, Cypress, Appium (for mobile testing), Postman (for API testing), and LoadRunner (for performance testing).",
-    },
-    {
-      question: "What programming languages are commonly used in automation testing?",
-      answer:
-        "Common programming languages include Java, Python, C#, JavaScript, and Ruby.",
-    },
-    {
-      question: "What is the Page Object Model (POM)?",
-      answer:
-        "The Page Object Model is a design pattern where each page of the application is represented by a separate class, encapsulating elements and interactions. This promotes code reusability and maintainability.",
-    },
-    {
-      question: "How do you handle dynamic elements in Selenium?",
-      answer:
-        "Dynamic elements can be handled using:\n - XPath or CSS selectors that use stable attributes.\n - Explicit waits to ensure elements are available.\n - Retry mechanisms for timing issues.",
-    },
-    {
-      question: "What is a test case and a test script?",
-      answer:
-        "A test case defines a scenario, including inputs, steps, and expected results. A test script automates a test case using a programming language.",
-    },
-    {
-      question: "What is the difference between smoke testing and sanity testing?",
-      answer:
-        "Smoke Testing: Verifies critical functionalities work after a new build.\nSanity Testing: Focused on specific functionality or bug fixes after changes.",
-    },
-    {
-      question: "What is regression testing?",
-      answer:
-        "Regression testing ensures that recent changes, such as bug fixes or new features, have not negatively impacted the existing functionality of the application.",
-    },
-    {
-      question: "What are locators in Selenium?",
-      answer:
-        "Locators are methods for identifying elements on a webpage. Examples include:\n - ID\n - Name\n - Class Name\n - Tag Name\n - XPath\n - CSS Selector.",
-    },
-    {
-      question: "What is a test suite in automation testing?",
-      answer:
-        "A test suite is a collection of automated test scripts grouped to run together. They can be organized based on functionality, modules, or test phases.",
-    },
-    {
-      question: "What is Continuous Integration (CI)?",
-      answer:
-        "CI is a development practice where code changes are automatically tested and merged into a shared repository. Automated tests ensure the new changes do not break the application.",
-    },
-    {
-      question: "How do you ensure maintainability in automated test scripts?",
-      answer:
-        "Maintainability is ensured by writing modular, reusable code using design patterns like the Page Object Model, adopting best coding practices, and regularly updating test scripts as the application evolves.",
-    },
-    {
-      question: "What is a headless browser?",
-      answer:
-        "A headless browser runs without a user interface, allowing automated tests to execute faster and more efficiently. Examples include Headless Chrome and PhantomJS.",
-    },
-    {
-      question: "How do you handle browser compatibility in automation testing?",
-      answer:
-        "Browser compatibility can be handled by using cross-browser testing tools like Selenium Grid, BrowserStack, or Sauce Labs, which allow testing on multiple browsers and platforms.",
-    },
-    {
-      question: "What is parallel testing?",
-      answer:
-        "Parallel testing involves running multiple tests concurrently, either on different machines or different browsers, to reduce the overall test execution time.",
-    },
-  ]);
-  
 
   return (
     <main className="container mx-auto mt-8 px-4">
@@ -240,7 +141,7 @@ const Testingress = () => {
         <div className="w-full md:w-3/12 mb-8">
           <h3 className="text-2xl font-extrabold mb-4">
             Questions
-            <TextLight text={"Courses"} />
+            <TextLight text={"Manual Testing"} />
           </h3>
           <ul className="list-none space-y-4">
             {faqs.map((faq, index) => (
@@ -268,18 +169,18 @@ const Testingress = () => {
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-50 rounded-lg"></div>
             <h2 className="absolute bottom-4 left-4 text-white text-3xl font-extrabold z-10">
-              Software Testing Interview Questions
+              Software Testing (Manual/Automation) Interview Questions
             </h2>
           </div>
           <p className="text-gray-700 mt-6 mb-4 leading-relaxed">
             Are you preparing for a Software Testing interview? Here are 25
-            essential questions to help you succeed in your interview and
+            (Manual/Automation) essential questions to help you succeed in your interview and
             demonstrate your mastery of Scrum.
           </p>
 
           <div className="bg-white p-6 rounded-lg shadow-md">
             <h3 className="text-2xl font-bold text-gray-800 mb-4">
-              Top Software Testing Interview Questions & Answers
+              Top Manual Testing Interview Questions & Answers
             </h3>
             <div className="divide-y divide-gray-300">
               {faqs.map((faq, index) => (

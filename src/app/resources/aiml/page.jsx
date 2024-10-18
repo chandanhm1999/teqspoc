@@ -1,8 +1,7 @@
 import React from "react";
 import MainP from "@/components/mainCont/MainP";
-import Demo from "@/components/home/demo/Demo";
-import Pythons from "@/components/syllabus/pythons/Pythons";
 import Amilr from "@/components/resource/resourceSection/aimlr/Amilr";
+import ContactUsSection from "@/components/sysContact/ContactUsSection";
 
 const Aiml = () => {
   return (
@@ -13,7 +12,7 @@ const Aiml = () => {
         title="AI/ML Questions & Answers"
       />
       <Amilr />
-      <Demo />
+      <ContactUsSection />
     </>
   );
 };

@@ -199,7 +199,7 @@ const Amilr = () => {
             </h2>
           </div>
           <p className="text-gray-700 mt-6 mb-4 leading-relaxed">
-            Are you preparing for a AI/ML interview? Here are 19
+            Are you preparing for a AI/ML interview? Here are 30
             essential questions to help you succeed in your interview and
             demonstrate your mastery of AI/ML.
           </p>

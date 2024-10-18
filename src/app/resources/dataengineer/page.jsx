@@ -1,6 +1,6 @@
-import Demo from "@/components/home/demo/Demo";
 import MainP from "@/components/mainCont/MainP";
 import Dataengineerres from "@/components/resource/resourceSection/dataengineerres/Dataengineerres";
+import ContactUsSection from "@/components/sysContact/ContactUsSection";
 import React from "react";
 
 const Dataengineer = () => {
@@ -12,7 +12,7 @@ const Dataengineer = () => {
         title="Data Engineer Interview Questions & Answers"
       />
       <Dataengineerres />
-      <Demo />
+      <ContactUsSection />
     </>
   );
 };

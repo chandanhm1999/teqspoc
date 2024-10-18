@@ -1,6 +1,6 @@
-import Demo from "@/components/home/demo/Demo";
 import MainP from "@/components/mainCont/MainP";
 import JavaRR from "@/components/resource/resourceSection/javaRR/JavaRR";
+import ContactUsSection from "@/components/sysContact/ContactUsSection";
 import React from "react";
 
 const Javaresource = () => {
@@ -12,7 +12,7 @@ const Javaresource = () => {
         title="Java Interview Questions & Answers"
       />
       <JavaRR />
-      <Demo />
+      <ContactUsSection />
     </>
   );
 };

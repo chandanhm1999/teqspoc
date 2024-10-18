@@ -1,6 +1,7 @@
 import personImg from "../../../../public/assets/herohome/sectwo/aboutus.jpg";
 import partsImg from "../../../../public/assets/herohome/sectwo/aboutusO.jpg";
 import Image from "next/image";
+import Link from "next/link";
 const SectionTwo = () => {
   return (
     <section className="container mx-auto px-4 py-2 md:py-6 lg:py-6 xl:py-6  mt-6">
@@ -29,7 +30,7 @@ const SectionTwo = () => {
               is not only accurate but also easy to understand and helpful.
             </p>
           </div>
-          <p className="text-gray-600 text-xs md:text-sm lg:text-sm xl:text-lg">
+          <p className="text-black/60 text-xs md:text-sm lg:text-sm xl:text-lg">
             Our approach is designed to make learning enjoyable and effective,
             ensuring that you always stay ahead. With teQspoc, you&apos;re not just
             learning; you&apos;re growing with the best support available.
@@ -38,7 +39,7 @@ const SectionTwo = () => {
             type="button"
             className="text-white mt-4 bg-gradient-to-r from-cyan-400 via-cyan-500 to-cyan-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-bold rounded-sm px-6 py-2 md:py-3 lg:py-3 xl:py-3 text-sm md:text-lg lg:text-lg xl:text-lg transition-all duration-200 ease-in-out"
           >
-            Know More
+            <Link href="/courses" >Know More</Link>
           </button>
         </div>
       </div>

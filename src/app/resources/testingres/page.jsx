@@ -1,7 +1,8 @@
 import React from "react";
 import MainP from "@/components/mainCont/MainP";
 import Testingress from "@/components/resource/resourceSection/testingress/Testingress";
-import Demo from "@/components/home/demo/Demo";
+import Testingressauto from "@/components/resource/resourceSection/testingress/Testingressauto";
+import ContactUsSection from "@/components/sysContact/ContactUsSection";
 
 const Testingres = () => {
   return (
@@ -12,7 +13,8 @@ const Testingres = () => {
         title="Testing Interview Questions & Answers"
       />
       <Testingress />
-      <Demo />
+      <Testingressauto />
+      <ContactUsSection />
     </>
   );
 };

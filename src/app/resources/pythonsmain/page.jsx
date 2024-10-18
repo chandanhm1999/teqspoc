@@ -1,7 +1,7 @@
 import React from "react";
 import MainP from "@/components/mainCont/MainP";
-import Demo from "@/components/home/demo/Demo";
 import Pythonr from "@/components/resource/resourceSection/pythonr/Pythonr";
+import ContactUsSection from "@/components/sysContact/ContactUsSection";
 
 const Pythonsmain = () => {
   return (
@@ -12,7 +12,7 @@ const Pythonsmain = () => {
         title="Python Questions & Answers"
       />
       <Pythonr />
-      <Demo />
+      <ContactUsSection />
     </>
   );
 };
