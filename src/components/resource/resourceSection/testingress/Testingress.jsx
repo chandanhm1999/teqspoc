@@ -9,130 +9,173 @@ const Testingress = () => {
   const [faqs] = useState([
     {
       question: "What is manual testing?",
-      answer:
-        "Manual testing is the process of manually checking software for defects by executing test cases without the use of automation tools. It involves evaluating the application’s behavior and user interface to ensure it meets requirements.",
+      answer: [
+        "Manual testing is the process of manually checking software for defects by executing test cases without the use of automation tools.",
+        "It involves evaluating the application’s behavior and user interface to ensure it meets requirements."
+      ]
     },
     {
       question: "What is the difference between manual testing and automated testing?",
-      answer:
-        "Manual testing requires human intervention to execute test cases, making it suitable for exploratory and usability testing. Automated testing uses scripts and tools to execute tests automatically, which is efficient for repetitive tasks and regression testing.",
+      answer: [
+        "Manual testing requires human intervention to execute test cases, making it suitable for exploratory and usability testing.",
+        "Automated testing uses scripts and tools to execute tests automatically, which is efficient for repetitive tasks and regression testing."
+      ]
     },
     {
       question: "What are the different levels of testing?",
-      answer:
-        "The levels include:\n - Unit Testing: Tests individual components.\n - Integration Testing: Tests interactions between integrated components.\n - System Testing: Tests the entire system as a whole.\n - Acceptance Testing: Validates the system against business requirements.",
+      answer: [
+        "Unit Testing: Tests individual components.",
+        "Integration Testing: Tests interactions between integrated components.",
+        "System Testing: Tests the entire system as a whole.",
+        "Acceptance Testing: Validates the system against business requirements."
+      ]
     },
     {
       question: "What is a test case?",
-      answer:
-        "A test case is a documented set of conditions and variables under which a tester determines whether a system behaves as expected. It typically includes test case ID, description, preconditions, steps to execute, and expected results.",
+      answer: [
+        "A test case is a documented set of conditions and variables under which a tester determines whether a system behaves as expected.",
+        "It typically includes test case ID, description, preconditions, steps to execute, and expected results."
+      ]
     },
     {
       question: "What is a bug? How do you report it?",
-      answer:
-        "A bug is an error or flaw in software that produces incorrect or unexpected results. To report it, you typically include a bug ID, summary, steps to reproduce, expected and actual results, and severity/priority levels.",
+      answer: [
+        "A bug is an error or flaw in software that produces incorrect or unexpected results.",
+        "To report it, you typically include a bug ID, summary, steps to reproduce, expected and actual results, and severity/priority levels."
+      ]
     },
     {
       question: "What is regression testing?",
-      answer:
-        "Regression testing involves retesting the application after changes (like bug fixes or new features) to ensure that existing functionalities remain unaffected.",
+      answer: [
+        "Regression testing involves retesting the application after changes (like bug fixes or new features) to ensure that existing functionalities remain unaffected."
+      ]
     },
     {
       question: "What is the difference between severity and priority?",
-      answer:
-        "Severity refers to the impact of a bug on the application's functionality, while priority indicates how quickly a bug should be fixed based on business needs.",
+      answer: [
+        "Severity refers to the impact of a bug on the application's functionality, while priority indicates how quickly a bug should be fixed based on business needs."
+      ]
     },
     {
       question: "What are the different types of testing?",
-      answer:
-        "Common types include:\n - Functional Testing: Validates functionalities against requirements.\n - Non-Functional Testing: Evaluates performance, usability, and security.\n - Smoke Testing: Quick checks of critical functionalities.\n - User Acceptance Testing (UAT): Conducted by end-users to ensure the software meets their needs.",
+      answer: [
+        "Functional Testing: Validates functionalities against requirements.",
+        "Non-Functional Testing: Evaluates performance, usability, and security.",
+        "Smoke Testing: Quick checks of critical functionalities.",
+        "User Acceptance Testing (UAT): Conducted by end-users to ensure the software meets their needs."
+      ]
     },
     {
       question: "What is a test plan?",
-      answer:
-        "A test plan is a document outlining the testing strategy, scope, resources, schedule, and activities for a project, serving as a roadmap for the testing process.",
+      answer: [
+        "A test plan is a document outlining the testing strategy, scope, resources, schedule, and activities for a project, serving as a roadmap for the testing process."
+      ]
     },
     {
       question: "What are the steps involved in the Software Testing Life Cycle (STLC)?",
-      answer:
-        "The steps include:\n - Requirement analysis\n - Test planning\n - Test case design\n - Test environment setup\n - Test execution\n - Defect reporting\n - Test closure activities",
+      answer: [
+        "Requirement analysis",
+        "Test planning",
+        "Test case design",
+        "Test environment setup",
+        "Test execution",
+        "Defect reporting",
+        "Test closure activities"
+      ]
     },
     {
       question: "What is exploratory testing?",
-      answer:
-        "Exploratory testing is an informal testing approach where testers explore the application without predefined test cases, using their intuition and experience to identify defects.",
+      answer: [
+        "Exploratory testing is an informal testing approach where testers explore the application without predefined test cases, using their intuition and experience to identify defects."
+      ]
     },
     {
       question: "How do you ensure test coverage?",
-      answer:
-        "Test coverage is ensured by creating comprehensive test cases that cover all functional requirements, performing traceability analysis, and using testing techniques like boundary value analysis.",
+      answer: [
+        "Test coverage is ensured by creating comprehensive test cases that cover all functional requirements, performing traceability analysis, and using testing techniques like boundary value analysis."
+      ]
     },
     {
       question: "What is boundary value analysis?",
-      answer:
-        "Boundary value analysis is a testing technique that focuses on testing at the boundaries between equivalence classes. It involves checking values at, just above, and just below the boundaries.",
+      answer: [
+        "Boundary value analysis is a testing technique that focuses on testing at the boundaries between equivalence classes.",
+        "It involves checking values at, just above, and just below the boundaries."
+      ]
     },
     {
       question: "What is equivalence partitioning?",
-      answer:
-        "Equivalence partitioning divides input data into valid and invalid partitions to minimize the number of test cases while ensuring adequate coverage by testing one representative value from each partition.",
+      answer: [
+        "Equivalence partitioning divides input data into valid and invalid partitions to minimize the number of test cases while ensuring adequate coverage by testing one representative value from each partition."
+      ]
     },
     {
       question: "What is alpha testing?",
-      answer:
-        "Alpha testing is a type of acceptance testing performed by internal teams before releasing the software to external users, aimed at identifying bugs and gathering feedback.",
+      answer: [
+        "Alpha testing is a type of acceptance testing performed by internal teams before releasing the software to external users, aimed at identifying bugs and gathering feedback."
+      ]
     },
     {
       question: "What is beta testing?",
-      answer:
-        "Beta testing is a type of acceptance testing performed by external users in a real-world environment to gather feedback and identify any remaining defects before the official product launch.",
+      answer: [
+        "Beta testing is a type of acceptance testing performed by external users in a real-world environment to gather feedback and identify any remaining defects before the official product launch."
+      ]
     },
     {
       question: "What are some common challenges faced in manual testing?",
-      answer:
-        "Common challenges include managing tight deadlines, handling frequent requirement changes, maintaining documentation, and dealing with complex applications.",
+      answer: [
+        "Common challenges include managing tight deadlines, handling frequent requirement changes, maintaining documentation, and dealing with complex applications."
+      ]
     },
     {
       question: "What is a smoke test?",
-      answer:
-        "A smoke test is a preliminary test to check the basic functionality of an application after a build, ensuring that critical features work before more detailed testing.",
+      answer: [
+        "A smoke test is a preliminary test to check the basic functionality of an application after a build, ensuring that critical features work before more detailed testing."
+      ]
     },
     {
       question: "What is a sanity test?",
-      answer:
-        "A sanity test is a focused test conducted to verify that specific functionality or bug fixes work as expected after changes, ensuring the application is stable for further testing.",
+      answer: [
+        "A sanity test is a focused test conducted to verify that specific functionality or bug fixes work as expected after changes, ensuring the application is stable for further testing."
+      ]
     },
     {
       question: "What is the role of documentation in manual testing?",
-      answer:
-        "Documentation is crucial for providing references for test cases, ensuring consistent testing practices, facilitating communication, and recording testing outcomes and defect reports.",
+      answer: [
+        "Documentation is crucial for providing references for test cases, ensuring consistent testing practices, facilitating communication, and recording testing outcomes and defect reports."
+      ]
     },
     {
       question: "How do you prioritize testing tasks?",
-      answer:
-        "Testing tasks are prioritized based on business impact, risk assessment, complexity, and feedback from customers or stakeholders.",
+      answer: [
+        "Testing tasks are prioritized based on business impact, risk assessment, complexity, and feedback from customers or stakeholders."
+      ]
     },
     {
       question: "What is a test suite?",
-      answer:
-        "A test suite is a collection of test cases that are intended to be executed together, helping organize and manage tests related to specific functionalities or modules.",
+      answer: [
+        "A test suite is a collection of test cases that are intended to be executed together, helping organize and manage tests related to specific functionalities or modules."
+      ]
     },
     {
       question: "What is user acceptance testing (UAT)?",
-      answer:
-        "UAT is the final testing phase where end-users validate the software against their requirements and ensure it meets their expectations before the product is released.",
+      answer: [
+        "UAT is the final testing phase where end-users validate the software against their requirements and ensure it meets their expectations before the product is released."
+      ]
     },
     {
       question: "What are some common bug tracking tools?",
-      answer:
-        "Common bug tracking tools include JIRA, Bugzilla, Mantis, Trello, and Redmine, which help in tracking and managing bugs and issues.",
+      answer: [
+        "Common bug tracking tools include JIRA, Bugzilla, Mantis, Trello, and Redmine, which help in tracking and managing bugs and issues."
+      ]
     },
     {
       question: "How do you define 'done' for a testing phase?",
-      answer:
-        "A testing phase is considered 'done' when all planned test cases are executed, all critical bugs are resolved, and the application meets the defined acceptance criteria and quality standards.",
-    },
+      answer: [
+        "A testing phase is considered 'done' when all planned test cases are executed, all critical bugs are resolved, and the application meets the defined acceptance criteria and quality standards."
+      ]
+    }
   ]);
+  
 
   return (
     <main className="container mx-auto mt-8 px-4">
@@ -191,9 +234,11 @@ const Testingress = () => {
                     </h4>
                     <div className="flex items-start mt-2 space-x-2">
                       <FaLightbulb className="w-5 h-5 text-yellow-500" />
-                      <p className="text-gray-700 leading-relaxed">
-                        {faq.answer}
-                      </p>
+                      <ul className="list-disc list-inside text-gray-700 leading-relaxed">
+                        {faq.answer.map((point, pointIndex) => (
+                          <li key={pointIndex}>{point}</li>
+                        ))}
+                      </ul>
                     </div>
                   </div>
                 </div>

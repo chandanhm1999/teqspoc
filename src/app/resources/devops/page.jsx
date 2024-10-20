@@ -1,4 +1,3 @@
-
 import MainP from "@/components/mainCont/MainP";
 import Devopsres from "@/components/resource/resourceSection/devopsresponce/Devopsres";
 import ContactUsSection from "@/components/sysContact/ContactUsSection";
