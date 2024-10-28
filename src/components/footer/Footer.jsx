@@ -14,7 +14,9 @@ const Footer = () => {
       <div className="mx-auto">
         <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center border-b border-black border-opacity-10 pb-4 mb-4">
           <div className="">
-            <Image src="/teq.svg" width={150} height={50} alt="teqlogo" />
+            <Link href="https://www.teqspoc.com/">
+              <Image src="/teq.svg" width={150} height={50} alt="teqlogo" />
+            </Link>
             <p className="text-sm md:text-sm lg:text-sm xl:text-sm 2xl:text-sm font-medium text-start sm:text-left">
               We offer top-notch online courses led by expert instructors to
               help you reach your full potential.
@@ -23,7 +25,7 @@ const Footer = () => {
           <ul className="flex flex-col sm:flex-row sm:space-x-8 space-y-4 sm:space-y-0 text-lg font-medium tracking-wide">
             <li>
               <Link
-                href="/refer"
+                href="https://www.teqspoc.com/refer"
                 className="transition text-black duration-300 hover:text-peach hover:underline"
               >
                 Refer & Earn
@@ -54,10 +56,10 @@ const Footer = () => {
               <Link href="/about">About us</Link>
             </li>
             <li className="font-semibold tracking-bold hover:underline">
-              <Link href="/courses">All Courses</Link>
+              <Link href="https://www.teqspoc.com/courses">All Courses</Link>
             </li>
             <li className="font-semibold tracking-bold hover:underline">
-              <Link href="/resources">Resources</Link>
+              <Link href="https://www.teqspoc.com/resources">Resources</Link>
             </li>
           </ul>
 
@@ -69,7 +71,7 @@ const Footer = () => {
               <Link href="/freejobassistance">Free Job Assistance</Link>
             </li>
             <li className="font-semibold tracking-bold hover:underline">
-              <Link href="/contact">More</Link>
+              <Link href="https://www.teqspoc.com/instructor">Instructor</Link>
             </li>
           </ul>
 

@@ -38,7 +38,7 @@ const Navbar = () => {
       >
         <nav className="flex h-[70px] items-center justify-between py-2 pl-4 sm:pl-4 md:pl-5 lg:pl-6 xl:pl-6 2xl:pl-8">
           <div className="text-2xl text-white md:text-3xl ">
-            <Link href="/">
+            <Link href="https://www.teqspoc.com">
               <Image src="/teq.svg" alt="teqspoc" width={150} height={70} />
             </Link>
           </div>
@@ -47,22 +47,22 @@ const Navbar = () => {
             <ul className="flex items-center gap-8 lg:gap-8 xl:gap-10 2xl:gap-15">
               {/* All Courses */}
               <li className="cursor pointer font-semibold">
-                <Link href="/courses">All Courses</Link>
+                <Link href="https://www.teqspoc.com/courses">All Courses</Link>
               </li>
 
               {/* Home section */}
               <li className="cursor pointer font-semibold">
-                <Link href="/resources">Resources</Link>
+                <Link href="https://www.teqspoc.com/resources">Resources</Link>
               </li>
 
               {/* Refer us section */}
               <li className="cursor pointer font-semibold">
-                <Link href="/refer">Refer & Earn</Link>
+                <Link href="https://www.teqspoc.com/refer">Refer & Earn</Link>
               </li>
 
               <li className="group relative cursor-pointer">
                 <Link
-                  href="/#home"
+                  href="https://www.teqspoc.com"
                   className="flex h-[72px] font-semibold items-center gap-[2px]"
                 >
                   More{" "}
@@ -72,22 +72,22 @@ const Navbar = () => {
                 </Link>
                 <div className="absolute -left-9 z-[9999] hidden w-[250px] rounded-md bg-white p-2 text-black group-hover:block">
                   <ul className="space-y-3">
-                    <Link href="/instructor">
+                    <Link href="https://www.teqspoc.com/instructor">
                       <li className="p-2 hover:bg-violet-200">
                         Become an Instructor
                       </li>
                     </Link>
-                    <Link href="/freejobassistance">
+                    <Link href="https://www.teqspoc.com/freejobassistance">
                       <li className="p-2 hover:bg-violet-200">
                         Free Job Assistance
                       </li>
                     </Link>
-                    <Link href="/careers">
+                    <Link href="https://www.teqspoc.com/careers">
                       <li className="p-2 hover:bg-violet-200">Careers</li>
                     </Link>
 
                     {/* About us section */}
-                    <Link href="/about">
+                    <Link href="https://www.teqspoc.com/about">
                       <li className="p-2 hover:bg-violet-200">About us</li>
                     </Link>
                   </ul>
@@ -96,7 +96,7 @@ const Navbar = () => {
 
               {/* Blog Contact Us */}
               <li className="cursor pointer font-semibold">
-                <Link href="/contact">Contact Us</Link>
+                <Link href="https://www.teqspoc.com/contact">Contact Us</Link>
               </li>
 
               {/* Phone number section */}
@@ -139,46 +139,46 @@ const Navbar = () => {
           <div className="md:hidden bg-gradient-to-l from-white via-blue-100 text-black shadow-lg">
             <ul className="flex flex-col gap-4 p-4">
               <li>
-                <Link href="/" className="font-semibold" onClick={handleMobileLinkClick}>
+                <Link href="https://www.teqspoc.com" className="font-semibold" onClick={handleMobileLinkClick}>
                   Home
                 </Link>
               </li>
 
               {/* All Courses */}
               <li>
-                <Link href="/courses" className="font-semibold" onClick={handleMobileLinkClick}>
+                <Link href="https://www.teqspoc.com/courses" className="font-semibold" onClick={handleMobileLinkClick}>
                   All Courses
                 </Link>
               </li>
 
               {/* Resources */}
               <li>
-                <Link href="/resources" className="font-semibold" onClick={handleMobileLinkClick}>
+                <Link href="https://www.teqspoc.com/resources" className="font-semibold" onClick={handleMobileLinkClick}>
                   Resources
                 </Link>
               </li>
 
               {/* About us */}
               <li>
-                <Link href="/about" className="font-semibold" onClick={handleMobileLinkClick}>
+                <Link href="https://www.teqspoc.com/about" className="font-semibold" onClick={handleMobileLinkClick}>
                   About us
                 </Link>
               </li>
 
               {/* Refer */}
               <li>
-                <Link href="/refer" className="font-semibold" onClick={handleMobileLinkClick}>
+                <Link href="https://www.teqspoc.com/refer" className="font-semibold" onClick={handleMobileLinkClick}>
                   Refer & Earn
                 </Link>
               </li>
 
               <li>
-                <Link href="/instructor" className="font-semibold" onClick={handleMobileLinkClick}>
+                <Link href="https://www.teqspoc.com/instructor" className="font-semibold" onClick={handleMobileLinkClick}>
                   Become an Instructor
                 </Link>
               </li>
 
-              <Link href="/freejobassistance">
+              <Link href="https://www.teqspoc.com/freejobassistance">
                 <li
                   className=" hover:bg-violet-200 font-semibold"
                   onClick={handleMobileLinkClick}
@@ -187,14 +187,14 @@ const Navbar = () => {
                 </li>
               </Link>
 
-              <Link href="/careers"
+              <Link href="https://www.teqspoc.com/careers"
               className="font-semibold"
               onClick={handleMobileLinkClick}
               >
                 <li className=" hover:bg-violet-200 font-semibold">Careers</li>
               </Link>
             </ul>
-            <Link href="/contact">
+            <Link href="https://www.teqspoc.com/contact">
               <div className="justify-center text-center items-center p-3">
                 <button
                   type="button"
