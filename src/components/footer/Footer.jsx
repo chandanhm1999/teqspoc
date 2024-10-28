@@ -115,7 +115,7 @@ const Footer = () => {
         <div className="border-t border-black border-opacity-10 text-center pt-4">
           <div className="mx-auto flex flex-col sm:flex-row justify-between items-center">
             <Link
-              href="https://chandan21.vercel.app"
+              href="https://cdevxgen.vercel.app"
               className="text-black text-sm flex items-center transition hover:text-white"
             >
               <span>Designed & Developed By </span>

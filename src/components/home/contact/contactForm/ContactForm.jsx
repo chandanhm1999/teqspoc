@@ -10,9 +10,10 @@ import { FaUser, FaPhone, FaEnvelope, FaRegCommentDots } from "react-icons/fa"; 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
     name: "",
-    number: "",
     email: "",
+    number: "",
     message: "",
+    // actionButton: "contactus",
   });
 
   const handleChange = (e) => {
@@ -24,10 +25,10 @@ const ContactForm = () => {
     e.preventDefault();
 
     emailjs
-      .send("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", formData, "YOUR_USER_ID")
+      .send("service_ainryci", "template_razla0o", formData, "qITRmpGoMmZw1K4mJ")
       .then(() => {
         toast.success("Message sent successfully!");
-        setFormData({ name: "", number: "", email: "", message: "" });
+        setFormData({ name: "", email: "", number: "", message: "" });
       })
       .catch(() => {
         toast.error("Failed to send message, please try again.");
@@ -65,17 +66,6 @@ const ContactForm = () => {
             />
           </div>
           <div className="relative">
-            <FaPhone className="absolute top-4 left-3 text-gray-400" />
-            <input
-              type="number"
-              id="number"
-              value={formData.number}
-              onChange={handleChange}
-              placeholder="Phone Number"
-              className="pl-10 w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-            />
-          </div>
-          <div className="relative">
             <FaEnvelope className="absolute top-4 left-3 text-gray-400" />
             <input
               type="email"
@@ -87,6 +77,18 @@ const ContactForm = () => {
             />
           </div>
           <div className="relative">
+            <FaPhone className="absolute top-4 left-3 text-gray-400" />
+            <input
+              type="number"
+              id="number"
+              value={formData.number}
+              onChange={handleChange}
+              placeholder="Phone Number"
+              className="pl-10 w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+            />
+          </div>
+          
+          <div className="relative">
             <FaRegCommentDots className="absolute top-4 left-3 text-gray-400" />
             <textarea
               id="message"
@@ -97,6 +99,7 @@ const ContactForm = () => {
               className="pl-10 w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
             ></textarea>
           </div>
+
           <button
             type="submit"
             className="w-full p-3 bg-blue-500 text-white rounded-md hover:bg-blue-600 transition duration-200 shadow-md hover:shadow-lg"

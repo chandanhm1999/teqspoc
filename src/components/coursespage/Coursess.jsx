@@ -197,10 +197,10 @@ const Coursess = () => {
                   {item.syllabus ? (
                     <Link
                       href={item.syllabus}
-                      className=" text-gray-600 hover:text-black flex items-center"
+                      className=" text-blue-600 hover:text-black flex items-center"
                     >
                       View syllabus
-                      <FaShare className="ml-1 mt-1" />
+                      <FaShareSquare className="ml-1 mt-1" />
                     </Link>
                   ) : (
                     <span>No syllabus available</span>
@@ -216,7 +216,7 @@ const Coursess = () => {
                   <button
                     onClick={() =>
                       openModal(
-                        `https://teqspoc.vercel.app/resources/${item.heading
+                        `https://www.teqspoc.com/resources/${item.heading
                           .toLowerCase()
                           .replace(/ /g, "-")}`
                       )

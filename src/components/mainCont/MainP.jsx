@@ -1,35 +1,43 @@
 import Link from "next/link";
 import { FaChevronRight } from "react-icons/fa";
+import Image from "next/image";
 
-const MainP = (props) => {
-  const { url = "", parent = "", title = "" } = props;
-
+const MainP = ({ url = "", title = "" }) => {
   return (
     <div className="relative w-full h-64 flex items-center justify-center">
-      <div className="absolute inset-0">
-        <div className="bg-black opacity-60 h-[380px] -mt-36 w-full"></div>
+      {/* Background Image */}
+      <div className="relative bg-black w-full h-[320px] -mt-24">
+        <Image
+          src={url}
+          alt="Background Image"
+          className="object-cover opacity-60"
+          fill
+          priority // Optional: load this image as a priority for better performance
+        />
       </div>
-      <div className="absolute text-white mt-10">
-        <ul className="flex space-x-2 items-center font-bold">
+
+      {/* Text Overlay */}
+      <div className="absolute top-1/2 transform -translate-y-1/2 text-white flex flex-col items-center space-y-2">
+        <ul className="flex space-x-2 items-center mt-10 font-bold text-lg">
           <li>
-            <Link href="/" className="text-white">
+            <Link href="/" className="text-white hover:underline">
               Home
             </Link>
           </li>
-          <FaChevronRight />
-          <Link href="/resources" className="text-white">
-            Resourse
-          </Link>
-          <FaChevronRight />
+          <li>
+            <FaChevronRight />
+          </li>
+          <li>
+            <Link href="/resources" className="text-white hover:underline">
+              Resource
+            </Link>
+          </li>
+          <li>
+            <FaChevronRight />
+          </li>
           <li className="text-yellow-500">{title}</li>
-          {/* <li><a className="text-white">{parent}</a></li> */}
         </ul>
       </div>
-      <img
-        src={url}
-        alt="Background Image"
-        className="w-full h-[320px] object-cover -mt-24"
-      />
     </div>
   );
 };

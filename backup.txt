@@ -11,7 +11,7 @@ Enroll
 <button
 onClick={() =>
 openModal(
-    `https://teqspoc.vercel.app/resources/${item.heading
+    `https://www.teqspoc.com/resources/${item.heading
     .toLowerCase()
     .replace(/ /g, "-")}`
 )

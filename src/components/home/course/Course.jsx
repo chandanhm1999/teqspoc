@@ -228,7 +228,7 @@ const Course = () => {
                         className=" text-blue-600 hover:text-black flex items-center"
                       >
                         View syllabus
-                        <FaShareAlt className="ml-1 mt-1" />
+                        <FaShareSquare className="ml-1 mt-1" />
                       </Link>
                     ) : (
                       <span>No syllabus available</span>
@@ -245,7 +245,7 @@ const Course = () => {
                     <button
                       onClick={() =>
                         openModal(
-                          `https://teqspoc.vercel.app/resources/${item.heading.toLowerCase().replace(/ /g, "-")}`
+                          `https://www.teqspoc.com/resources/${item.heading.toLowerCase().replace(/ /g, "-")}`
                         )
                       }
                       className="text-black border border-gray-400 mt-4 hover:bg-gray-400 hover:text-white font-semibold rounded-sm px-6 py-2 md:py-2 lg:py-2 xl:py-2 text-xs md:text-sm lg:text-sm xl:text-sm transition-all duration-300 ease-in-out flex items-center shadow-lg hover:shadow-xl transform hover:scale-105"

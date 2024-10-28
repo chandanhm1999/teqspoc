@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import { FaBook, FaShareSquare } from "react-icons/fa";
 import Link from "next/link"; // Import Link from next/link
 import ShareModal from "./ShareModelResourse"; // Import the ShareModal component
+import Image from "next/image"; // Import Image from next/image
 
 const postData = [
   {
@@ -103,7 +104,13 @@ const Card = ({
   return (
     <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-200 dark:border-gray-300">
       <a href="#">
-        <img className="rounded-t-lg" src={imgSrc} alt={heading} />
+        <Image
+          className="rounded-t-lg"
+          src={imgSrc}
+          alt={heading}
+          width={400} // Set the desired width
+          height={300} // Set the desired height
+        />
       </a>
       <div className="p-5">
         <a href="#">
@@ -130,7 +137,7 @@ const Card = ({
           <button
             onClick={() =>
               openModal(
-                `https://localhost:3000/resources/${heading
+                `https://www.teqspoc.com/resources/${heading
                   .toLowerCase()
                   .replace(/ /g, "-")}`
               )

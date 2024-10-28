@@ -28,19 +28,28 @@ const EnrollmentModal = ({ isOpen, onClose, course }) => {
       <div className="bg-white rounded-lg p-6 shadow-lg w-11/12 sm:w-3/4 lg:w-2/3 xl:w-1/2 flex flex-col lg:flex-row">
         {/* Left Side Image - 40% Width on larger screens, hidden on smaller screens */}
         <div className="lg:w-2/5 w-full lg:block hidden mb-4 lg:mb-0">
-          <img
-            src="/assets/model/mode.png" // Replace with your image URL
-            alt="Enrollment"
-            className="rounded-lg object-cover w-full h-full"
-          />
+          <div className="relative w-full h-full">
+            <Image
+              src="/assets/model/mode.png" // Ensure the path is correct
+              alt="Enrollment"
+              className="rounded-lg object-cover"
+              fill // Makes the image responsive to its parent container
+              priority // Optional: loads the image as a priority for faster loading
+            />
+          </div>
         </div>
 
         {/* Right Side Form - 60% Width on larger screens */}
         <div className="lg:w-3/5 w-full lg:pl-6">
-          <h2 className="text-2xl font-bold mb-4">Enroll in {course.heading}</h2>
+          <h2 className="text-2xl font-bold mb-4">
+            Enroll in {course.heading}
+          </h2>
           <form onSubmit={handleSubmit}>
             <div className="mb-4">
-              <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="fullName">
+              <label
+                className="block text-gray-700 text-sm font-bold mb-2"
+                htmlFor="fullName"
+              >
                 Full Name
               </label>
               <input
@@ -54,7 +63,10 @@ const EnrollmentModal = ({ isOpen, onClose, course }) => {
               />
             </div>
             <div className="mb-4">
-              <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="mobileNumber">
+              <label
+                className="block text-gray-700 text-sm font-bold mb-2"
+                htmlFor="mobileNumber"
+              >
                 Mobile Number
               </label>
               <input
@@ -68,7 +80,10 @@ const EnrollmentModal = ({ isOpen, onClose, course }) => {
               />
             </div>
             <div className="mb-4">
-              <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="email">
+              <label
+                className="block text-gray-700 text-sm font-bold mb-2"
+                htmlFor="email"
+              >
                 Email Address
               </label>
               <input
@@ -82,7 +97,10 @@ const EnrollmentModal = ({ isOpen, onClose, course }) => {
               />
             </div>
             <div className="mb-4">
-              <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="type">
+              <label
+                className="block text-gray-700 text-sm font-bold mb-2"
+                htmlFor="type"
+              >
                 Type
               </label>
               <select
@@ -93,7 +111,9 @@ const EnrollmentModal = ({ isOpen, onClose, course }) => {
                 className="w-full p-2 border border-gray-300 rounded"
                 required
               >
-                <option value="" disabled>Select Type</option>
+                <option value="" disabled>
+                  Select Type
+                </option>
                 <option value="online">Online</option>
                 <option value="offline">Offline</option>
               </select>

@@ -1,28 +1,28 @@
 import React from "react";
+import Image from "next/image";
 
 const TimeLine = [
-    {
-      Logo: "/assets/TimeLineLogo/Logo1.svg",
-      Heading: "Leadership",
-      Description: "Committed to ensuring the companys success.",
-    },
-    {
-      Logo: "/assets/TimeLineLogo/Logo2.svg",
-      Heading: "Responsibility",
-      Description: "Our students success is our foremost concern.",
-    },
-    {
-      Logo: "/assets/TimeLineLogo/Logo3.svg",
-      Heading: "Flexibility",
-      Description: "The skill to adapt quickly is key.",
-    },
-    {
-      Logo: "/assets/TimeLineLogo/Logo4.svg",
-      Heading: "Solve the problem",
-      Description: "Develop solutions through coding.",
-    },
-  ];
-
+  {
+    Logo: "/assets/TimeLineLogo/Logo1.svg",
+    Heading: "Leadership",
+    Description: "Committed to ensuring the companys success.",
+  },
+  {
+    Logo: "/assets/TimeLineLogo/Logo2.svg",
+    Heading: "Responsibility",
+    Description: "Our students success is our foremost concern.",
+  },
+  {
+    Logo: "/assets/TimeLineLogo/Logo3.svg",
+    Heading: "Flexibility",
+    Description: "The skill to adapt quickly is key.",
+  },
+  {
+    Logo: "/assets/TimeLineLogo/Logo4.svg",
+    Heading: "Solve the problem",
+    Description: "Develop solutions through coding.",
+  },
+];
 
 const Imgtime = () => {
   return (
@@ -34,7 +34,7 @@ const Imgtime = () => {
               <div className="flex flex-col lg:gap-3" key={i}>
                 <div className="flex gap-6" key={i}>
                   <div className="w-[52px] h-[52px] bg-white rounded-full flex justify-center items-center shadow-[#00000012] shadow-[0_0_62px_0]">
-                    <img src={ele.Logo} alt="" />
+                    <Image src={ele.Logo} alt="" width={25} height={25} />
                   </div>
                   <div>
                     <h2 className="font-semibold text-[18px]">{ele.Heading}</h2>
@@ -69,9 +69,11 @@ const Imgtime = () => {
             </div>
             <div></div>
           </div>
-          <img
+          <Image
             src="/assets/s/TimelineImage.jpg"
             alt="timelineImage"
+            width={600}
+            height={400}
             className="shadow-black shadow-[20px_20px_0px_0px] object-cover h-[400px] lg:h-fit"
           />
         </div>
