@@ -15,6 +15,10 @@ const ReferFrnd = () => {
     friendEmail: "",
     place: "",
     course: "",
+    type: "", // New field
+    linkedin: "", // New field
+    experience: "", // New field
+    actionButton: "referandearn",
   });
 
   const [errors, setErrors] = useState({});
@@ -25,8 +29,7 @@ const ReferFrnd = () => {
     if (!formData.email || !/\S+@\S+\.\S+/.test(formData.email))
       newErrors.email = "Valid email is required";
     if (!formData.phone) newErrors.phone = "Phone number is required";
-    if (!formData.friendName)
-      newErrors.friendName = "Friends name is required";
+    if (!formData.friendName) newErrors.friendName = "Friends name is required";
     if (!formData.friendPhone)
       newErrors.friendPhone = "Friends phone number is required";
     if (!formData.friendEmail || !/\S+@\S+\.\S+/.test(formData.friendEmail))
@@ -47,20 +50,29 @@ const ReferFrnd = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-
-    if (!validate()) return;
-
+    
+    if (!validate()) {
+      console.log("Validation errors:", errors);  // Debugging step
+      return;
+    }
+  
+    console.log("Form data being sent:", formData);  // Debugging step
+  
     try {
       const response = await fetch(
-        "https://script.google.com/macros/s/AKfycbxAzwOzCCxFYF6m2LRGnrj1tgb5xKe-yR6Egf3FxVonW9tdSJXod26V27GpVHvoYC12/exec", // Replace with your Apps Script URL
+        "https://script.google.com/macros/s/AKfycbwgqmwX-VZPYzPnKCiHa2l_NBJNLhZIwX3LQrpeiNjtcTtwUfNXurg9IBATjVX6o-m6/exec", 
         {
           method: "POST",
-          body: new URLSearchParams(formData),
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(formData),
         }
       );
-
+  
       if (response.ok) {
-        toast.success("Message sent successfully!");
+        console.log("Response successful:", response);  // Debugging step
+        toast.success("Data sent successfully!");
         setFormData({
           name: "",
           email: "",
@@ -71,15 +83,20 @@ const ReferFrnd = () => {
           friendEmail: "",
           place: "",
           course: "",
+          type: "", 
+          linkedin: "", 
+          experience: "", 
+          actionButton: "referandearn",
         });
       } else {
+        console.error("Failed response:", response);  // Debugging step
         toast.error("Failed to send message. Please try again.");
       }
     } catch (error) {
-      console.error("Error:", error);
+      console.error("Error occurred:", error);  // Debugging step
       toast.error("Failed to send message. Please try again.");
     }
-  };
+  };  
 
   return (
     <div className="font-sans max-w-6xl mx-auto relative bg-white shadow-lg rounded-3xl overflow-hidden mt-4 p-6">
@@ -101,11 +118,13 @@ const ReferFrnd = () => {
 
         <form onSubmit={handleSubmit} className="space-y-6">
           <h2 className="text-xl text-[#1f2937] font-bold text-center mb-6">
-          Complete the form now to get attractive vouchers!
+            Complete the form now to get attractive vouchers!
           </h2>
 
           <div className="space-y-4">
-            <label className="text-[#4b5563] font-medium font-sm">Your Details</label>
+            <label className="text-[#4b5563] font-medium font-sm">
+              Your Details
+            </label>
             <div className="space-y-4">
               <div className="flex space-x-4">
                 <input
@@ -227,7 +246,9 @@ const ReferFrnd = () => {
                   errors.course ? "border-2 border-red-500" : ""
                 }`}
               >
-                <option disabled value="">Select Course</option>
+                <option disabled value="">
+                  Select Course
+                </option>
                 <option value="Scrum Master">Scrum Master</option>
                 <option value="DotNet Certification">
                   DotNet Certification

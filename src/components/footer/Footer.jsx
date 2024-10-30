@@ -33,7 +33,7 @@ const Footer = () => {
             </li>
             <li>
               <Link
-                href="/freejobassistance"
+                href="https://www.teqspoc.com/freejobassistance"
                 className="transition duration-300 hover:text-peach hover:underline"
               >
                 Free Job Assistance
@@ -41,7 +41,7 @@ const Footer = () => {
             </li>
             <li>
               <Link
-                href="/contact"
+                href="https://www.teqspoc.com/contact"
                 className="transition duration-300 hover:text-peach hover:underline"
               >
                 CONTACT
@@ -53,7 +53,7 @@ const Footer = () => {
         <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center text-lg leading-relaxed text-opacity-70 mb-8">
           <ul className="space-y-2 mb-6 sm:mb-0">
             <li className="font-semibold tracking-bold hover:underline">
-              <Link href="/about">About us</Link>
+              <Link href="https://www.teqspoc.com/about">About us</Link>
             </li>
             <li className="font-semibold tracking-bold hover:underline">
               <Link href="https://www.teqspoc.com/courses">All Courses</Link>
@@ -65,10 +65,10 @@ const Footer = () => {
 
           <ul className="space-y-2 mb-6 sm:mb-0">
             <li className="font-semibold tracking-bold hover:underline">
-              <Link href="/careers">Careers</Link>
+              <Link href="https://www.teqspoc.com/careers">Careers</Link>
             </li>
             <li className="font-semibold tracking-bold hover:underline">
-              <Link href="/freejobassistance">Free Job Assistance</Link>
+              <Link href="https://www.teqspoc.com/freejobassistance">Free Job Assistance</Link>
             </li>
             <li className="font-semibold tracking-bold hover:underline">
               <Link href="https://www.teqspoc.com/instructor">Instructor</Link>

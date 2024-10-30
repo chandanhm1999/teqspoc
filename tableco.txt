@@ -1,0 +1,20 @@
+name: "", email: "", phone: "", message: "", friendName: "", friendPhone: "", friendEmail: "", place: "", course: "", actionButton:"referandearn"
+
+fullName: "", mobileNumber: "", email: "", type: "", actionButton: "enrolmodel"
+
+name: "", email: "", course: "", phone: "", linkedin: "", experience: "", actionButton: "instructor"
+
+name: "", lastname: "", email: "", phone: "", message: "", actionButton: "freejobassistance"
+
+name: "", email: "", course: "", phone: "", linkedin: "", experience: "", actionButton: "carrers"
+
+name: "", email: "", mobileNumber: "", courseType: "", message: "", actionButton: "upcommingBatch
+
+
+
+
+
+
+
+
+
