@@ -27,9 +27,9 @@ const Details = () => {
           <h2 className="mt-4 text-base font-medium text-gray-800 dark:text-white">
             Email
           </h2>
-          <a href="mailto:project@shreevishnumep.com">
+          <a href="mailto:support@teqspoc.com">
             <p className="mt-2 text-sm text-blue-500 dark:text-blue-400">
-              course@teqspoc.com
+              support@teqspoc.com
             </p>
           </a>
         </div>
@@ -54,8 +54,8 @@ const Details = () => {
           <h2 className="mt-4 text-base font-medium text-gray-800 dark:text-white">
             Call us
           </h2>
-          <a href="tel:+918105780072">
-            <p className="mt-2 text-sm text-blue-500">+91 8105780072</p>
+          <a href="tel:+919019004424">
+            <p className="mt-2 text-sm text-blue-500">+91 9019004424</p>
           </a>
         </div>
 
@@ -85,8 +85,8 @@ const Details = () => {
             Visit us
           </h2>
           <p className="mt-2 text-sm text-blue-500 dark:text-blue-400">
-            <a href="https://maps.app.goo.gl/sVp2xziE3L4xsbUx8">
-              5th Chandra Layout, Marathahalli, Bengaluru, Karnataka 560037
+            <a href="https://maps.app.goo.gl/dVkwuvWeaZBLwUkn8">
+            WPQ3+43H, Kadubeesanahalli, Panathur, Bengaluru, Karnataka 560103
             </a>
           </p>
         </div>

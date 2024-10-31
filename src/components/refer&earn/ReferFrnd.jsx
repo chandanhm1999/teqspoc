@@ -18,7 +18,7 @@ const ReferFrnd = () => {
     type: "", // New field
     linkedin: "", // New field
     experience: "", // New field
-    actionButton: "referandearn",
+    actionButton: "referandearnData",
   });
 
   const [errors, setErrors] = useState({});
@@ -63,16 +63,13 @@ const ReferFrnd = () => {
         "https://script.google.com/macros/s/AKfycbwgqmwX-VZPYzPnKCiHa2l_NBJNLhZIwX3LQrpeiNjtcTtwUfNXurg9IBATjVX6o-m6/exec", 
         {
           method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
           body: JSON.stringify(formData),
         }
       );
   
       if (response.ok) {
         console.log("Response successful:", response);  // Debugging step
-        toast.success("Data sent successfully!");
+        toast.success("Message sent successfully!");
         setFormData({
           name: "",
           email: "",

@@ -8,7 +8,7 @@ import Image from "next/image"; // Import Image from next/image
 
 const postData = [
   {
-    heading: "Scrum Master",
+    heading: "scrummaster",
     heading2: "Scrummaster Interview Questions & Answers",
     des: "Master the art of Scrum with insights from industry experts. Learn key techniques to lead teams effectively and deliver projects on time.",
     author: "Industry-Experts",
@@ -16,7 +16,7 @@ const postData = [
     path: "/resources/scrummaster",
   },
   {
-    heading: "HR Recruiter",
+    heading: "hrrecruiter",
     heading2: "HR Recruiter Interview Questions & Answers",
     des: "Master the art of recruitment with our in-depth HR recruiter guides, covering essential skills, strategies, and best practices for hiring top talent.",
     author: "Industry-Experts",
@@ -24,7 +24,7 @@ const postData = [
     path: "/resources/hrrecruiter",
   },
   {
-    heading: "Python",
+    heading: "pythonsmain",
     heading2: "Python Interview Questions & Answers",
     des: "Enhance your Python programming expertise with detailed tutorials and problem-solving techniques to help you excel in coding interviews and projects.",
     author: "Industry-Experts",
@@ -32,7 +32,7 @@ const postData = [
     path: "/resources/pythonsmain",
   },
   {
-    heading: "AI/ML",
+    heading: "aiml",
     heading2: "AI/ML Interview Questions & Answers",
     des: "Explore the exciting field of AI and Machine Learning with comprehensive examples, interview questions, and key concepts to boost your career in tech.",
     author: "Industry-Experts",
@@ -48,7 +48,7 @@ const postData = [
     path: "/resources/testingres",
   },
   {
-    heading: "DotNet",
+    heading: "dotnet",
     heading2: "DotNet Interview Questions & Answers",
     des: "Dive into the world of .NET and elevate your coding skills with comprehensive tutorials and practical examples. Perfect for advancing your career in software development.",
     author: "Industry-Experts",
@@ -56,7 +56,7 @@ const postData = [
     path: "/resources/dotnet",
   },
   {
-    heading: "Java",
+    heading: "javaresource",
     heading2: "Java Interview Questions & Answers",
     des: "Unlock the power of Java with a full-stack development course that covers everything from backend to frontend. Gain the skills needed to build robust and scalable applications.",
     author: "Industry-Experts",
@@ -64,7 +64,7 @@ const postData = [
     path: "/resources/javaresource",
   },
   {
-    heading: "Data Engineer",
+    heading: "dataengineer",
     heading2: "Data Engineer Interview Questions & Answers",
     des: "Transform raw data into actionable insights with our Data Engineering course. Master the tools and techniques needed to handle big data and drive data-driven decisions.",
     author: "Industry-Experts",
@@ -72,7 +72,7 @@ const postData = [
     path: "/resources/dataengineer",
   },
   {
-    heading: "DevOps",
+    heading: "devops",
     heading2: "Devops Interview Questions & Answers",
     des: "Streamline your development and operations with our DevOps course. Learn how to integrate development and operations to deliver software faster and more efficiently.",
     author: "Industry-Experts",

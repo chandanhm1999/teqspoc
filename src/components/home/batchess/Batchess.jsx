@@ -8,8 +8,13 @@ import ModalForm from "./ModalForm";  // Import the ModalForm component
 
 const Batchess = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [currentCourse, setCurrentCourse] = useState(null);
 
-  const openModal = () => setIsModalOpen(true);
+  const openModal = (course) => {
+    setCurrentCourse(course);
+    setIsModalOpen(true);
+  };
+
   const closeModal = () => setIsModalOpen(false);
 
   const postData = [
@@ -148,7 +153,7 @@ const Batchess = () => {
                 <td className="py-3 px-4 text-sm">{batch.time}</td>
                 <td className="py-3 px-4 text-sm">
                   <button
-                    onClick={openModal}
+                    onClick={() => openModal(batch.course)}  // Pass the course to openModal
                     className="inline-flex items-center bg-blue-500 text-white px-5 py-3 text-sm font-bold rounded-sm shadow-md hover:bg-blue-600 transition-all duration-300"
                   >
                     <FaMoneyBillWave className="mr-1 text-sm" />
@@ -162,7 +167,7 @@ const Batchess = () => {
       </div>
 
       {/* Modal */}
-      <ModalForm isOpen={isModalOpen} closeModal={closeModal} />
+      <ModalForm isOpen={isModalOpen} closeModal={closeModal} course={currentCourse} />
     </div>
   );
 };

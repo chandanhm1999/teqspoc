@@ -1,5 +1,6 @@
 import React from "react";
 import { FaWhatsapp, FaInstagram, FaLinkedin } from "react-icons/fa";
+import { FaFacebook } from "react-icons/fa6";
 
 const ShareModelResourse = ({ isOpen, onClose, shareUrl }) => {
   const copyToClipboard = () => {
@@ -14,7 +15,7 @@ const ShareModelResourse = ({ isOpen, onClose, shareUrl }) => {
       <div className="bg-white rounded-lg shadow-lg p-6 w-96">
         <h3 className="text-xl font-semibold mb-2">Share this course</h3>
         <p className="text-gray-700 mb-4">
-          Share this course&apos;s details with your family & friends
+          Share this Resource&apos;s with your family & friends
         </p>
         <input
           type="text"
@@ -29,6 +30,7 @@ const ShareModelResourse = ({ isOpen, onClose, shareUrl }) => {
           Copy Link
         </button>
         <div className="flex justify-around mb-4">
+          {/* WhatsApp */}
           <a
             href={`https://api.whatsapp.com/send?text=${encodeURIComponent(shareUrl)}`}
             target="_blank"
@@ -37,14 +39,19 @@ const ShareModelResourse = ({ isOpen, onClose, shareUrl }) => {
           >
             <FaWhatsapp />
           </a>
+
+          {/* Instagram (Fallback message as direct share is not possible) */}
           <a
-            href={`https://www.instagram.com/?url=${encodeURIComponent(shareUrl)}`}
-            target="_blank"
-            rel="noopener noreferrer"
+            href="#"
+            onClick={() =>
+              alert("Instagram doesn't support direct link sharing. Please copy the link and share it manually.")
+            }
             className="text-pink-600 text-2xl"
           >
             <FaInstagram />
           </a>
+
+          {/* LinkedIn */}
           <a
             href={`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(shareUrl)}`}
             target="_blank"
@@ -52,6 +59,16 @@ const ShareModelResourse = ({ isOpen, onClose, shareUrl }) => {
             className="text-blue-700 text-2xl"
           >
             <FaLinkedin />
+          </a>
+
+          {/* Facebook */}
+          <a
+            href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(shareUrl)}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-600 text-2xl"
+          >
+            <FaFacebook />
           </a>
         </div>
         <button

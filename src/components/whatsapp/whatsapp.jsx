@@ -6,7 +6,7 @@ const WhatsApp = () => {
     <>
       <Link
         className="fixed bottom-10 right-10 flex items-center justify-center p-3 rounded-full bg-[#25D366] text-white z-20 drop-shadow-lg transform transition-all duration-300 hover:scale-105"
-        href="https://wa.me/+918105114625"
+        href="https://wa.me/+919019004424"
         target="_blank"
         rel="noopener noreferrer"
       >
@@ -16,7 +16,7 @@ const WhatsApp = () => {
       {/* Commented out version can be enabled if needed */}
       {/* <Link
         className="fixed bottom-8 right-4 md:right-8 md:bottom-8 z-20 drop-shadow-lg hidden md:block bg-[#25D366] text-white rounded-full p-2 flex items-center justify-center"
-        href="https://wa.me/7906514988"
+        href="https://wa.me/+91 9019004424"
         target="_blank"
         rel="noopener noreferrer"
       >

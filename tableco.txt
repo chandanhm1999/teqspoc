@@ -1,4 +1,4 @@
-name: "", email: "", phone: "", message: "", friendName: "", friendPhone: "", friendEmail: "", place: "", course: "", actionButton:"referandearn"
+name: "", email: "", phone: "", message: "", friendName: "", friendPhone: "", friendEmail: "", place: "", course: "", type: "", linkedin: "", experience: "", actionButton:"referandearn"
 
 fullName: "", mobileNumber: "", email: "", type: "", actionButton: "enrolmodel"
 
@@ -8,7 +8,15 @@ name: "", lastname: "", email: "", phone: "", message: "", actionButton: "freejo
 
 name: "", email: "", course: "", phone: "", linkedin: "", experience: "", actionButton: "carrers"
 
-name: "", email: "", mobileNumber: "", courseType: "", message: "", actionButton: "upcommingBatch
+name: "", email: "", mobileNumber: "", courseType: "", message: "", actionButton: "upcommingBatch"
+
+
+
+Main columns in google sheets:
+
+name: "", email: "", phone: "", message: "", friendName: "", friendPhone: "", friendEmail: "", place: "", course: "", type: "", 
+linkedin: "", experience: "", actionButton:"referandearn"
+
 
 
 

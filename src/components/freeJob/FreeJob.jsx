@@ -1,14 +1,24 @@
 "use client";
 import React, { useState } from "react";
 import Image from "next/image";
+import { ToastContainer, toast } from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css';
 
 const FreeJob = () => {
   const [formData, setFormData] = useState({
     name: "",
-    lastname: "",
     email: "",
     phone: "",
     message: "",
+    friendName: "",
+    friendPhone: "",
+    friendEmail: "",
+    place: "",
+    course: "",
+    type: "",
+    linkedin: "",
+    experience: "",
+    actionButton: "freeJob",
   });
 
   const handleChange = (e) => {
@@ -23,35 +33,50 @@ const FreeJob = () => {
 
     try {
       const response = await fetch(
-        "https://script.google.com/macros/s/AKfycbxVBPUknZOGjrT2Y6qIamv9h5vBy4ZFS5MccM-zbiNG70Kobqh_JclBTusbC8nBsu3k/exec", // Replace with your Apps Script URL
+        "https://script.google.com/macros/s/AKfycbwgqmwX-VZPYzPnKCiHa2l_NBJNLhZIwX3LQrpeiNjtcTtwUfNXurg9IBATjVX6o-m6/exec", 
         {
           method: "POST",
-          body: new URLSearchParams(formData),
-          
+          body: JSON.stringify(formData),
         }
-      );console.log(JSON.stringify(formData));
+      );
+      console.log(JSON.stringify(formData));
 
       if (response.ok) {
-        alert("Message sent successfully!");
-        setFormData({ name: "", lastname: "", email: "", phone: "", message: "" });
+        toast.success("Message sent successfully!");
+        setFormData({
+          name: "",
+          email: "",
+          phone: "",
+          message: "",
+          friendName: "",
+          friendPhone: "",
+          friendEmail: "",
+          place: "",
+          course: "",
+          type: "",
+          linkedin: "",
+          experience: "",
+          actionButton: "freeJob",
+        });
       } else {
-        alert("Failed to send message. Please try again.");
+        toast.error("Failed to send message. Please try again.");
       }
     } catch (error) {
       console.error("Error:", error);
-      alert("Failed to send message. Please try again.");
+      toast.error("Failed to send message. Please try again.");
     }
   };
 
   return (
     <div className="font-[sans-serif] max-w-6xl mx-auto relative bg-white shadow-[0_4px_12px_-4px_rgba(6,81,237,0.3)] rounded-3xl overflow-hidden my-4">
+      <ToastContainer />
       <div className="absolute -bottom-8 -left-8 w-24 h-24 rounded-full bg-blue-500 opacity-50"></div>
       <div className="absolute -top-8 -right-8 w-24 h-24 rounded-full bg-blue-500 opacity-50"></div>
 
       <div className="grid md:grid-cols-2 gap-10 py-10 px-8 relative z-10">
         <div className="text-center flex flex-col items-center justify-center">
           <Image
-            src="/assets/freejob/new.jpg" // Ensure this image is available in the public folder
+            src="/assets/freejob/new.jpg"
             alt="Contact us"
             width={500}
             height={700}

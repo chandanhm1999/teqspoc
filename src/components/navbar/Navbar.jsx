@@ -105,11 +105,11 @@ const Navbar = () => {
                   <BiPhoneCall className="h-[40px] w-[40px] rounded-md bg-primary bg-blue-500 p-2 text-2xl cursor-pointer text-white group-hover:bg-black/90" />
                 </li>
                 <li>
-                  <Link href="tel:+918105780072">
+                  <Link href="tel:+919019004424">
                     <div className="text-sm cursor-pointer">Call us on</div>
                     <div className="text-lg">
                       {" "}
-                      <div>+91 8105780072</div>
+                      <div>+91 9019004424</div>
                     </div>
                   </Link>
                 </li>
