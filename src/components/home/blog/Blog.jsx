@@ -37,10 +37,10 @@ const Blog = () => {
   return (
     <section className="mx-auto p-6 md:p-12 antialiased bg-white">
       <div className="text-center mb-12">
-        <h3 className="text-2xl font-bold text-black/80 lg:text-3xl xl:lg:text-3xl mb-4">
+        <h2 className="text-2xl font-bold text-black/80 lg:text-3xl xl:lg:text-3xl mb-4">
           Comprehensive  
           <TextLight text={"Training "} />Solutions
-        </h3>
+        </h2>
         <p className="text-sm text-[#4B5563] max-w-4xl mx-auto">
           From Beginner to Expert, we deliver tailored learning experiences
           through multiple formats, including Classroom, Virtual, Weekend, and

@@ -29,10 +29,10 @@ const Instruct = () => {
           </p>
           <div className="w-fit">
             <Button linkto={"/instructor"}>
-              <div className="flex items-center gap-3">
+              <h3 className="flex items-center gap-3">
                 Begin Your Teaching Journey Today
                 <FaArrowRight />
-              </div>
+              </h3>
             </Button>
           </div>
         </div>

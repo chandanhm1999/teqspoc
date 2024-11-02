@@ -204,9 +204,9 @@ const Course = () => {
 
                   <div className="flex justify-between items-center">
                     <div className="flex items-center">
-                      <h3 className="text-green-500 text-xs md:text-sm lg:text-sm xl:text-lg font-medium">
+                      <div className="text-green-500 text-xs md:text-sm lg:text-sm xl:text-lg font-medium">
                         {item.rating}
-                      </h3>
+                      </div>
                       <div className="ml-2 flex">
                         {[...Array(5)].map((_, index) => (
                           <FaStar key={index} className="h-2 w-2 text-yellow-400" />
@@ -214,10 +214,10 @@ const Course = () => {
                       </div>
                     </div>
                     <div className="flex items-center space-x-2">
-                      <h3 className="text-green-500 text-xs font-semibold">
+                      <div className="text-green-500 text-xs font-semibold">
                         <del className="text-red-500">₹{item.discount}</del>
-                      </h3>
-                      <h3 className="text-xl font-bold text-gray-900">₹{item.price}</h3>
+                      </div>
+                      <div className="text-xl font-bold text-gray-900">₹{item.price}</div>
                     </div>
                   </div>
 

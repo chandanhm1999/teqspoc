@@ -1,6 +1,6 @@
 export const metadata = {
   title: "Teqspoc - Expert Guidance and Endless Support",
-  description: "Teqspoc is your partner in tech education, offering expert guidance and endless support for learners in AI, Full Stack Development, Scrum Master, and more. Achieve your career goals with our cutting-edge courses and real-world projects.",
+  description: "Teqspoc: Your partner in tech education, offering expert guidance and support. Achieve your goals with AI, Full Stack, Scrum Master courses, and more.",
   icons: {
     icon: ["/teqspoc.png"],
     apple: ["/teqspoc.png?v=4"],

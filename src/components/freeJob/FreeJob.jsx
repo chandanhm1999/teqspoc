@@ -88,9 +88,9 @@ const FreeJob = () => {
           <h2 className="text-3xl text-blue-700 font-extrabold text-center mb-2">
             Hey Learners
           </h2>
-          <p className="text-sm text-gray-600 font-semibold text-center mb-6">
+          <h3 className="text-sm text-gray-600 font-semibold text-center mb-6">
             Make progress towards your goal with one simple step!
-          </p>
+          </h3>
           <div className="space-y-4">
             <div className="flex space-x-4">
               <input

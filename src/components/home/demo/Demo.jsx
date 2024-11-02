@@ -13,11 +13,11 @@ const Demo = () => {
               Discover
             </h2>
 
-            <p className="hidden max-w-screen-sm text-gray-200 dark:text-gray-300 md:block">
+            <h4 className="hidden max-w-screen-sm text-gray-200 dark:text-gray-300 md:block">
               top-tier courses crafted by industry experts, designed to elevate
               your skills and knowledge. Learn from the best to stay ahead in
               your field and achieve your <TextLight text={"career goals."} />
-            </p>
+            </h4>
           </div>
 
           <Link
