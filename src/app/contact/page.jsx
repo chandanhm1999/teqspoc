@@ -7,7 +7,6 @@ import { metadata } from "../layoutMetadata"; // Importing metadata
 
 // Directly export the imported metadata
 export { metadata };
-
 const Contact = () => {
   return (
     <>

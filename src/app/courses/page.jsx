@@ -2,6 +2,7 @@ import Coursess from "@/components/coursespage/Coursess";
 import Batchess from "@/components/home/batchess/Batchess";
 import MainSec from "@/components/home/contact/mainSec/MainSec";
 import ContactUsSection from "@/components/sysContact/ContactUsSection";
+
 import React from "react";
 import { metadata } from "./clayoutMetadata"; // Importing metadata
 

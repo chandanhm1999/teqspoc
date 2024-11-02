@@ -7,7 +7,6 @@ import { metadata } from "../rlayoutMetadata"; // Importing metadata
 
 // Directly export the imported metadata
 export { metadata };
-
 const Testingres = () => {
   return (
     <>

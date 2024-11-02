@@ -6,6 +6,7 @@ import Navbar from "@/components/navbar/Navbar";
 import "react-multi-carousel/lib/styles.css";
 import Footer from "@/components/footer/Footer";
 import WhatsApp from "@/components/whatsapp/whatsapp";
+
 import Preloader from "@/components/preloader/Preloader";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -24,7 +25,7 @@ export default function RootLayout({ children }) {
 
   return (
     <html lang="en">
-    <link rel="canonical" href="https://www.teqspoc.com" />
+
       <body>
       {loading && <Preloader />} {/* Show loader if loading state is true */}
       <div className={loading ? "hidden" : "visible"}>

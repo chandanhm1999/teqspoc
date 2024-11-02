@@ -49,12 +49,15 @@ export const metadata = {
       },
     ],
   },
-  // Added Canonical URL
+
   canonical: "https://www.teqspoc.com",
   // Added Robots tag
   robots: "index, follow",
   // Added X-Robots-Tag
   xRobotsTag: "index, follow",
+  language: "en",
+  rating: "General",
+  robots: "index, follow",
   language: "en",
   rating: "General",
 };

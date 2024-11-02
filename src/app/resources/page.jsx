@@ -1,7 +1,6 @@
 import MainSec from "@/components/home/contact/mainSec/MainSec";
 import Resource from "@/components/resource/resources";
 import React from "react";
-
 import { metadata } from "./rlayoutMetadata"; // Importing metadata
 
 // Directly export the imported metadata

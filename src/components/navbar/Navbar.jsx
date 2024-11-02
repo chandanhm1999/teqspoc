@@ -76,6 +76,7 @@ const Navbar = () => {
                         Become an Instructor
                       </li>
                     </Link>
+
                     <Link href="/freejobassistance">
                       <li className="p-2 hover:bg-violet-200">
                         Free Job Assistance

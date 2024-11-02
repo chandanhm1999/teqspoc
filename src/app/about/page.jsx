@@ -5,6 +5,7 @@ import SectionTwo from "@/components/home/sectwo/SectionTwo";
 import VideoInstruct from "@/components/home/videoInstruct/VideoInstruct";
 import React from "react";
 
+
 import { metadata } from "./alayoutMetadata"; // Importing metadata
 
 // Directly export the imported metadata

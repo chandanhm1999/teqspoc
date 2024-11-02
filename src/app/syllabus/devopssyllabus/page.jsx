@@ -7,7 +7,6 @@ import { metadata } from "../../courses/clayoutMetadata"; // Importing metadata
 
 // Directly export the imported metadata
 export { metadata };
-
 const Devopssyllabus = () => {
   return (
     <>
