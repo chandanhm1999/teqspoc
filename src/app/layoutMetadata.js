@@ -50,7 +50,7 @@ export const metadata = {
     ],
   },
 
-  canonical: "https://www.teqspoc.com",
+  Canonical: "https://www.teqspoc.com",
   // Added Robots tag
   robots: "index, follow",
   // Added X-Robots-Tag

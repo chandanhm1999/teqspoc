@@ -51,7 +51,7 @@ export const metadata = {
       },
     ],
   },
-  canonical: "https://www.teqspoc.com/instructor",
+  Canonical: "https://www.teqspoc.com/instructor",
   robots: "index, follow",
   xRobotsTag: "index, follow",
   language: "en",

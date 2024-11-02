@@ -59,7 +59,7 @@ export const metadata = {
       },
     ],
   },
-  canonical: "https://www.teqspoc.com/freejobassistance",
+  Canonical: "https://www.teqspoc.com/freejobassistance",
   robots: "index, follow",
   xRobotsTag: "index, follow",
   language: "en",

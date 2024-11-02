@@ -64,7 +64,7 @@ export const metadata = {
     ],
   },
   // Added Canonical URL
-  canonical: "https://www.teqspoc.com/resources",
+  Canonical: "https://www.teqspoc.com/resources",
   // Added Robots tag
   robots: "index, follow",
   // Added X-Robots-Tag
