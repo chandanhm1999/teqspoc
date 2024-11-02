@@ -3,6 +3,11 @@ import MainSec from "@/components/home/contact/mainSec/MainSec";
 import Pythons from "@/components/syllabus/pythons/Pythons";
 import ContactUsSection from "@/components/sysContact/ContactUsSection";
 
+import { metadata } from "../../courses/clayoutMetadata"; // Importing metadata
+
+// Directly export the imported metadata
+export { metadata };
+
 const Pythonsyllabus = () => {
   return (
     <>

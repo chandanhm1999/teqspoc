@@ -3,6 +3,11 @@ import MainSec from "@/components/home/contact/mainSec/MainSec";
 import Hr from "../../../components/syllabus/hrrecuiter/Hr";
 import ContactUsSection from "@/components/sysContact/ContactUsSection";
 
+import { metadata } from "../../courses/clayoutMetadata"; // Importing metadata
+
+// Directly export the imported metadata
+export { metadata };
+
 const Hrrecuitersyllabus = () => {
   return (
     <>

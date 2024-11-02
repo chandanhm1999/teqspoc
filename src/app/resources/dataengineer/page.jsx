@@ -3,6 +3,11 @@ import Dataengineerres from "@/components/resource/resourceSection/dataengineerr
 import ContactUsSection from "@/components/sysContact/ContactUsSection";
 import React from "react";
 
+import { metadata } from "../rlayoutMetadata"; // Importing metadata
+
+// Directly export the imported metadata
+export { metadata };
+
 const Dataengineer = () => {
   return (
     <>
