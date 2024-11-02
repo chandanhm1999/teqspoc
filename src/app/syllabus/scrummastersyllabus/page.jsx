@@ -11,6 +11,7 @@ export { metadata };
 const Scrummastersyllabus = () => {
   return (
     <>
+    <link rel="canonical" href="https://www.teqspoc.com/syllabus/scrummastersyllabus"></link>
     <MainSec
         url="/assets/sys/scrum.jpg"
         parent="Scrummastersyllabus"

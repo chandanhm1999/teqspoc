@@ -16,6 +16,7 @@ export { metadata };
 export default function Home() {
   return (
     <>
+    <link rel="canonical" href="https://www.teqspoc.com"></link>
       <HeroBanner />
       <RenderCourse />
       <Batchess />

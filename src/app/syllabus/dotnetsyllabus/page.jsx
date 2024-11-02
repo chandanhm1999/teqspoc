@@ -11,6 +11,7 @@ export { metadata };
 const Dotnetsyllabus = () => {
   return (
     <>
+    <link rel="canonical" href="https://www.teqspoc.com/syllabus/dotnetsyllabus"></link>
       <MainSec
         url="/assets/sys/dotnet.jpg"
         parent="Dotnetsyllabus"

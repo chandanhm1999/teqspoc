@@ -11,6 +11,7 @@ export { metadata };
 const Aimlsyllabus = () => {
   return (
     <>
+    <link rel="canonical" href="https://www.teqspoc.com/syllabus/aimlsyllabus"></link>
       <MainSec
         url="/assets/sys/ai.jpg"
         parent="AL/ML-Syllabus"

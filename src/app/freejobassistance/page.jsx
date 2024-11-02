@@ -8,6 +8,7 @@ export { metadata };
 const Freejobassistance = () => {
   return (
     <>
+    <link rel="canonical" href="https://www.teqspoc.com/freejobassistance"></link>
       <MainSec
         url="/assets/freejob/freepost.jpg"
         parent="FreeJobAssistance"

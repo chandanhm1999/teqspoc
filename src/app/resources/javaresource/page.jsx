@@ -9,6 +9,7 @@ export { metadata };
 const Javaresource = () => {
   return (
     <>
+    <link rel="canonical" href="https://www.teqspoc.com/resources/javaresource"></link>
       <MainP
         url="/assets/resourse/interview/java.jpg"
         parent="Java"

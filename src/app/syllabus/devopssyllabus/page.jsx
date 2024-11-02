@@ -10,6 +10,7 @@ export { metadata };
 const Devopssyllabus = () => {
   return (
     <>
+    <link rel="canonical" href="https://www.teqspoc.com/syllabus/devopssyllabus"></link>
       <MainSec
         url="/assets/sys/devops.jpg"
         parent="Devopssyllabus"

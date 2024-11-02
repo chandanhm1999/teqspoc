@@ -11,6 +11,7 @@ export { metadata };
 const Pythonsyllabus = () => {
   return (
     <>
+    <link rel="canonical" href="https://www.teqspoc.com/syllabus/pythonsyllabus"></link>
       <MainSec
         url="/assets/sys/pythons.jpg"
         parent="Python-Syllabus"

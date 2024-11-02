@@ -11,6 +11,7 @@ export { metadata };
 const Javasyllabus = () => {
   return (
     <>
+    <link rel="canonical" href="https://www.teqspoc.com/syllabus/javasyllabus"></link>
       <MainSec
         url="/assets/sys/java.jpg"
         parent="Javasyllabus"

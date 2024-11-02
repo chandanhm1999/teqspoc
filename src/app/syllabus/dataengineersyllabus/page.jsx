@@ -11,6 +11,7 @@ export { metadata };
 const Dataengineersyllabus = () => {
   return (
     <>
+    <link rel="canonical" href="https://www.teqspoc.com/syllabus/dataengineersyllabus"></link>
       <MainSec
         url="/assets/sys/data.jpg"
         parent="Dataengineersyllabus"

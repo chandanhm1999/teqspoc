@@ -10,6 +10,7 @@ export { metadata };
 const Refer = () => {
   return (
     <>
+    <link rel="canonical" href="https://www.teqspoc.com/refer"></link>
       <MainSec
         url="/assets/refer/new.jpg"
         parent="Refer & Earn"

@@ -14,6 +14,7 @@ export { metadata };
 const About = () => {
   return (
     <>
+    <link rel="canonical" href="https://www.teqspoc.com/about"></link>
       <AboutMainSec
         url="/assets/about/aboutimg.jpg"
         parent="About Us"

@@ -11,6 +11,7 @@ export { metadata };
 const Testingsyllabus = () => {
   return (
     <>
+    <link rel="canonical" href="https://www.teqspoc.com/syllabus/testingsyllabus"></link>
       <MainSec
         url="/assets/sys/test.jpg"
         parent="Testingsyllabus"

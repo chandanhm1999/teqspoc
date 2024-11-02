@@ -11,6 +11,7 @@ export { metadata };
 const Dataengineer = () => {
   return (
     <>
+    <link rel="canonical" href="https://www.teqspoc.com/resources/dataengineer"></link>
       <MainP
         url="/assets/resourse/interview/data.jpg"
         parent="DataEngineer Interview Questions & Answers"

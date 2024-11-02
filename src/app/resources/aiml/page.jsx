@@ -11,6 +11,7 @@ export { metadata };
 const Aiml = () => {
   return (
     <>
+    <link rel="canonical" href="https://www.teqspoc.com/resources/aiml"></link>
       <MainP
         url="/assets/resourse/aim.jpg"
         parent="AI/ML Questions & Answers"

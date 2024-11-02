@@ -11,6 +11,7 @@ export { metadata };
 const Scrummaster = () => {
   return (
     <>
+    <link rel="canonical" href="https://www.teqspoc.com/resources/scrummaster"></link>
       <MainP
         url="/assets/resourse/interview/mainscrum.jpg"
         parent="Scrummaster Interview Questions & Answers"

@@ -9,6 +9,7 @@ export { metadata };
 const Careers = () => {
   return (
     <>
+    <link rel="canonical" href="https://www.teqspoc.com/careers"></link>
       <MainSec
         url="/assets/carrers/resume.jpg"
         parent="Carrers"

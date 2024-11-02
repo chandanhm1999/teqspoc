@@ -11,6 +11,7 @@ export { metadata };
 const Dotnet = () => {
   return (
     <>
+    <link rel="canonical" href="https://www.teqspoc.com/resources/dotnet"></link>
       <MainP
         url="/assets/resourse/interview/maindotnet.jpg"
         parent="DotNet"

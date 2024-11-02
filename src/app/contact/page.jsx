@@ -10,6 +10,7 @@ export { metadata };
 const Contact = () => {
   return (
     <>
+    <link rel="canonical" href="https://www.teqspoc.com/contact"></link>
       <MainSec
         url="/assets/contact/contacting.jpg"
         parent="Contact"

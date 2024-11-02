@@ -10,6 +10,7 @@ export { metadata };
 const Instructor = () => {
   return (
     <>
+    <link rel="canonical" href="https://www.teqspoc.com/instructor"></link>
       <MainSec
         url="/assets/instruct/int.jpg"
         parent="Instructor"

@@ -12,6 +12,7 @@ export { metadata };
 const Courses = () => {
   return (
     <>
+    <link rel="canonical" href="https://www.teqspoc.com/courses"></link>
       <MainSec
         url="/assets/contact/contacting.jpg"
         parent="Courses"

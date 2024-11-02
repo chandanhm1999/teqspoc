@@ -12,6 +12,7 @@ export { metadata };
 const Devops = () => {
   return (
     <>
+    <link rel="canonical" href="https://www.teqspoc.com/resources/devops"></link>
       <MainP
         url="/assets/resourse/interview/maindevops.jpg"
         parent="Devops Interview Questions & Answers"

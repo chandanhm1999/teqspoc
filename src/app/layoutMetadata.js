@@ -49,7 +49,6 @@ export const metadata = {
       },
     ],
   },
-
   Canonical: "https://www.teqspoc.com",
   // Added Robots tag
   robots: "index, follow",
